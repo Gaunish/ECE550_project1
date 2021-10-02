@@ -41,9 +41,20 @@ module regfile (
 
 	decoder_5 dReadA(ctrl_readRegA[4:0],decode_readA[31:0]);
 	decoder_5 dReadB(ctrl_readRegB[4:0],decode_readB[31:0]);
+	
+	wire[31:0] buffer_A[0:31];
+	wire[31:0] buffer_B[0:31];
 
-	assign data_readRegA = out[ctrl_readRegA[4:0]];
-	assign data_readRegB = out[ctrl_readRegB[4:0]];
+	 generate 
+		genvar read;
+			for(read = 0; read < 32; read = read + 1)begin : read_out
+			tristate T1(out[read], decode_readA, buffer_A[read]);
+			tristate T2(out[read], decode_readB, buffer_B[read]);
+		end
+	 endgenerate
+	
+	assign data_readRegA = buffer_A[ctrl_readRegA[4:0]];
+	assign data_readRegB = buffer_B[ctrl_readRegB[4:0]];
 
 	
 
