@@ -11,7 +11,7 @@ module register(input[31:0] d,
 				genvar i;
 				for(i = 0; i < 31; i = i + 1)begin : description
 					dffe_ref DFF1(buffer[i], d[i], clk, en, clr);
-					assign out[i] = first ? buffer[i] : 1'b0;
+					assign out[i] = first ? 1'b0 : buffer[i];
 				end
 			endgenerate
 					
