@@ -22,7 +22,7 @@ module regfile (
 	wire[31:0] enable;
 	generate
 		genvar j;
-			for(j = 0;j < 31;j = j +1) begin: write
+			for(j = 0;j < 32;j = j +1) begin: write
 				and(enable[j],ctrl_decode_write[j],ctrl_writeEnable);
 			end
 	endgenerate
@@ -31,7 +31,7 @@ module regfile (
 	generate 
 		genvar i;
 			register reg0(data_writeReg[31:0], enable[0], out[0], clock, ctrl_reset,1);
-			for(i = 1; i < 31; i = i + 1)begin : description
+			for(i = 1; i < 32; i = i + 1)begin : description
 			register reg1(data_writeReg[31:0], enable[i], out[i], clock, ctrl_reset,0);
 		end
 	 endgenerate
