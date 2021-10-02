@@ -1,0 +1,15 @@
+module reg(input[31:0] d,
+			  output[31:0] out,
+			  input clk,
+			  input en,
+			  input clr);
+			  
+			generate 
+				genvar i;
+				for(i = 0; i < 31; i = i + 1)begin : description
+					dffe_ref(out[i], d[i], clk, en, clr);
+				end
+			endgenerate
+					
+			
+endmodule
