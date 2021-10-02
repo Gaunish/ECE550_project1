@@ -3,7 +3,7 @@ module regfile_imp(in,
 						 clk,
 						 clr,
 						 first);
-	 input[31:0] in;
+	input[31:0] in;
 	input[31:0] enable;
 	input clk;
 	input clr;
@@ -16,5 +16,6 @@ module regfile_imp(in,
 				register reg1(in, enable[i], out[i], clk, clr, first);
 		end
 	 endgenerate
+	 
 
 endmodule

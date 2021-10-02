@@ -33,10 +33,15 @@ module regfile_tb();
 
         // Begin testing... (loop over registers)
         for(index = 0; index <= 31; index = index + 1) begin
-            writeRegister(index, 32'h0000DEAD);
-            checkRegister(index, 32'h0000DEAD);
+            writeRegister(index, 32'h1000DEAD);
+            checkRegister(index, 32'h1000DEAD);
         end
 
+		  for(index = 0; index <= 31; index = index + 1) begin
+            writeRegister(index, 1'b1 << index);
+            checkRegister(index, 1'b1 << index);
+        end
+		  
         if (errors == 0) begin
             $display("The simulation completed without errors");
         end
