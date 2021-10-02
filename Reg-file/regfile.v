@@ -48,13 +48,13 @@ module regfile (
 	 generate 
 		genvar read;
 			for(read = 0; read < 32; read = read + 1)begin : read_out
-			tristate T1(out[read], decode_readA[read], buffer_A[read]);
-			tristate T2(out[read], decode_readB[read], buffer_B[read]);
+			tristate T1(out[read], decode_readA[read], data_readRegA);
+			tristate T2(out[read], decode_readB[read], data_readRegB);
 		end
 	 endgenerate
 	
-	assign data_readRegA = buffer_A[ctrl_readRegA[4:0]];
-	assign data_readRegB = buffer_B[ctrl_readRegB[4:0]];
+	//assign data_readRegA = buffer_A;
+	//assign data_readRegB = buffer_B;
 
 	
 
