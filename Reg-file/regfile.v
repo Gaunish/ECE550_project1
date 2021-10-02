@@ -4,8 +4,6 @@ module regfile (
     ctrl_reset, ctrl_writeReg,
     ctrl_readRegA, ctrl_readRegB, data_writeReg,
     data_readRegA, data_readRegB,
-	 
-	 outpin
 );
 
    input clock, ctrl_writeEnable, ctrl_reset;
@@ -13,7 +11,6 @@ module regfile (
    input [31:0] data_writeReg;
 
    output [31:0] data_readRegA, data_readRegB;
-	output [31:0] outpin;
 
 	wire [31:0] decodeA;
 	wire [31:0] decodeB;
@@ -45,9 +42,8 @@ module regfile (
 	decoder_5 dReadA(ctrl_readRegA[4:0],decode_readA[31:0]);
 	decoder_5 dReadB(ctrl_readRegB[4:0],decode_readB[31:0]);
 
-	assign outpin = out[16];
-	assign data_readRegA = out[1];
-	assign data_readRegB = out[decode_readB[31:0]];
+	assign data_readRegA = out[ctrl_readRegA[4:0]];
+	assign data_readRegB = out[ctrl_readRegB[4:0]];
 
 	
 
