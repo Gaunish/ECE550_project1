@@ -14,20 +14,33 @@ module regfile (
 
 	wire [31:0] decodeA;
 	wire [31:0] decodeB;
+	
+	//Array used as a buffer to store output of registers
 	wire[31:0] out[0:31];
 	
 	//Write Port
+//----------------------------------------------------------------------------------------------------------------------	
+	//Decode the input write control bit
 	wire [31:0] ctrl_decode_write;
 	decoder_5 dWrite(ctrl_writeReg[4:0],ctrl_decode_write[31:0]);
+	
+	//enable is the final write control bit
+	//It is calculated by ANDing write enable, decoded write control bit
 	wire[31:0] enable;
+	
+	//calculate the value of enable
 	generate
 		genvar j;
 			for(j = 0;j < 32;j = j +1) begin: write
 				and(enable[j],ctrl_decode_write[j],ctrl_writeEnable);
 			end
 	endgenerate
+//----------------------------------------------------------------------------------------------------------------------	
+
   
-	//register
+	//Registers
+//----------------------------------------------------------------------------------------------------------------------	
+	//loop is used to write input data(if any) and store the output on buffer array out 
 	generate 
 		genvar i;
 			register reg0(data_writeReg[31:0], enable[0], out[0], clock, ctrl_reset,1);
@@ -36,26 +49,27 @@ module regfile (
 		end
 	 endgenerate
 	 
+//----------------------------------------------------------------------------------------------------------------------	
+
+
+	//Read Port
+//----------------------------------------------------------------------------------------------------------------------	
+	//decode the input read control bits A, B
 	wire [31:0] decode_readA;
 	wire [31:0] decode_readB;
-
+	
 	decoder_5 dReadA(ctrl_readRegA[4:0],decode_readA[31:0]);
 	decoder_5 dReadB(ctrl_readRegB[4:0],decode_readB[31:0]);
 	
-	wire[31:0] buffer_A[0:31];
-	wire[31:0] buffer_B[0:31];
-
-	 generate 
+	//loop is used to calculate output for read port A,B
+	// by adding the register buffer wire via tristates
+	generate 
 		genvar read;
 			for(read = 0; read < 32; read = read + 1)begin : read_out
 			tristate T1(out[read], decode_readA[read], data_readRegA);
 			tristate T2(out[read], decode_readB[read], data_readRegB);
 		end
 	 endgenerate
-	
-	//assign data_readRegA = buffer_A;
-	//assign data_readRegB = buffer_B;
-
-	
-
+//----------------------------------------------------------------------------------------------------------------------	
+		
 endmodule
