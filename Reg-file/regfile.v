@@ -40,12 +40,13 @@ module regfile (
   
 	//Registers
 //----------------------------------------------------------------------------------------------------------------------	
-	//loop is used to write input data(if any) and store the output on buffer array out 
+	//loop is used to write input data(if any) and store the output on buffer array out
+	
 	generate 
 		genvar i;
-			register reg0(data_writeReg[31:0], enable[0], out[0], clock, ctrl_reset,1);
+			register reg0(data_writeReg[31:0], enable[0], out[0], clock, ctrl_reset,1'b1);
 			for(i = 1; i < 32; i = i + 1)begin : description
-			register reg1(data_writeReg[31:0], enable[i], out[i], clock, ctrl_reset,0);
+			register reg1(data_writeReg[31:0], enable[i], out[i], clock, ctrl_reset,1'b0);
 		end
 	 endgenerate
 	 

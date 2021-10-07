@@ -37,3 +37,7 @@ Implementation :
 ----------------------------------------------------------------------------------------------------------------------------------
 
 how fast register file can be clocked?
+
+We ran the regfile waveform with decreasing clock period and found:
+
+Our register file can be clocked with minimum period of 15ns.
