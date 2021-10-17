@@ -3,7 +3,11 @@ module regfile (
     ctrl_writeEnable,
     ctrl_reset, ctrl_writeReg,
     ctrl_readRegA, ctrl_readRegB, data_writeReg,
+<<<<<<< Updated upstream
     data_readRegA, data_readRegB,
+=======
+    data_readRegA, data_readRegB
+>>>>>>> Stashed changes
 );
 
    input clock, ctrl_writeEnable, ctrl_reset;
@@ -12,6 +16,7 @@ module regfile (
 
    output [31:0] data_readRegA, data_readRegB;
 
+<<<<<<< Updated upstream
 	wire [31:0] decodeA;
 	wire [31:0] decodeB;
 	wire[31:0] out[0:31];
@@ -46,5 +51,8 @@ module regfile (
 	assign data_readRegB = out[ctrl_readRegB[4:0]];
 
 	
+=======
+   /* YOUR CODE HERE */
+>>>>>>> Stashed changes
 
 endmodule

@@ -61,6 +61,7 @@ module regfile (
 	
 	decoder_5 dReadA(ctrl_readRegA[4:0],decode_readA[31:0]);
 	decoder_5 dReadB(ctrl_readRegB[4:0],decode_readB[31:0]);
+<<<<<<< Updated upstream
 	
 	//loop is used to calculate output for read port A,B
 	// by adding the register buffer wire via tristates
@@ -74,3 +75,23 @@ module regfile (
 //----------------------------------------------------------------------------------------------------------------------	
 		
 endmodule
+=======
+	
+	wire[31:0] buffer_A[0:31];
+	wire[31:0] buffer_B[0:31];
+
+	 generate 
+		genvar read;
+			for(read = 0; read < 32; read = read + 1)begin : read_out
+			tristate T1(out[read], decode_readA[read], data_readRegA);
+			tristate T2(out[read], decode_readB[read], data_readRegB);
+		end
+	 endgenerate
+	
+	//assign data_readRegA = buffer_A;
+	//assign data_readRegB = buffer_B;
+
+	
+
+endmodule
+>>>>>>> Stashed changes
