@@ -1,5 +1,9 @@
 Flow report for regfile
+<<<<<<< HEAD
+Thu Oct 07 19:06:38 2021
+=======
 Thu Oct 07 14:32:23 2021
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +45,11 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
+; Flow Status                        ; Successful - Thu Oct 07 19:06:38 2021       ;
+=======
 ; Flow Status                        ; Successful - Thu Oct 07 14:32:23 2021       ;
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; regfile                                     ;
 ; Top-level Entity Name              ; regfile                                     ;
@@ -65,7 +73,11 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
+; Start date & time ; 10/07/2021 19:05:27 ;
+=======
 ; Start date & time ; 10/07/2021 10:29:20 ;
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 ; Main task         ; Compilation         ;
 ; Revision Name     ; regfile             ;
 +-------------------+---------------------+
@@ -76,7 +88,11 @@ agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID                ; 136784556407598.163364792717400       ; --            ; --          ; --             ;
+=======
 ; COMPILER_SIGNATURE_ID                ; 110427378324588.163361696041784       ; --            ; --          ; --             ;
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; regfile_tb     ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; regfile_tb                            ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
@@ -103,6 +119,14 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 4952 MB             ; 00:00:32                           ;
+; Fitter                    ; 00:00:30     ; 1.0                     ; 5505 MB             ; 00:00:33                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4885 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 5035 MB             ; 00:00:04                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4873 MB             ; 00:00:04                           ;
+; Total                     ; 00:00:59     ; --                      ; --                  ; 00:01:17                           ;
+=======
 ; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 4987 MB             ; 00:00:24                           ;
 ; Fitter                    ; 00:00:14     ; 1.0                     ; 5979 MB             ; 00:00:19                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 4898 MB             ; 00:00:03                           ;
@@ -145,6 +169,7 @@ agreement for further details.
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4855 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4883 MB             ; 00:00:02                           ;
 ; Total                     ; 00:01:14     ; --                      ; --                  ; 00:01:26                           ;
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

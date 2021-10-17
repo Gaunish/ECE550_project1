@@ -5,6 +5,12 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+<<<<<<< HEAD
+vlog -vlog01compat -work work +incdir+E:/Project/Reg-file {E:/Project/Reg-file/dffe_ref.v}
+vlog -vlog01compat -work work +incdir+E:/Project/Reg-file {E:/Project/Reg-file/register.v}
+vlog -vlog01compat -work work +incdir+E:/Project/Reg-file {E:/Project/Reg-file/regfile_imp.v}
+
+=======
 vlog -vlog01compat -work work +incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file {C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_5.v}
 vlog -vlog01compat -work work +incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file {C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_3.v}
 vlog -vlog01compat -work work +incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file {C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_2.v}
@@ -20,3 +26,4 @@ add wave *
 view structure
 view signals
 run -all
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26

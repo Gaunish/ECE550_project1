@@ -1,5 +1,9 @@
 TimeQuest Timing Analyzer report for regfile
+<<<<<<< HEAD
+Thu Oct 07 19:06:28 2021
+=======
 Thu Oct 07 10:29:56 2021
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -84,6 +88,17 @@ agreement for further details.
 +-----------------------+-----------------------------------------------------+
 
 
+<<<<<<< HEAD
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+=======
 +------------------------------------------+
 ; Parallel Compilation                     ;
 +----------------------------+-------------+
@@ -99,6 +114,7 @@ agreement for further details.
 ;     Processor 1            ; 100.0%      ;
 ;     Processors 2-4         ;   3.3%      ;
 +----------------------------+-------------+
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -919,7 +935,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+<<<<<<< HEAD
+    Info: Processing started: Thu Oct 07 19:06:22 2021
+=======
     Info: Processing started: Thu Oct 07 10:29:54 2021
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 Info: Command: quartus_sta regfile -c regfile
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -975,9 +995,16 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+<<<<<<< HEAD
+    Info: Peak virtual memory: 5035 megabytes
+    Info: Processing ended: Thu Oct 07 19:06:28 2021
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
+=======
     Info: Peak virtual memory: 5097 megabytes
     Info: Processing ended: Thu Oct 07 10:29:56 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 
 

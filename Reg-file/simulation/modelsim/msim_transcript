@@ -11,37 +11,83 @@
 # Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+E:/Project/Reg-file {E:/Project/Reg-file/dffe_ref.v}
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/regfile.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:18:15 on Oct 02,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Project/Reg-file" E:/Project/Reg-file/dffe_ref.v 
+# Start time: 19:07:42 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/regfile.v 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 19:07:42 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/dffe_ref.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:07:42 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/dffe_ref.v 
 # -- Compiling module dffe_ref
 # 
 # Top level modules:
 # 	dffe_ref
-# End time: 17:18:15 on Oct 02,2021, Elapsed time: 0:00:00
+# End time: 19:07:42 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Project/Reg-file {E:/Project/Reg-file/register.v}
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/register.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:18:15 on Oct 02,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Project/Reg-file" E:/Project/Reg-file/register.v 
+# Start time: 19:07:43 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/register.v 
 # -- Compiling module register
 # 
 # Top level modules:
 # 	register
-# End time: 17:18:15 on Oct 02,2021, Elapsed time: 0:00:00
+# End time: 19:07:43 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+E:/Project/Reg-file {E:/Project/Reg-file/regfile_imp.v}
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/decoder_2.v}
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 17:18:15 on Oct 02,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/Project/Reg-file" E:/Project/Reg-file/regfile_imp.v 
-# -- Compiling module regfile_imp
+# Start time: 19:07:43 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/decoder_2.v 
+# -- Compiling module decoder_2
 # 
 # Top level modules:
-# 	regfile_imp
-# End time: 17:18:15 on Oct 02,2021, Elapsed time: 0:00:00
+# 	decoder_2
+# End time: 19:07:43 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/decoder_3.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:07:43 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/decoder_3.v 
+# -- Compiling module decoder_3
+# 
+# Top level modules:
+# 	decoder_3
+# End time: 19:07:43 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/decoder_5.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:07:43 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/decoder_5.v 
+# -- Compiling module decoder_5
+# 
+# Top level modules:
+# 	decoder_5
+# End time: 19:07:43 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/tristate.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:07:43 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/tristate.v 
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# End time: 19:07:43 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+<<<<<<< HEAD
+# vlog -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file {E:/ECE550_Project1/Reg-file/regfile_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 19:07:43 on Oct 07,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/ECE550_Project1/Reg-file" E:/ECE550_Project1/Reg-file/regfile_tb.v 
+=======
 =======
 # Reading D:/Softwares/Quartus/modelsim_ase/tcl/vsim/pref.tcl
 # do regfile_run_msim_gate_verilog.do
@@ -70,10 +116,29 @@
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 # Start time: 13:48:15 on Oct 07,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file" C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v 
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 # -- Compiling module regfile_tb
 # 
 # Top level modules:
 # 	regfile_tb
+<<<<<<< HEAD
+# End time: 19:07:43 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  regfile_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" regfile_tb 
+# Start time: 19:07:43 on Oct 07,2021
+# Loading work.regfile_tb
+# Loading work.regfile
+# Loading work.decoder_5
+# Loading work.decoder_2
+# Loading work.decoder_3
+# Loading work.register
+# Loading work.dffe_ref
+# Loading work.tristate
+# ** Warning: (vsim-3017) E:/ECE550_Project1/Reg-file/regfile_tb.v(17): [TFMPC] - Too few port connections. Expected 10, found 9.
+#    Time: 0 ps  Iteration: 0  Instance: /regfile_tb/regfile_ut File: E:/ECE550_Project1/Reg-file/regfile.v
+=======
 # End time: 13:48:15 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
@@ -96,6 +161,7 @@
 # Loading timing data from regfile_min_1200mv_0c_v_fast.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /regfile_tb File: C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 # 
 # add wave *
 # view structure
@@ -173,9 +239,17 @@
 #                 5040 << Writing register 30 with 40000000 >>
 #                 5120 << Writing register 31 with 80000000 >>
 # The simulation failed with           4 errors
+<<<<<<< HEAD
+# ** Note: $stop    : E:/ECE550_Project1/Reg-file/regfile_tb.v(52)
+#    Time: 5180 ns  Iteration: 1  Instance: /regfile_tb
+# Break in Module regfile_tb at E:/ECE550_Project1/Reg-file/regfile_tb.v line 52
+# End time: 19:08:17 on Oct 07,2021, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 1
+=======
 # ** Note: $stop    : C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v(53)
 #    Time: 5180 ns  Iteration: 1  Instance: /regfile_tb
 # Break in Module regfile_tb at C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v line 53
 # End time: 13:48:23 on Oct 07,2021, Elapsed time: 0:00:08
 # Errors: 0, Warnings: 0
 >>>>>>> Stashed changes
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
