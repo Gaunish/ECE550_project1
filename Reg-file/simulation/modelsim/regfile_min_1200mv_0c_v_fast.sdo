@@ -30,7 +30,11 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "regfile")
+<<<<<<< Updated upstream
   (DATE "10/07/2021 10:37:34")
+=======
+  (DATE "10/07/2021 10:29:59")
+>>>>>>> Stashed changes
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition")

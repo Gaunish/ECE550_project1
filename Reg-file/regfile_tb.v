@@ -32,7 +32,8 @@ module regfile_tb();
         @(negedge clock);    // wait until next negative edge of clock
 
         // Begin testing... (loop over registers)
-        for(index = 0; index <= 31; index = index + 1) begin
+        
+		  for(index = 0; index <= 31; index = index + 1) begin
             writeRegister(index, 32'h1000DEAD);
             checkRegister(index, 32'h1000DEAD);
         end
