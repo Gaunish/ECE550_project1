@@ -1,0 +1,484 @@
+$comment
+	File created using the following command:
+		vcd file CPU.msim.vcd -direction
+$end
+$date
+	Sun Oct 17 11:10:44 2021
+$end
+$version
+	ModelSim Version 10.4d
+$end
+$timescale
+	1ps
+$end
+
+$scope module pc_counter_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 12 " pc [11:0] $end
+$var reg 1 # rst $end
+$var wire 1 $ new_pc [11] $end
+$var wire 1 % new_pc [10] $end
+$var wire 1 & new_pc [9] $end
+$var wire 1 ' new_pc [8] $end
+$var wire 1 ( new_pc [7] $end
+$var wire 1 ) new_pc [6] $end
+$var wire 1 * new_pc [5] $end
+$var wire 1 + new_pc [4] $end
+$var wire 1 , new_pc [3] $end
+$var wire 1 - new_pc [2] $end
+$var wire 1 . new_pc [1] $end
+$var wire 1 / new_pc [0] $end
+
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 new_pc[0]~output_o $end
+$var wire 1 7 new_pc[1]~output_o $end
+$var wire 1 8 new_pc[2]~output_o $end
+$var wire 1 9 new_pc[3]~output_o $end
+$var wire 1 : new_pc[4]~output_o $end
+$var wire 1 ; new_pc[5]~output_o $end
+$var wire 1 < new_pc[6]~output_o $end
+$var wire 1 = new_pc[7]~output_o $end
+$var wire 1 > new_pc[8]~output_o $end
+$var wire 1 ? new_pc[9]~output_o $end
+$var wire 1 @ new_pc[10]~output_o $end
+$var wire 1 A new_pc[11]~output_o $end
+$var wire 1 B clk~input_o $end
+$var wire 1 C pc[0]~input_o $end
+$var wire 1 D rst~input_o $end
+$var wire 1 E new_pc~10_combout $end
+$var wire 1 F new_pc[0]~reg0_q $end
+$var wire 1 G pc[1]~input_o $end
+$var wire 1 H new_pc~11_combout $end
+$var wire 1 I new_pc[1]~reg0_q $end
+$var wire 1 J pc[2]~input_o $end
+$var wire 1 K new_pc[2]~12_combout $end
+$var wire 1 L new_pc[2]~reg0_q $end
+$var wire 1 M pc[3]~input_o $end
+$var wire 1 N new_pc[2]~13 $end
+$var wire 1 O new_pc[3]~14_combout $end
+$var wire 1 P new_pc[3]~reg0_q $end
+$var wire 1 Q pc[4]~input_o $end
+$var wire 1 R new_pc[3]~15 $end
+$var wire 1 S new_pc[4]~16_combout $end
+$var wire 1 T new_pc[4]~reg0_q $end
+$var wire 1 U pc[5]~input_o $end
+$var wire 1 V new_pc[4]~17 $end
+$var wire 1 W new_pc[5]~18_combout $end
+$var wire 1 X new_pc[5]~reg0_q $end
+$var wire 1 Y pc[6]~input_o $end
+$var wire 1 Z new_pc[5]~19 $end
+$var wire 1 [ new_pc[6]~20_combout $end
+$var wire 1 \ new_pc[6]~reg0_q $end
+$var wire 1 ] pc[7]~input_o $end
+$var wire 1 ^ new_pc[6]~21 $end
+$var wire 1 _ new_pc[7]~22_combout $end
+$var wire 1 ` new_pc[7]~reg0_q $end
+$var wire 1 a pc[8]~input_o $end
+$var wire 1 b new_pc[7]~23 $end
+$var wire 1 c new_pc[8]~24_combout $end
+$var wire 1 d new_pc[8]~reg0_q $end
+$var wire 1 e pc[9]~input_o $end
+$var wire 1 f new_pc[8]~25 $end
+$var wire 1 g new_pc[9]~26_combout $end
+$var wire 1 h new_pc[9]~reg0_q $end
+$var wire 1 i pc[10]~input_o $end
+$var wire 1 j new_pc[9]~27 $end
+$var wire 1 k new_pc[10]~28_combout $end
+$var wire 1 l new_pc[10]~reg0_q $end
+$var wire 1 m pc[11]~input_o $end
+$var wire 1 n new_pc[10]~29 $end
+$var wire 1 o new_pc[11]~30_combout $end
+$var wire 1 p new_pc[11]~reg0_q $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+0#
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+00
+11
+x2
+13
+14
+15
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+1K
+0L
+0M
+0N
+0O
+0P
+0Q
+1R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+1Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+1b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+1j
+0k
+0l
+0m
+0n
+0o
+0p
+$end
+#10000
+1!
+1B
+1L
+18
+1-
+#20000
+0!
+0B
+#30000
+1!
+1B
+#40000
+0!
+0B
+#50000
+1!
+1B
+#60000
+0!
+0B
+#70000
+1!
+1B
+#80000
+0!
+0B
+#90000
+1!
+1B
+#100000
+0!
+0B
+#110000
+1!
+1B
+#120000
+0!
+0B
+#130000
+1!
+1B
+#140000
+0!
+0B
+#150000
+1!
+1B
+#160000
+0!
+0B
+#170000
+1!
+1B
+#180000
+0!
+0B
+#190000
+1!
+1B
+#200000
+0!
+0B
+#210000
+1!
+1B
+#220000
+0!
+0B
+#230000
+1!
+1B
+#240000
+0!
+0B
+#250000
+1!
+1B
+#260000
+0!
+0B
+#270000
+1!
+1B
+#280000
+0!
+0B
+#290000
+1!
+1B
+#300000
+0!
+0B
+#310000
+1!
+1B
+#320000
+0!
+0B
+#330000
+1!
+1B
+#340000
+0!
+0B
+#350000
+1!
+1B
+#360000
+0!
+0B
+#370000
+1!
+1B
+#380000
+0!
+0B
+#390000
+1!
+1B
+#400000
+0!
+0B
+#410000
+1!
+1B
+#420000
+0!
+0B
+#430000
+1!
+1B
+#440000
+0!
+0B
+#450000
+1!
+1B
+#460000
+0!
+0B
+#470000
+1!
+1B
+#480000
+0!
+0B
+#490000
+1!
+1B
+#500000
+0!
+0B
+#510000
+1!
+1B
+#520000
+0!
+0B
+#530000
+1!
+1B
+#540000
+0!
+0B
+#550000
+1!
+1B
+#560000
+0!
+0B
+#570000
+1!
+1B
+#580000
+0!
+0B
+#590000
+1!
+1B
+#600000
+0!
+0B
+#610000
+1!
+1B
+#620000
+0!
+0B
+#630000
+1!
+1B
+#640000
+0!
+0B
+#650000
+1!
+1B
+#660000
+0!
+0B
+#670000
+1!
+1B
+#680000
+0!
+0B
+#690000
+1!
+1B
+#700000
+0!
+0B
+#710000
+1!
+1B
+#720000
+0!
+0B
+#730000
+1!
+1B
+#740000
+0!
+0B
+#750000
+1!
+1B
+#760000
+0!
+0B
+#770000
+1!
+1B
+#780000
+0!
+0B
+#790000
+1!
+1B
+#800000
+0!
+0B
+#810000
+1!
+1B
+#820000
+0!
+0B
+#830000
+1!
+1B
+#840000
+0!
+0B
+#850000
+1!
+1B
+#860000
+0!
+0B
+#870000
+1!
+1B
+#880000
+0!
+0B
+#890000
+1!
+1B
+#900000
+0!
+0B
+#910000
+1!
+1B
+#920000
+0!
+0B
+#930000
+1!
+1B
+#940000
+0!
+0B
+#950000
+1!
+1B
+#960000
+0!
+0B
+#970000
+1!
+1B
+#980000
+0!
+0B
+#990000
+1!
+1B
+#1000000
