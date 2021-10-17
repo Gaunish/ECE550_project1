@@ -2,25 +2,44 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+<<<<<<< Updated upstream
 # Start time: 10:47:11 on Oct 07,2021
+=======
+# Start time: 14:32:24 on Oct 07,2021
+>>>>>>> Stashed changes
 # vlog -work work regfile.vo 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
+<<<<<<< Updated upstream
 # End time: 10:47:12 on Oct 07,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 # Start time: 10:47:12 on Oct 07,2021
 # vlog -work work Waveform.vwf.vt 
+=======
+# End time: 14:32:24 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 14:32:24 on Oct 07,2021
+# vlog -work work regFile.vwf.vt 
+>>>>>>> Stashed changes
 # -- Compiling module regfile_vlg_vec_tst
 # 
 # Top level modules:
 # 	regfile_vlg_vec_tst
+<<<<<<< Updated upstream
 # End time: 10:47:12 on Oct 07,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.regfile_vlg_vec_tst -voptargs=""+acc"" 
 # Start time: 10:47:12 on Oct 07,2021
+=======
+# End time: 14:32:24 on Oct 07,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.regfile_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 14:32:24 on Oct 07,2021
+>>>>>>> Stashed changes
 # Loading work.regfile_vlg_vec_tst
 # Loading work.regfile
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -34,6 +53,7 @@
 # 
 # Loading instances from regfile_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
+<<<<<<< Updated upstream
 # ** Warning: Design size of 22143 statements exceeds ModelSim Altera Starter recommended capacity.
 # Expect performance to be adversely affected.
 # Loading timing data from regfile_v.sdo
@@ -43,3 +63,12 @@
 #    Time: 1 us  Iteration: 0  Instance: /regfile_vlg_vec_tst
 # End time: 10:47:19 on Oct 07,2021, Elapsed time: 0:00:07
 # Errors: 0, Warnings: 1
+=======
+# Loading timing data from regfile_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /regfile_vlg_vec_tst File: regFile.vwf.vt
+# ** Note: $finish    : regFile.vwf.vt(59)
+#    Time: 1 us  Iteration: 0  Instance: /regfile_vlg_vec_tst
+# End time: 14:32:25 on Oct 07,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+>>>>>>> Stashed changes

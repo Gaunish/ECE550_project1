@@ -7,25 +7,58 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
+<<<<<<< HEAD
 Z0 dE:/ECE550_Project1/Reg-file/simulation/modelsim
 vdecoder_2
 Z1 !s110 1633648063
+=======
+<<<<<<< Updated upstream
+Z0 dE:/Project/Reg-file/simulation/modelsim
+vdffe_ref
+Z1 !s110 1633209495
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 !i10b 1
 !s100 nYLjQc<=WF]`2cmgX?kS60
 IFfR=Wi:iUPM8:d^LDb7zL0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
+<<<<<<< HEAD
 w1633197721
 8E:/ECE550_Project1/Reg-file/decoder_2.v
 FE:/ECE550_Project1/Reg-file/decoder_2.v
+=======
+w1633117809
+8E:/Project/Reg-file/dffe_ref.v
+FE:/Project/Reg-file/dffe_ref.v
+=======
+Z0 dC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/simulation/modelsim
+vdecoder_2
+Z1 !s110 1633616259
+!i10b 1
+!s100 nYLjQc<=WF]`2cmgX?kS60
+IfGzKi4F19?=?cnC9YK4jB0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1633145549
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_2.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_2.v
+>>>>>>> Stashed changes
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 L0 1
 Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z4 !s108 1633648063.000000
 !s107 E:/ECE550_Project1/Reg-file/decoder_2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/decoder_2.v|
+=======
+<<<<<<< Updated upstream
+Z4 !s108 1633209495.000000
+!s107 E:/Project/Reg-file/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Project/Reg-file|E:/Project/Reg-file/dffe_ref.v|
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file
@@ -99,9 +132,33 @@ R7
 I589>D>9APOZ2eZ9JGjAV^1
 R2
 R0
+<<<<<<< HEAD
 w1633647924
 8E:/ECE550_Project1/Reg-file/regfile.v
 FE:/ECE550_Project1/Reg-file/regfile.v
+=======
+Z7 w1633209300
+8E:/Project/Reg-file/regfile_imp.v
+FE:/Project/Reg-file/regfile_imp.v
+=======
+Z4 !s108 1633616259.000000
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_2.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file
+vdecoder_3
+R1
+!i10b 1
+!s100 [E_RD4nd976XKiV>85<Ea0
+ILJWhIASZQm0H>88J]R17T1
+R2
+R0
+w1633148404
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_3.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_3.v
+>>>>>>> Stashed changes
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 L0 1
 R3
 r1
@@ -129,8 +186,14 @@ r1
 !s85 0
 31
 R4
+<<<<<<< HEAD
 !s107 E:/ECE550_Project1/Reg-file/regfile_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/regfile_tb.v|
+=======
+<<<<<<< Updated upstream
+!s107 E:/Project/Reg-file/regfile_imp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Project/Reg-file|E:/Project/Reg-file/regfile_imp.v|
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 !i113 1
 R5
 R6
@@ -141,6 +204,7 @@ R1
 IZmB^H]X=hUY[L3GP8gY200
 R2
 R0
+<<<<<<< HEAD
 R9
 8E:/ECE550_Project1/Reg-file/register.v
 FE:/ECE550_Project1/Reg-file/register.v
@@ -165,14 +229,151 @@ R0
 w1633210730
 8E:/ECE550_Project1/Reg-file/tristate.v
 FE:/ECE550_Project1/Reg-file/tristate.v
+=======
+R7
+8E:/Project/Reg-file/register.v
+FE:/Project/Reg-file/register.v
+=======
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_3.v|
+!i113 1
+R5
+R6
+vdecoder_5
+R1
+!i10b 1
+!s100 O1K?:AcNecQ=cG7;3:`1f3
+IEQ`U5FnQHm4RSJW2iKdLS1
+R2
+R0
+w1633148435
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_5.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_5.v
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 L0 1
 R3
 r1
 !s85 0
 31
 R4
+<<<<<<< HEAD
 !s107 E:/ECE550_Project1/Reg-file/tristate.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/tristate.v|
+=======
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_5.v|
+!i113 1
+R5
+R6
+vdffe_ref
+Z7 !s110 1633616260
+!i10b 1
+!s100 m2?1a8:`omUTO_3UK>MQz1
+IAiWo=1JNLM>@Z:JPFQV4M0
+R2
+R0
+w1633189166
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/dffe_ref.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/dffe_ref.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1633616260.000000
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/dffe_ref.v|
+!i113 1
+R5
+R6
+vregfile
+R7
+!i10b 1
+!s100 FW;MKEi_gLHNG8O_T`gaV2
+I[RdBY75jcPPhK`a2[cl`k3
+R2
+R0
+w1633212910
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile.v
+>>>>>>> Stashed changes
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+<<<<<<< Updated upstream
+!s107 E:/Project/Reg-file/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Project/Reg-file|E:/Project/Reg-file/register.v|
+=======
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile.v|
+!i113 1
+R5
+R6
+vregfile_tb
+R7
+!i10b 1
+!s100 YHn4[UY`9=OQRWZ28=U442
+Izf1Z]cS_W_1:8d9QWR4]g1
+R2
+R0
+w1633210476
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v|
+!i113 1
+R5
+R6
+vregister
+R7
+!i10b 1
+!s100 S2[S@Ie6;l90Q;F3B;a8j3
+I_oebKDALl?LZASTjaoK]g3
+R2
+R0
+w1633208404
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/register.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/register.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/register.v|
+!i113 1
+R5
+R6
+vtristate
+R7
+!i10b 1
+!s100 1iUADjL@<=8CTGE2ch92@1
+INae;n7XDWmk[kIL``J>B:2
+R2
+R0
+w1633211747
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/tristate.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/tristate.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/tristate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file|C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/tristate.v|
+>>>>>>> Stashed changes
+>>>>>>> f7ff96b18fc0a81580d59c30d29958413a48dc26
 !i113 1
 R5
 R6

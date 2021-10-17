@@ -1,4 +1,5 @@
 vendor_name = ModelSim
+<<<<<<< Updated upstream
 source_file = 1, E:/ECE550_Project1/Reg-file/regfile_tb.v
 source_file = 1, E:/ECE550_Project1/Reg-file/regfile.v
 source_file = 1, E:/ECE550_Project1/Reg-file/dffe_ref.v
@@ -10,6 +11,20 @@ source_file = 1, E:/ECE550_Project1/Reg-file/decoder_5.v
 source_file = 1, E:/ECE550_Project1/Reg-file/tristate.v
 source_file = 1, E:/ECE550_Project1/Reg-file/Waveform.vwf
 source_file = 1, E:/ECE550_Project1/Reg-file/db/regfile.cbx.xml
+=======
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_5.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_3.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/decoder_2.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_tb.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/dffe_ref.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/register.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regfile_imp.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/regFile.vwf
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/Register.vwf
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/tristate.v
+source_file = 1, C:/Users/86156/Documents/GitHub/ECE550_project1/Reg-file/db/regfile.cbx.xml
+>>>>>>> Stashed changes
 design_name = regfile
 instance = comp, \data_readRegA[0]~output , data_readRegA[0]~output, regfile, 1
 instance = comp, \data_readRegA[1]~output , data_readRegA[1]~output, regfile, 1
