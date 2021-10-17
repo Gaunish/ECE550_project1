@@ -8,6 +8,7 @@ source_file = 1, E:/ECE550_Project1/Reg-file/decoder_2.v
 source_file = 1, E:/ECE550_Project1/Reg-file/decoder_3.v
 source_file = 1, E:/ECE550_Project1/Reg-file/decoder_5.v
 source_file = 1, E:/ECE550_Project1/Reg-file/tristate.v
+source_file = 1, E:/ECE550_Project1/Reg-file/Waveform.vwf
 source_file = 1, E:/ECE550_Project1/Reg-file/db/regfile.cbx.xml
 design_name = regfile
 instance = comp, \data_readRegA[0]~output , data_readRegA[0]~output, regfile, 1

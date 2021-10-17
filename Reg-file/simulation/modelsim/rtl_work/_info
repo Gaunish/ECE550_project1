@@ -7,46 +7,130 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dE:/Project/Reg-file/simulation/modelsim
-vdffe_ref
-Z1 !s110 1633209495
+Z0 dE:/ECE550_Project1/Reg-file/simulation/modelsim
+vdecoder_2
+Z1 !s110 1633648063
 !i10b 1
-!s100 m2?1a8:`omUTO_3UK>MQz1
-I5bJL`:L1k81j9bbNKeo892
+!s100 nYLjQc<=WF]`2cmgX?kS60
+IFfR=Wi:iUPM8:d^LDb7zL0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1633117809
-8E:/Project/Reg-file/dffe_ref.v
-FE:/Project/Reg-file/dffe_ref.v
+w1633197721
+8E:/ECE550_Project1/Reg-file/decoder_2.v
+FE:/ECE550_Project1/Reg-file/decoder_2.v
 L0 1
 Z3 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1633209495.000000
-!s107 E:/Project/Reg-file/dffe_ref.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Project/Reg-file|E:/Project/Reg-file/dffe_ref.v|
+Z4 !s108 1633648063.000000
+!s107 E:/ECE550_Project1/Reg-file/decoder_2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/decoder_2.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+E:/Project/Reg-file
-vregfile_imp
+Z6 !s92 -vlog01compat -work work +incdir+E:/ECE550_Project1/Reg-file
+vdecoder_3
 R1
 !i10b 1
-!s100 glo89_QQ]fc_7M@>44;2g3
-IODdG`eJ3cl6GeK^;YDonB3
+!s100 [E_RD4nd976XKiV>85<Ea0
+IBNMU>8=himQ`lOdAE24j20
 R2
 R0
-Z7 w1633209300
-8E:/Project/Reg-file/regfile_imp.v
-FE:/Project/Reg-file/regfile_imp.v
+w1633197729
+8E:/ECE550_Project1/Reg-file/decoder_3.v
+FE:/ECE550_Project1/Reg-file/decoder_3.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 E:/Project/Reg-file/regfile_imp.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Project/Reg-file|E:/Project/Reg-file/regfile_imp.v|
+!s107 E:/ECE550_Project1/Reg-file/decoder_3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/decoder_3.v|
+!i113 1
+R5
+R6
+vdecoder_5
+R1
+!i10b 1
+!s100 O1K?:AcNecQ=cG7;3:`1f3
+I=ZDe_M?TF;zzmS0jk0TO40
+R2
+R0
+w1633197739
+8E:/ECE550_Project1/Reg-file/decoder_5.v
+FE:/ECE550_Project1/Reg-file/decoder_5.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/ECE550_Project1/Reg-file/decoder_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/decoder_5.v|
+!i113 1
+R5
+R6
+vdffe_ref
+Z7 !s110 1633648062
+!i10b 1
+!s100 m2?1a8:`omUTO_3UK>MQz1
+ImVXMB<RJH2U>QRW^h_hPD3
+R2
+R0
+w1633117809
+8E:/ECE550_Project1/Reg-file/dffe_ref.v
+FE:/ECE550_Project1/Reg-file/dffe_ref.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1633648062.000000
+!s107 E:/ECE550_Project1/Reg-file/dffe_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/dffe_ref.v|
+!i113 1
+R5
+R6
+vregfile
+R7
+!i10b 1
+!s100 cm5CWTfC=YVgzVofO8B5d0
+I589>D>9APOZ2eZ9JGjAV^1
+R2
+R0
+w1633647924
+8E:/ECE550_Project1/Reg-file/regfile.v
+FE:/ECE550_Project1/Reg-file/regfile.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 E:/ECE550_Project1/Reg-file/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/regfile.v|
+!i113 1
+R5
+R6
+vregfile_tb
+R1
+!i10b 1
+!s100 K`B^NB[]MCNKLPB8[THTD3
+IT3_P4]7czPg2YiL=Df9NO0
+R2
+R0
+Z9 w1633209300
+8E:/ECE550_Project1/Reg-file/regfile_tb.v
+FE:/ECE550_Project1/Reg-file/regfile_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/ECE550_Project1/Reg-file/regfile_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/regfile_tb.v|
 !i113 1
 R5
 R6
@@ -54,20 +138,41 @@ vregister
 R1
 !i10b 1
 !s100 S2[S@Ie6;l90Q;F3B;a8j3
-Io>7A<RAIoImK@Rgm_STGj0
+IZmB^H]X=hUY[L3GP8gY200
 R2
 R0
-R7
-8E:/Project/Reg-file/register.v
-FE:/Project/Reg-file/register.v
+R9
+8E:/ECE550_Project1/Reg-file/register.v
+FE:/ECE550_Project1/Reg-file/register.v
 L0 1
 R3
 r1
 !s85 0
 31
 R4
-!s107 E:/Project/Reg-file/register.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Project/Reg-file|E:/Project/Reg-file/register.v|
+!s107 E:/ECE550_Project1/Reg-file/register.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/register.v|
+!i113 1
+R5
+R6
+vtristate
+R1
+!i10b 1
+!s100 1iUADjL@<=8CTGE2ch92@1
+IMn`8kKjGEK5:F2DHIzA]n3
+R2
+R0
+w1633210730
+8E:/ECE550_Project1/Reg-file/tristate.v
+FE:/ECE550_Project1/Reg-file/tristate.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/ECE550_Project1/Reg-file/tristate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/ECE550_Project1/Reg-file|E:/ECE550_Project1/Reg-file/tristate.v|
 !i113 1
 R5
 R6
