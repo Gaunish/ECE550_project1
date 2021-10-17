@@ -91,5 +91,42 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
+	 
+	 wiren [11:0] pc;
+	 wire [11:0] pc_wire;
+	 assign pc_wire = pc;
+	 pc_counter Pc_counter(
+		.clk(clock),
+		.rst(reset),
+		.pc(pc_wire),
+		.new_pc(pc)
+	 );
+	 
+	 assign address_imem[11:0] = pc_wire[11:0];
+	 
+	 
+	 assign ctrl_writeReg[4:0] = q_imem[15:11];
+	 assign ctrl_readRegA[4:0] = q_imem[25:21];//Rs
+	 assign ctrl_readRegB[4:0] = q_imem[20:16];//Rt
+	 
+	 wire alu_isNotEqual,alu_isLessThan,alu_overflow;
+	 
+	 
+	 
+	 wire[31:0] alu_result;
+	 alu Alu(
+		.data_operandA(data_readRegA),
+		.data_operandB(data_readRegB),
+		.ctrl_ALUopcode(q_imem[5:0]),
+		.ctrl_shiftamt(q_imem[10:6]),
+		.data_result(data_writeReg),
+		.isNotEqual(alu_isNotEqual),
+		.isLessThan(alu_isLessThan),
+		.overflow(alu_overflow)
+	 );
+	
+	 
+	 
+	// pc_counter pc_counter()
 
 endmodule

@@ -18,6 +18,18 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         (these may be inverted, divided, or unchanged from the original clock input). Your grade will be 
         based on proper functioning with this clock.
     */
+	 
+	 wire clk_div2, clk_div4;
+	 frequency_divider_by2 frediv_1(clock,reset,clk_div2);
+	 frequency_divider_by2 frediv_2(clk_div2,reset,clk_div4);
+	 assign imem_clock = clock;
+	 assign regfile_clock = ~clk_div4;
+	 assign processor_clock = ~clk_div4; 
+	 assign dmem_clock = ~clk_div2;
+	 
+	 
+	 
+	 
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
 
     /** IMEM **/
