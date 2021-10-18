@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/17/2021 11:10:43"
+// Generated on "10/17/2021 17:52:37"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          pc_counter
 // 
@@ -31,16 +31,14 @@ module pc_counter_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg [11:0] pc;
 reg rst;
 // wires                                               
-wire [11:0] new_pc;
+wire [11:0] pc;
 
 // assign statements (if any)                          
 pc_counter i1 (
 // port map - connection between master ports and signals/registers   
 	.clk(clk),
-	.new_pc(new_pc),
 	.pc(pc),
 	.rst(rst)
 );
@@ -55,66 +53,6 @@ begin
 	clk = 1'b0;
 	clk = #10000 1'b1;
 	#10000;
-end 
-// pc[ 11 ]
-initial
-begin
-	pc[11] = 1'b0;
-end 
-// pc[ 10 ]
-initial
-begin
-	pc[10] = 1'b0;
-end 
-// pc[ 9 ]
-initial
-begin
-	pc[9] = 1'b0;
-end 
-// pc[ 8 ]
-initial
-begin
-	pc[8] = 1'b0;
-end 
-// pc[ 7 ]
-initial
-begin
-	pc[7] = 1'b0;
-end 
-// pc[ 6 ]
-initial
-begin
-	pc[6] = 1'b0;
-end 
-// pc[ 5 ]
-initial
-begin
-	pc[5] = 1'b0;
-end 
-// pc[ 4 ]
-initial
-begin
-	pc[4] = 1'b0;
-end 
-// pc[ 3 ]
-initial
-begin
-	pc[3] = 1'b0;
-end 
-// pc[ 2 ]
-initial
-begin
-	pc[2] = 1'b0;
-end 
-// pc[ 1 ]
-initial
-begin
-	pc[1] = 1'b0;
-end 
-// pc[ 0 ]
-initial
-begin
-	pc[0] = 1'b0;
 end 
 
 // rst
