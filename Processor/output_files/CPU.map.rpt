@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Mon Oct 18 01:24:31 2021
+Mon Oct 18 13:37:24 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -58,7 +58,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 18 01:24:31 2021       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 18 13:37:24 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; skeleton                                    ;
@@ -67,7 +67,7 @@ agreement for further details.
 ;     Total combinational functions  ; 1,492                                       ;
 ;     Dedicated logic registers      ; 1,006                                       ;
 ; Total registers                    ; 1006                                        ;
-; Total pins                         ; 182                                         ;
+; Total pins                         ; 194                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 131,072                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -213,37 +213,37 @@ agreement for further details.
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                          ;
-+---------------------------------------------+----------------------------------------+
-; Resource                                    ; Usage                                  ;
-+---------------------------------------------+----------------------------------------+
-; Estimated Total logic elements              ; 2,452                                  ;
-;                                             ;                                        ;
-; Total combinational functions               ; 1492                                   ;
-; Logic element usage by number of LUT inputs ;                                        ;
-;     -- 4 input functions                    ; 1362                                   ;
-;     -- 3 input functions                    ; 84                                     ;
-;     -- <=2 input functions                  ; 46                                     ;
-;                                             ;                                        ;
-; Logic elements by mode                      ;                                        ;
-;     -- normal mode                          ; 1450                                   ;
-;     -- arithmetic mode                      ; 42                                     ;
-;                                             ;                                        ;
-; Total registers                             ; 1006                                   ;
-;     -- Dedicated logic registers            ; 1006                                   ;
-;     -- I/O registers                        ; 0                                      ;
-;                                             ;                                        ;
-; I/O pins                                    ; 182                                    ;
-; Total memory bits                           ; 131072                                 ;
-;                                             ;                                        ;
-; Embedded Multiplier 9-bit elements          ; 0                                      ;
-;                                             ;                                        ;
-; Maximum fan-out node                        ; frequency_divider_by2:frediv_2|out_clk ;
-; Maximum fan-out                             ; 1007                                   ;
-; Total fan-out                               ; 10593                                  ;
-; Average fan-out                             ; 3.66                                   ;
-+---------------------------------------------+----------------------------------------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 2,452       ;
+;                                             ;             ;
+; Total combinational functions               ; 1492        ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 1363        ;
+;     -- 3 input functions                    ; 83          ;
+;     -- <=2 input functions                  ; 46          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 1450        ;
+;     -- arithmetic mode                      ; 42          ;
+;                                             ;             ;
+; Total registers                             ; 1006        ;
+;     -- Dedicated logic registers            ; 1006        ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 194         ;
+; Total memory bits                           ; 131072      ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; clock~input ;
+; Maximum fan-out                             ; 1027        ;
+; Total fan-out                               ; 10618       ;
+; Average fan-out                             ; 3.64        ;
++---------------------------------------------+-------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -251,7 +251,7 @@ agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Entity Name           ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
-; |skeleton                                 ; 1492 (0)          ; 1006 (0)     ; 131072      ; 0            ; 0       ; 0         ; 182  ; 0            ; |skeleton                                                                             ; skeleton              ; work         ;
+; |skeleton                                 ; 1492 (0)          ; 1006 (0)     ; 131072      ; 0            ; 0       ; 0         ; 194  ; 0            ; |skeleton                                                                             ; skeleton              ; work         ;
 ;    |frequency_divider_by2:frediv_1|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider_by2:frediv_1                                              ; frequency_divider_by2 ; work         ;
 ;    |frequency_divider_by2:frediv_2|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider_by2:frediv_2                                              ; frequency_divider_by2 ; work         ;
 ;    |imem:my_imem|                         ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem                                                                ; imem                  ; work         ;
@@ -589,7 +589,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 182                         ;
+; boundary_port         ; 194                         ;
 ; cycloneiii_ff         ; 1006                        ;
 ;     ENA CLR           ; 992                         ;
 ;     SCLR              ; 12                          ;
@@ -603,8 +603,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 34                          ;
-;         3 data inputs ; 53                          ;
-;         4 data inputs ; 1362                        ;
+;         3 data inputs ; 52                          ;
+;         4 data inputs ; 1363                        ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.10                       ;
@@ -627,8 +627,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Oct 18 01:24:21 2021
+    Info: Processing started: Mon Oct 18 13:37:14 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
+Warning (125092): Tcl Script File test.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE test.qip
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file mux_32.v
@@ -649,8 +651,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file imem.v
     Info (12023): Found entity 1: imem File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
     Info (12023): Found entity 1: dmem File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file test.v
-    Info (12023): Found entity 1: test File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/test.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file pc_counter.v
     Info (12023): Found entity 1: pc_counter File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/pc_counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file frequency_divider_by2.v
@@ -660,8 +660,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extension.v
     Info (12023): Found entity 1: sign_extension File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/sign_extension.v Line: 1
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Info (12128): Elaborating entity "frequency_divider_by2" for hierarchy "frequency_divider_by2:frediv_1" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 32
-Info (12128): Elaborating entity "imem" for hierarchy "imem:my_imem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 73
+Info (12128): Elaborating entity "frequency_divider_by2" for hierarchy "frequency_divider_by2:frediv_1" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 37
+Info (12128): Elaborating entity "imem" for hierarchy "imem:my_imem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 77
 Info (12128): Elaborating entity "altsyncram" for hierarchy "imem:my_imem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 82
 Info (12130): Elaborated megafunction instantiation "imem:my_imem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 82
 Info (12133): Instantiated megafunction "imem:my_imem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 82
@@ -682,7 +682,7 @@ Info (12133): Instantiated megafunction "imem:my_imem|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mi91.tdf
     Info (12023): Found entity 1: altsyncram_mi91 File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_mi91.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_mi91" for hierarchy "imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated" File: d:/softwares/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 88
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 92
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "dmem:my_dmem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 86
 Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 86
@@ -704,14 +704,14 @@ Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1eh1.tdf
     Info (12023): Found entity 1: altsyncram_1eh1 File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_1eh1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_1eh1" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_1eh1:auto_generated" File: d:/softwares/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 106
-Info (12128): Elaborating entity "processor" for hierarchy "processor:my_processor" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 139
-Warning (10034): Output port "address_dmem" at processor.v(88) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 88
-Warning (10034): Output port "data" at processor.v(89) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 89
-Warning (10034): Output port "wren" at processor.v(90) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 90
-Info (12128): Elaborating entity "pc_counter" for hierarchy "processor:my_processor|pc_counter:Pc_counter" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 119
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 110
+Info (12128): Elaborating entity "processor" for hierarchy "processor:my_processor" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 144
+Warning (10034): Output port "address_dmem" at processor.v(90) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 90
+Warning (10034): Output port "data" at processor.v(91) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 91
+Warning (10034): Output port "wren" at processor.v(92) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 92
+Info (12128): Elaborating entity "pc_counter" for hierarchy "processor:my_processor|pc_counter:Pc_counter" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 125
 Warning (10230): Verilog HDL assignment warning at pc_counter.v(13): truncated value with size 32 to match size of target (12) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/pc_counter.v Line: 13
-Info (12128): Elaborating entity "control" for hierarchy "processor:my_processor|control:Control" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 126
+Info (12128): Elaborating entity "control" for hierarchy "processor:my_processor|control:Control" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 133
 Warning (10270): Verilog HDL Case Statement warning at control.v(14): incomplete case statement has no default case item File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 14
 Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "BR", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
 Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "JP", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
@@ -729,9 +729,9 @@ Info (10041): Inferred latch for "Rwd" at control.v(13) File: C:/Users/86156/Doc
 Info (10041): Inferred latch for "DMwe" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
 Info (10041): Inferred latch for "JP" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
 Info (10041): Inferred latch for "BR" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (12128): Elaborating entity "sign_extension" for hierarchy "processor:my_processor|sign_extension:Sign_extension" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 146
-Info (12128): Elaborating entity "mux_32" for hierarchy "processor:my_processor|mux_32:Sign_extention_mux_32" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 153
-Info (12128): Elaborating entity "alu" for hierarchy "processor:my_processor|alu:Alu" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 168
+Info (12128): Elaborating entity "sign_extension" for hierarchy "processor:my_processor|sign_extension:Sign_extension" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 148
+Info (12128): Elaborating entity "mux_32" for hierarchy "processor:my_processor|mux_32:Sign_extention_mux_32" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 156
+Info (12128): Elaborating entity "alu" for hierarchy "processor:my_processor|alu:Alu" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 171
 Warning (10270): Verilog HDL Case Statement warning at alu.v(25): incomplete case statement has no default case item File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v Line: 25
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
@@ -836,36 +836,36 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
 Warning (13012): Latch processor:my_processor|control:Control|ALUinB has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 10
     Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_mi91.tdf Line: 32
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ctrl_writeEnable_test" is stuck at VCC File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 50
-    Warning (13410): Pin "operandB_test[16]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[17]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[18]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[19]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[20]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[21]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[22]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[23]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[24]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[25]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[26]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[27]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[28]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[29]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[30]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
+    Warning (13410): Pin "ctrl_writeEnable_test" is stuck at VCC File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
+    Warning (13410): Pin "operandB_test[16]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[17]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[18]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[19]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[20]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[21]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[22]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[23]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[24]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[25]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[26]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[27]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[28]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[29]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "operandB_test[30]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2698 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2710 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 180 output pins
+    Info (21059): Implemented 192 output pins
     Info (21061): Implemented 2484 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 134 warnings
-    Info: Peak virtual memory: 5009 megabytes
-    Info: Processing ended: Mon Oct 18 01:24:31 2021
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 135 warnings
+    Info: Peak virtual memory: 5003 megabytes
+    Info: Processing ended: Mon Oct 18 13:37:24 2021
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+

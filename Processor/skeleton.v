@@ -19,7 +19,8 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
  alucode_test,
  aluresult_test,
  ctrl_readRegA_test,
- ctrl_readRegB_test
+ ctrl_readRegB_test,
+ pc_test
 	
 );
     input clock, reset;
@@ -35,9 +36,9 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 wire clk_div2, clk_div4;
 	 frequency_divider_by2 frediv_1(clock,reset,clk_div2);
 	 frequency_divider_by2 frediv_2(clk_div2,reset,clk_div4);
-	 assign imem_clock = clock;
-	 assign regfile_clock = ~clk_div4;
-	 assign processor_clock = ~clk_div4; 
+	 assign imem_clock = ~clock;
+	 assign regfile_clock = clock;
+	 assign processor_clock = clk_div4; 
 	 assign dmem_clock = ~clk_div2;
 	 
 	 //Test ports
@@ -58,6 +59,8 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 //alu testing
 	 output [31:0] operandA_test,operandB_test,aluresult_test;
 	 output [4:0] alucode_test;
+	 
+	 output [11:0]pc_test;
 	 //-----------------------------------------------------------------------------
 	
 	 
@@ -135,7 +138,8 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 		 operandA_test,
 		operandB_test,
 		alucode_test,
-		aluresult_test
+		aluresult_test,
+		pc_test
 		 
     );
 
