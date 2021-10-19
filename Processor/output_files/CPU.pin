@@ -78,40 +78,40 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : A7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8         :                
 VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A10       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A11       :        :                   :         : 8         :                
-data_readRegA_test[1]        : A12       : output : 2.5 V             :         : 8         : N              
+aluresult_test[15]           : A11       : output : 2.5 V             :         : 8         : N              
+data_writeReg_test[19]       : A12       : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
 GND+                         : A14       :        :                   :         : 8         :                
 GND+                         : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-sign_extension_test[5]       : A17       : output : 2.5 V             :         : 7         : N              
-sign_extension_test[6]       : A18       : output : 2.5 V             :         : 7         : N              
+aluresult_test[30]           : A17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A19       :        :                   :         : 7         :                
 VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A21       :        :                   :         : 7         :                
+operandB_test[25]            : A21       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : A22       :        :                   :         : 7         :                
-sign_extension_test[24]      : A23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A23       :        :                   :         : 7         :                
 VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : A26       :        :                   :         : 7         :                
 VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
 VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA3       :        :                   :         : 2         :                
+alucode_test[3]              : AA3       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA4       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA5       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA6       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA7       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3         :                
+operandB_test[1]             : AA8       : output : 2.5 V             :         : 3         : N              
 GNDA1                        : AA9       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AA10      :        :                   :         : 3         :                
+operandB_test[6]             : AA10      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
-data_writeReg_test[17]       : AA12      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[30]       : AA13      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[22]       : AA14      : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[24]       : AA15      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[1]        : AA16      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[4]        : AA17      : output : 2.5 V             :         : 4         : N              
+q_imem_test[24]              : AA12      : output : 2.5 V             :         : 3         : N              
+q_imem_test[18]              : AA13      : output : 2.5 V             :         : 3         : N              
+operandA_test[29]            : AA14      : output : 2.5 V             :         : 3         : N              
+aluresult_test[5]            : AA15      : output : 2.5 V             :         : 4         : N              
+q_imem_test[26]              : AA16      : output : 2.5 V             :         : 4         : N              
+ctrl_readRegB_test[1]        : AA17      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
 GNDA4                        : AA20      : gnd    :                   :         :           :                
@@ -119,8 +119,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA24      :        :                   :         : 5         :                
-q_imem_test[19]              : AA25      : output : 2.5 V             :         : 5         : N              
-data_readRegA_test[15]       : AA26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA26      :        :                   :         : 5         :                
 GND                          : AA27      : gnd    :                   :         :           :                
 VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   :         : 2         :                
@@ -129,18 +129,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB3       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB5       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB6       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3         :                
+q_imem_test[4]               : AB7       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB8       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB9       :        :                   :         : 3         :                
-q_imem_test[23]              : AB10      : output : 2.5 V             :         : 3         : N              
-sign_extension_test[13]      : AB11      : output : 2.5 V             :         : 3         : N              
-pc_test[7]                   : AB12      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[13]       : AB13      : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[30]       : AB14      : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[9]        : AB15      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[16]       : AB16      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[11]       : AB17      : output : 2.5 V             :         : 4         : N              
-q_imem_test[20]              : AB18      : output : 2.5 V             :         : 4         : N              
+pc_test[2]                   : AB10      : output : 2.5 V             :         : 3         : N              
+aluresult_test[24]           : AB11      : output : 2.5 V             :         : 3         : N              
+pc_test[6]                   : AB12      : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[27]       : AB13      : output : 2.5 V             :         : 3         : N              
+q_imem_test[23]              : AB14      : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[5]        : AB15      : output : 2.5 V             :         : 4         : N              
+operandA_test[31]            : AB16      : output : 2.5 V             :         : 4         : N              
+ctrl_readRegB_test[2]        : AB17      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
@@ -149,27 +149,27 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB26      :        :                   :         : 5         :                
-data_readRegA_test[19]       : AB27      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB28      :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC1       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC2       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC3       :        :                   :         : 2         :                
+aluresult_test[31]           : AC1       : output : 2.5 V             :         : 2         : N              
+q_imem_test[21]              : AC2       : output : 2.5 V             :         : 2         : N              
+data_writeReg_test[31]       : AC3       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC4       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
 GND                          : AC6       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC7       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3         :                
+alucode_test[1]              : AC7       : output : 2.5 V             :         : 3         : N              
+q_imem_test[1]               : AC8       : output : 2.5 V             :         : 3         : N              
 GND                          : AC9       : gnd    :                   :         :           :                
-data_writeReg_test[27]       : AC10      : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[5]        : AC11      : output : 2.5 V             :         : 3         : N              
-q_imem_test[22]              : AC12      : output : 2.5 V             :         : 3         : N              
+pc_test[4]                   : AC10      : output : 2.5 V             :         : 3         : N              
+aluresult_test[17]           : AC11      : output : 2.5 V             :         : 3         : N              
+pc_test[9]                   : AC12      : output : 2.5 V             :         : 3         : N              
 GND                          : AC13      : gnd    :                   :         :           :                
-data_writeReg_test[21]       : AC14      : output : 2.5 V             :         : 3         : N              
-pc_test[8]                   : AC15      : output : 2.5 V             :         : 4         : N              
+aluresult_test[22]           : AC14      : output : 2.5 V             :         : 3         : N              
+aluresult_test[3]            : AC15      : output : 2.5 V             :         : 4         : N              
 GND                          : AC16      : gnd    :                   :         :           :                
-data_writeReg_test[26]       : AC17      : output : 2.5 V             :         : 4         : N              
-regfile_clock                : AC18      : output : 2.5 V             :         : 4         : N              
-q_imem_test[4]               : AC19      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[2]        : AC17      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[28]       : AC18      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[6]        : AC19      : output : 2.5 V             :         : 4         : N              
 GND                          : AC20      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
@@ -186,18 +186,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AD4       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD5       :        :                   :         : 3         :                
 VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD8       :        :                   :         : 3         :                
+q_imem_test[3]               : AD8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AD10      :        :                   :         : 3         :                
-data_writeReg_test[2]        : AD11      : output : 2.5 V             :         : 3         : N              
-pc_test[9]                   : AD12      : output : 2.5 V             :         : 3         : N              
+operandB_test[3]             : AD10      : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[17]       : AD11      : output : 2.5 V             :         : 3         : N              
+q_imem_test[25]              : AD12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
-pc_test[10]                  : AD14      : output : 2.5 V             :         : 3         : N              
-pc_test[11]                  : AD15      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[22]       : AD14      : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[3]        : AD15      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
-sign_extension_test[10]      : AD17      : output : 2.5 V             :         : 4         : N              
-q_imem_test[7]               : AD18      : output : 2.5 V             :         : 4         : N              
-sign_extension_test[4]       : AD19      : output : 2.5 V             :         : 4         : N              
+aluresult_test[20]           : AD17      : output : 2.5 V             :         : 4         : N              
+operandB_test[14]            : AD18      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD19      :        :                   :         : 4         :                
 VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD21      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
@@ -208,114 +208,114 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE2       :        :                   :         : 2         :                
+operandB_test[5]             : AE2       : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
-sign_extension_test[28]      : AE6       : output : 2.5 V             :         : 3         : N              
-sign_extension_test[11]      : AE7       : output : 2.5 V             :         : 3         : N              
-q_imem_test[13]              : AE8       : output : 2.5 V             :         : 3         : N              
-q_imem_test[2]               : AE9       : output : 2.5 V             :         : 3         : N              
-q_imem_test[3]               : AE10      : output : 2.5 V             :         : 3         : N              
-pc_test[4]                   : AE11      : output : 2.5 V             :         : 3         : N              
-q_imem_test[9]               : AE12      : output : 2.5 V             :         : 3         : N              
-pc_test[5]                   : AE13      : output : 2.5 V             :         : 3         : N              
-pc_test[1]                   : AE14      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[0]        : AE15      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[7]        : AE16      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[5]        : AE17      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[24]       : AE18      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[4]        : AE19      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[25]       : AE20      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[28]       : AE21      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[20]       : AE22      : output : 2.5 V             :         : 4         : N              
+operandB_test[29]            : AE5       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   :         : 3         :                
+alucode_test[4]              : AE7       : output : 2.5 V             :         : 3         : N              
+dmem_clock                   : AE8       : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[24]       : AE9       : output : 2.5 V             :         : 3         : N              
+q_imem_test[16]              : AE10      : output : 2.5 V             :         : 3         : N              
+pc_test[3]                   : AE11      : output : 2.5 V             :         : 3         : N              
+operandB_test[10]            : AE12      : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[25]       : AE13      : output : 2.5 V             :         : 3         : N              
+aluresult_test[25]           : AE14      : output : 2.5 V             :         : 3         : N              
+q_imem_test[22]              : AE15      : output : 2.5 V             :         : 4         : N              
+operandA_test[20]            : AE16      : output : 2.5 V             :         : 4         : N              
+aluresult_test[18]           : AE17      : output : 2.5 V             :         : 4         : N              
+aluresult_test[16]           : AE18      : output : 2.5 V             :         : 4         : N              
+aluresult_test[28]           : AE19      : output : 2.5 V             :         : 4         : N              
+operandA_test[4]             : AE20      : output : 2.5 V             :         : 4         : N              
+operandA_test[21]            : AE21      : output : 2.5 V             :         : 4         : N              
+operandA_test[16]            : AE22      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
-data_readRegA_test[16]       : AE24      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[21]       : AE25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 4         :                
+q_imem_test[13]              : AE25      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE27      :        :                   :         : 5         :                
-data_readRegA_test[29]       : AE28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
 GND                          : AF1       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF2       :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 3         :                
+operandB_test[2]             : AF3       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF5       :        :                   :         : 3         :                
+alucode_test[0]              : AF5       : output : 2.5 V             :         : 3         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF6       :        :                   :         : 3         :                
-sign_extension_test[3]       : AF7       : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF8       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
-sign_extension_test[2]       : AF10      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[10]       : AF11      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[9]        : AF12      : output : 2.5 V             :         : 3         : N              
-sign_extension_test[8]       : AF13      : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[0]        : AF14      : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[3]        : AF15      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[20]       : AF16      : output : 2.5 V             :         : 4         : N              
-q_imem_test[26]              : AF17      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[14]       : AF18      : output : 2.5 V             :         : 4         : N              
-processor_clock              : AF19      : output : 2.5 V             :         : 4         : N              
-sign_extension_test[7]       : AF20      : output : 2.5 V             :         : 4         : N              
-pc_test[6]                   : AF21      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[2]        : AF22      : output : 2.5 V             :         : 4         : N              
+q_imem_test[27]              : AF7       : output : 2.5 V             :         : 3         : N              
+operandA_test[8]             : AF8       : output : 2.5 V             :         : 3         : N              
+q_imem_test[10]              : AF9       : output : 2.5 V             :         : 3         : N              
+operandB_test[31]            : AF10      : output : 2.5 V             :         : 3         : N              
+pc_test[0]                   : AF11      : output : 2.5 V             :         : 3         : N              
+ctrl_readRegB_test[4]        : AF12      : output : 2.5 V             :         : 3         : N              
+aluresult_test[13]           : AF13      : output : 2.5 V             :         : 3         : N              
+pc_test[8]                   : AF14      : output : 2.5 V             :         : 3         : N              
+ctrl_readRegA_test[2]        : AF15      : output : 2.5 V             :         : 4         : N              
+q_imem_test[17]              : AF16      : output : 2.5 V             :         : 4         : N              
+q_imem_test[19]              : AF17      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[16]       : AF18      : output : 2.5 V             :         : 4         : N              
+operandA_test[13]            : AF19      : output : 2.5 V             :         : 4         : N              
+operandA_test[28]            : AF20      : output : 2.5 V             :         : 4         : N              
+operandB_test[13]            : AF21      : output : 2.5 V             :         : 4         : N              
+operandA_test[25]            : AF22      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4         :                
-q_imem_test[17]              : AF24      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[6]        : AF25      : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[27]       : AF26      : output : 2.5 V             :         : 4         : N              
+operandA_test[22]            : AF24      : output : 2.5 V             :         : 4         : N              
+operandA_test[24]            : AF25      : output : 2.5 V             :         : 4         : N              
+q_imem_test[14]              : AF26      : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
 GND                          : AG2       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG4       :        :                   :         : 3         :                
+aluresult_test[11]           : AG4       : output : 2.5 V             :         : 3         : N              
 GND                          : AG5       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG7       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG8       :        :                   :         : 3         :                
+data_writeReg_test[11]       : AG6       : output : 2.5 V             :         : 3         : N              
+operandB_test[4]             : AG7       : output : 2.5 V             :         : 3         : N              
+q_imem_test[2]               : AG8       : output : 2.5 V             :         : 3         : N              
 GND                          : AG9       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AG10      :        :                   :         : 3         :                
-data_writeReg_test[31]       : AG11      : output : 2.5 V             :         : 3         : N              
-pc_test[0]                   : AG12      : output : 2.5 V             :         : 3         : N              
+operandB_test[7]             : AG10      : output : 2.5 V             :         : 3         : N              
+pc_test[1]                   : AG11      : output : 2.5 V             :         : 3         : N              
+operandA_test[12]            : AG12      : output : 2.5 V             :         : 3         : N              
 GND                          : AG13      : gnd    :                   :         :           :                
 GND+                         : AG14      :        :                   :         : 3         :                
 GND+                         : AG15      :        :                   :         : 4         :                
 GND                          : AG16      : gnd    :                   :         :           :                
-pc_test[2]                   : AG17      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[19]       : AG18      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[15]       : AG19      : output : 2.5 V             :         : 4         : N              
+operandA_test[26]            : AG17      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[18]       : AG18      : output : 2.5 V             :         : 4         : N              
+aluresult_test[0]            : AG19      : output : 2.5 V             :         : 4         : N              
 GND                          : AG20      : gnd    :                   :         :           :                
-data_writeReg_test[18]       : AG21      : output : 2.5 V             :         : 4         : N              
-q_imem_test[12]              : AG22      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[12]       : AG23      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[1]        : AG21      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[9]        : AG22      : output : 2.5 V             :         : 4         : N              
+aluresult_test[6]            : AG23      : output : 2.5 V             :         : 4         : N              
 GND                          : AG24      : gnd    :                   :         :           :                
-q_imem_test[29]              : AG25      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG25      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH3       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH4       :        :                   :         : 3         :                
+q_imem_test[0]               : AH4       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH6       :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH7       :        :                   :         : 3         :                
-q_imem_test[11]              : AH8       : output : 2.5 V             :         : 3         : N              
+operandB_test[0]             : AH6       : output : 2.5 V             :         : 3         : N              
+alucode_test[2]              : AH7       : output : 2.5 V             :         : 3         : N              
+q_imem_test[6]               : AH8       : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
-sign_extension_test[9]       : AH10      : output : 2.5 V             :         : 3         : N              
-pc_test[3]                   : AH11      : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[26]       : AH12      : output : 2.5 V             :         : 3         : N              
+q_imem_test[7]               : AH10      : output : 2.5 V             :         : 3         : N              
+aluresult_test[27]           : AH11      : output : 2.5 V             :         : 3         : N              
+operandA_test[17]            : AH12      : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
 GND+                         : AH14      :        :                   :         : 3         :                
 GND+                         : AH15      :        :                   :         : 4         :                
 VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
-data_writeReg_test[11]       : AH17      : output : 2.5 V             :         : 4         : N              
-q_imem_test[24]              : AH18      : output : 2.5 V             :         : 4         : N              
-q_imem_test[25]              : AH19      : output : 2.5 V             :         : 4         : N              
+operandA_test[11]            : AH17      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[0]        : AH18      : output : 2.5 V             :         : 4         : N              
+aluresult_test[2]            : AH19      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
-data_writeReg_test[29]       : AH21      : output : 2.5 V             :         : 4         : N              
-sign_extension_test[12]      : AH22      : output : 2.5 V             :         : 4         : N              
-data_writeReg_test[25]       : AH23      : output : 2.5 V             :         : 4         : N              
+data_writeReg_test[20]       : AH21      : output : 2.5 V             :         : 4         : N              
+aluresult_test[9]            : AH22      : output : 2.5 V             :         : 4         : N              
+aluresult_test[1]            : AH23      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH25      :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+q_imem_test[12]              : AH25      : output : 2.5 V             :         : 4         : N              
+operandB_test[19]            : AH26      : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
@@ -327,19 +327,19 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : B7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
 GND                          : B9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B10       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B11       :        :                   :         : 8         :                
+data_writeReg_test[15]       : B11       : output : 2.5 V             :         : 8         : N              
 GND                          : B12       : gnd    :                   :         :           :                
 GND                          : B13       : gnd    :                   :         :           :                
 GND+                         : B14       :        :                   :         : 8         :                
 GND+                         : B15       :        :                   :         : 7         :                
 GND                          : B16       : gnd    :                   :         :           :                
-q_imem_test[5]               : B17       : output : 2.5 V             :         : 7         : N              
-q_imem_test[6]               : B18       : output : 2.5 V             :         : 7         : N              
+q_imem_test[15]              : B17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B19       :        :                   :         : 7         :                
 GND                          : B20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 7         :                
-sign_extension_test[20]      : B23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B23       :        :                   :         : 7         :                
 GND                          : B24       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B25       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 7         :                
@@ -347,21 +347,21 @@ GND                          : B27       : gnd    :                   :         
 VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
 GND                          : C1        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
-sign_extension_test[17]      : C3        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+operandB_test[27]            : C5        : output : 2.5 V             :         : 8         : N              
+operandB_test[26]            : C6        : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C12       :        :                   :         : 8         :                
-q_imem_test[0]               : C13       : output : 2.5 V             :         : 8         : N              
-data_readRegA_test[8]        : C14       : output : 2.5 V             :         : 8         : N              
-q_imem_test[31]              : C15       : output : 2.5 V             :         : 7         : N              
-sign_extension_test[31]      : C16       : output : 2.5 V             :         : 7         : N              
-sign_extension_test[29]      : C17       : output : 2.5 V             :         : 7         : N              
+q_imem_test[9]               : C12       : output : 2.5 V             :         : 8         : N              
+operandA_test[10]            : C13       : output : 2.5 V             :         : 8         : N              
+data_writeReg_test[12]       : C14       : output : 2.5 V             :         : 8         : N              
+operandA_test[7]             : C15       : output : 2.5 V             :         : 7         : N              
+q_imem_test[20]              : C16       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 7         :                
@@ -376,19 +376,19 @@ GND                          : C28       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
 GND                          : D3        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
-sign_extension_test[23]      : D5        : output : 2.5 V             :         : 8         : N              
+operandB_test[18]            : D4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D9        :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D10       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D11       :        :                   :         : 8         :                
-dmem_clock                   : D12       : output : 2.5 V             :         : 8         : N              
-sign_extension_test[0]       : D13       : output : 2.5 V             :         : 8         : N              
-q_imem_test[30]              : D14       : output : 2.5 V             :         : 8         : N              
-q_imem_test[28]              : D15       : output : 2.5 V             :         : 7         : N              
-q_imem_test[16]              : D16       : output : 2.5 V             :         : 7         : N              
+operandB_test[9]             : D12       : output : 2.5 V             :         : 8         : N              
+operandA_test[15]            : D13       : output : 2.5 V             :         : 8         : N              
+aluresult_test[12]           : D14       : output : 2.5 V             :         : 8         : N              
+operandA_test[6]             : D15       : output : 2.5 V             :         : 7         : N              
+ctrl_readRegA_test[3]        : D16       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : D19       :        :                   :         : 7         :                
@@ -414,18 +414,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : E11       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E12       :        :                   :         : 8         :                
 VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E14       :        :                   :         : 8         :                
-sign_extension_test[14]      : E15       : output : 2.5 V             :         : 7         : N              
+data_writeReg_test[21]       : E14       : output : 2.5 V             :         : 8         : N              
+data_writeReg_test[14]       : E15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E17       :        :                   :         : 7         :                
-sign_extension_test[16]      : E18       : output : 2.5 V             :         : 7         : N              
+data_writeReg_test[23]       : E17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E18       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E19       :        :                   :         : 7         :                
 VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
 VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E24       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : E25       :        :                   :         : 7         :                
+operandB_test[28]            : E25       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
@@ -439,11 +439,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
 GND                          : F9        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F11       :        :                   :         : 8         :                
+operandB_test[20]            : F11       : output : 2.5 V             :         : 8         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F12       :        :                   :         : 8         :                
 GND                          : F13       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 8         :                
-q_imem_test[14]              : F15       : output : 2.5 V             :         : 7         : N              
+aluresult_test[14]           : F15       : output : 2.5 V             :         : 7         : N              
 GND                          : F16       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F18       :        :                   :         : 7         :                
@@ -452,9 +452,9 @@ GND                          : F20       : gnd    :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : F21       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F22       :        :                   :         : 7         :                
 GND                          : F23       : gnd    :                   :         :           :                
-sign_extension_test[27]      : F24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
+operandB_test[22]            : F26       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G1        :        :                   :         : 1         :                
@@ -470,17 +470,17 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G12       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G13       :        :                   :         : 8         :                
-data_readRegA_test[17]       : G14       : output : 2.5 V             :         : 8         : N              
-sign_extension_test[15]      : G15       : output : 2.5 V             :         : 7         : N              
-q_imem_test[15]              : G16       : output : 2.5 V             :         : 7         : N              
+data_writeReg_test[30]       : G14       : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 7         :                
+aluresult_test[10]           : G16       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 7         :                
-sign_extension_test[25]      : G19       : output : 2.5 V             :         : 7         : N              
+data_writeReg_test[10]       : G19       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :         : 7         :                
+data_writeReg_test[4]        : G22       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
-sign_extension_test[19]      : G24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
@@ -489,7 +489,7 @@ VCCIO1                       : H1        : power  :                   : 2.5V    
 GND                          : H2        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
+operandB_test[30]            : H5        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
@@ -498,15 +498,15 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :      
 VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H12       :        :                   :         : 8         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H13       :        :                   :         : 8         :                
-q_imem_test[18]              : H14       : output : 2.5 V             :         : 8         : N              
-sign_extension_test[1]       : H15       : output : 2.5 V             :         : 7         : N              
-data_readRegA_test[6]        : H16       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 7         :                
+operandB_test[15]            : H14       : output : 2.5 V             :         : 8         : N              
+aluresult_test[21]           : H15       : output : 2.5 V             :         : 7         : N              
+operandA_test[3]             : H16       : output : 2.5 V             :         : 7         : N              
+aluresult_test[4]            : H17       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H19       :        :                   :         : 7         :                
 GNDA2                        : H20       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H21       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+operandB_test[24]            : H22       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
@@ -524,12 +524,12 @@ VCCA3                        : J8        : power  :                   : 2.5V    
 VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J10       :        :                   :         : 8         :                
 GND                          : J11       : gnd    :                   :         :           :                
-sign_extension_test[21]      : J12       : output : 2.5 V             :         : 8         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : J13       :        :                   :         : 8         :                
-q_imem_test[21]              : J14       : output : 2.5 V             :         : 8         : N              
-q_imem_test[1]               : J15       : output : 2.5 V             :         : 7         : N              
-data_readRegA_test[3]        : J16       : output : 2.5 V             :         : 7         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : J17       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J12       :        :                   :         : 8         :                
+aluresult_test[19]           : J13       : output : 2.5 V             :         : 8         : N              
+operandB_test[23]            : J14       : output : 2.5 V             :         : 8         : N              
+ctrl_readRegB_test[3]        : J15       : output : 2.5 V             :         : 7         : N              
+operandA_test[2]             : J16       : output : 2.5 V             :         : 7         : N              
+aluresult_test[23]           : J17       : output : 2.5 V             :         : 7         : N              
 GND                          : J18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : J19       :        :                   :         : 7         :                
 VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
@@ -561,7 +561,7 @@ VCCINT                       : K17       : power  :                   : 1.2V    
 GND                          : K18       : gnd    :                   :         :           :                
 VCCINT                       : K19       : power  :                   : 1.2V    :           :                
 GND                          : K20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :         : 6         :                
+operandB_test[21]            : K21       : output : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
 GND                          : K23       : gnd    :                   :         :           :                
 VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
@@ -570,12 +570,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 1         :                
-sign_extension_test[22]      : L2        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 1         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 1         :                
+operandB_test[17]            : L7        : output : 2.5 V             :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 1         :                
 GND                          : L9        : gnd    :                   :         :           :                
 VCCINT                       : L10       : power  :                   : 1.2V    :           :                
@@ -594,16 +594,16 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : L23       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L24       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L26       :        :                   :         : 6         :                
-sign_extension_test[26]      : L27       : output : 2.5 V             :         : 6         : N              
-sign_extension_test[30]      : L28       : output : 2.5 V             :         : 6         : N              
+ctrl_writeEnable_test        : L26       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M1        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 1         :                
 nSTATUS                      : M6        :        :                   :         : 1         :                
-sign_extension_test[18]      : M7        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 1         :                
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
 GND                          : M10       : gnd    :                   :         :           :                
@@ -681,13 +681,13 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : P25       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : P26       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6         :                
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R5        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R6        :        :                   :         : 2         :                
-imem_clock                   : R7        : output : 2.5 V             :         : 2         : N              
+data_writeReg_test[8]        : R1        : output : 2.5 V             :         : 2         : N              
+processor_clock              : R2        : output : 2.5 V             :         : 2         : N              
+operandA_test[19]            : R3        : output : 2.5 V             :         : 2         : N              
+pc_test[5]                   : R4        : output : 2.5 V             :         : 2         : N              
+operandB_test[8]             : R5        : output : 2.5 V             :         : 2         : N              
+operandA_test[23]            : R6        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R7        :        :                   :         : 2         :                
 nCE                          : R8        :        :                   :         : 1         :                
 GND                          : R9        : gnd    :                   :         :           :                
 VCCINT                       : R10       : power  :                   : 1.2V    :           :                
@@ -703,19 +703,19 @@ GND                          : R19       : gnd    :                   :         
 VCCINT                       : R20       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R21       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R22       :        :                   :         : 5         :                
-ctrl_writeEnable_test        : R23       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R23       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R25       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R26       :        :                   :         : 5         :                
+operandA_test[1]             : R25       : output : 2.5 V             :         : 5         : N              
+operandA_test[5]             : R26       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R27       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R28       :        :                   :         : 5         :                
 VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
 GND                          : T2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :         : 2         :                
+imem_clock                   : T3        : output : 2.5 V             :         : 2         : N              
+aluresult_test[8]            : T4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
 GND                          : T6        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 2         :                
+pc_test[10]                  : T7        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T8        :        :                   :         : 2         :                
 VCCINT                       : T9        : power  :                   : 1.2V    :           :                
 GND                          : T10       : gnd    :                   :         :           :                
@@ -733,16 +733,16 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 5         :                
 GND                          : T23       : gnd    :                   :         :           :                
 VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T26       :        :                   :         : 5         :                
+operandA_test[9]             : T25       : output : 2.5 V             :         : 5         : N              
+aluresult_test[26]           : T26       : output : 2.5 V             :         : 5         : N              
 GND                          : T27       : gnd    :                   :         :           :                
 VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U1        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U3        :        :                   :         : 2         :                
+q_imem_test[5]               : U1        : output : 2.5 V             :         : 2         : N              
+q_imem_test[30]              : U2        : output : 2.5 V             :         : 2         : N              
+regfile_clock                : U3        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U4        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U5        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : U6        :        :                   :         : 2         :                
+data_writeReg_test[29]       : U5        : output : 2.5 V             :         : 2         : N              
+pc_test[7]                   : U6        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U8        :        :                   :         : 2         :                
 GND                          : U9        : gnd    :                   :         :           :                
@@ -761,17 +761,17 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : U21       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : U22       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U23       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U24       :        :                   :         : 5         :                
-data_readRegA_test[31]       : U25       : output : 2.5 V             :         : 5         : N              
-data_readRegA_test[7]        : U26       : output : 2.5 V             :         : 5         : N              
+operandA_test[0]             : U25       : output : 2.5 V             :         : 5         : N              
+operandA_test[30]            : U26       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : U27       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : U28       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V1        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 2         :                
+q_imem_test[28]              : V1        : output : 2.5 V             :         : 2         : N              
+q_imem_test[29]              : V2        : output : 2.5 V             :         : 2         : N              
+q_imem_test[31]              : V3        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 2         :                
-data_writeReg_test[8]        : V7        : output : 2.5 V             :         : 2         : N              
+q_imem_test[11]              : V7        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 2         :                
 VCCINT                       : V9        : power  :                   : 1.2V    :           :                
 GND                          : V10       : gnd    :                   :         :           :                
@@ -785,22 +785,22 @@ VCCINT                       : V17       : power  :                   : 1.2V    
 GND                          : V18       : gnd    :                   :         :           :                
 VCCINT                       : V19       : power  :                   : 1.2V    :           :                
 GND                          : V20       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : V21       :        :                   :         : 5         :                
+operandA_test[18]            : V21       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V22       :        :                   :         : 5         :                
-data_readRegA_test[23]       : V23       : output : 2.5 V             :         : 5         : N              
-data_readRegA_test[14]       : V24       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V23       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V24       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V25       :        :                   :         : 5         :                
-data_readRegA_test[12]       : V26       : output : 2.5 V             :         : 5         : N              
+data_writeReg_test[26]       : V26       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : V27       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V28       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W1        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :         : 2         :                
+aluresult_test[29]           : W1        : output : 2.5 V             :         : 2         : N              
+pc_test[11]                  : W2        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : W3        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W4        :        :                   :         : 2         :                
+operandB_test[11]            : W4        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
 GND                          : W6        : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W7        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W8        :        :                   :         : 2         :                
+operandB_test[16]            : W8        : output : 2.5 V             :         : 2         : N              
 GND                          : W9        : gnd    :                   :         :           :                
 VCCINT                       : W10       : power  :                   : 1.2V    :           :                
 GND                          : W11       : gnd    :                   :         :           :                
@@ -813,18 +813,18 @@ GND                          : W17       : gnd    :                   :         
 VCCINT                       : W18       : power  :                   : 1.2V    :           :                
 GND                          : W19       : gnd    :                   :         :           :                
 VCCINT                       : W20       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W21       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :         : 5         :                
+operandA_test[14]            : W21       : output : 2.5 V             :         : 5         : N              
+aluresult_test[7]            : W22       : output : 2.5 V             :         : 5         : N              
 GND                          : W23       : gnd    :                   :         :           :                
 VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5         :                
-data_readRegA_test[18]       : W26       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W26       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : W28       :        :                   :         : 5         :                
 GND+                         : Y1        :        :                   :         : 2         :                
 reset                        : Y2        : input  : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :         : 2         :                
+q_imem_test[8]               : Y3        : output : 2.5 V             :         : 2         : N              
+ctrl_readRegA_test[4]        : Y4        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y5        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y6        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y7        :        :                   :         : 2         :                
@@ -832,20 +832,20 @@ VCCA1                        : Y8        : power  :                   : 2.5V    
 VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3         :                
 GND                          : Y11       : gnd    :                   :         :           :                
-q_imem_test[10]              : Y12       : output : 2.5 V             :         : 3         : N              
-q_imem_test[8]               : Y13       : output : 2.5 V             :         : 3         : N              
-q_imem_test[27]              : Y14       : output : 2.5 V             :         : 3         : N              
-data_writeReg_test[28]       : Y15       : output : 2.5 V             :         : 3         : N              
-data_readRegA_test[22]       : Y16       : output : 2.5 V             :         : 4         : N              
-data_readRegA_test[13]       : Y17       : output : 2.5 V             :         : 4         : N              
+operandA_test[27]            : Y12       : output : 2.5 V             :         : 3         : N              
+ctrl_readRegA_test[1]        : Y13       : output : 2.5 V             :         : 3         : N              
+ctrl_readRegA_test[0]        : Y14       : output : 2.5 V             :         : 3         : N              
+data_writeReg_test[13]       : Y15       : output : 2.5 V             :         : 3         : N              
+operandB_test[12]            : Y16       : output : 2.5 V             :         : 4         : N              
+ctrl_readRegB_test[0]        : Y17       : output : 2.5 V             :         : 4         : N              
 GND                          : Y18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4         :                
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
 VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5         :                
+data_writeReg_test[7]        : Y22       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y23       :        :                   :         : 5         :                
-data_writeReg_test[23]       : Y24       : output : 2.5 V             :         : 5         : N              
-data_readRegA_test[10]       : Y25       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y26       :        :                   :         : 5         :                
 GND+                         : Y27       :        :                   :         : 5         :                
 GND+                         : Y28       :        :                   :         : 5         :                

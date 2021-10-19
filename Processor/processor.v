@@ -75,7 +75,9 @@ module processor(
 	operandA_test,
 	operandB_test,
 	alucode_test,
-	aluresult_test
+	aluresult_test,
+	
+	pc_test
 );
     // Control signals
     input clock, reset;
@@ -107,6 +109,8 @@ module processor(
 	 assign operandB_test = sign_extension;
 	 assign aluresult_test = data_writeReg;
 	 assign alucode_test = q_imem[6:2];
+	 output [11:0]pc_test;
+	 assign pc_test = pc;
 	 //---------------------------------------------
 
 
