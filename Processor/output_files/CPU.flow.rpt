@@ -1,5 +1,5 @@
 Flow report for CPU
-Sun Oct 17 12:34:20 2021
+Mon Oct 18 01:24:58 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,20 +41,20 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct 17 12:34:20 2021       ;
+; Flow Status                        ; Successful - Mon Oct 18 01:24:58 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2                                           ;
-;     Total combinational functions  ; 2                                           ;
-;     Dedicated logic registers      ; 2                                           ;
-; Total registers                    ; 2                                           ;
-; Total pins                         ; 6                                           ;
+; Total logic elements               ; 2,452                                       ;
+;     Total combinational functions  ; 1,492                                       ;
+;     Dedicated logic registers      ; 1,006                                       ;
+; Total registers                    ; 1006                                        ;
+; Total pins                         ; 182                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
+; Total memory bits                  ; 131,072                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/17/2021 12:34:11 ;
+; Start date & time ; 10/18/2021 01:24:22 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110427378324588.163448845126912       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110427378324588.163453466232136       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
@@ -100,8 +100,12 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4991 MB             ; 00:00:19                           ;
-; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:19                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 5009 MB             ; 00:00:17                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4857 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4864 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4856 MB             ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4864 MB             ; 00:00:01                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:19                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +115,10 @@ agreement for further details.
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
 ; Analysis & Synthesis ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
@@ -118,6 +126,10 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
 
 
 
