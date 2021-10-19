@@ -1,0 +1,1989 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "10/18/2021 13:36:41"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          alu
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module alu_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [4:0] ctrl_ALUopcode;
+reg [4:0] ctrl_shiftamt;
+reg [31:0] data_operandA;
+reg [31:0] data_operandB;
+// wires                                               
+wire [31:0] data_result;
+wire isLessThan;
+wire isNotEqual;
+wire overflow;
+
+// assign statements (if any)                          
+alu i1 (
+// port map - connection between master ports and signals/registers   
+	.ctrl_ALUopcode(ctrl_ALUopcode),
+	.ctrl_shiftamt(ctrl_shiftamt),
+	.data_operandA(data_operandA),
+	.data_operandB(data_operandB),
+	.data_result(data_result),
+	.isLessThan(isLessThan),
+	.isNotEqual(isNotEqual),
+	.overflow(overflow)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// ctrl_ALUopcode[ 4 ]
+initial
+begin
+	ctrl_ALUopcode[4] = 1'b0;
+end 
+// ctrl_ALUopcode[ 3 ]
+initial
+begin
+	ctrl_ALUopcode[3] = 1'b0;
+end 
+// ctrl_ALUopcode[ 2 ]
+initial
+begin
+	ctrl_ALUopcode[2] = 1'b0;
+end 
+// ctrl_ALUopcode[ 1 ]
+initial
+begin
+	ctrl_ALUopcode[1] = 1'b0;
+end 
+// ctrl_ALUopcode[ 0 ]
+initial
+begin
+	ctrl_ALUopcode[0] = 1'b0;
+end 
+// ctrl_shiftamt[ 4 ]
+initial
+begin
+	ctrl_shiftamt[4] = 1'b0;
+end 
+// ctrl_shiftamt[ 3 ]
+initial
+begin
+	ctrl_shiftamt[3] = 1'b0;
+end 
+// ctrl_shiftamt[ 2 ]
+initial
+begin
+	ctrl_shiftamt[2] = 1'b0;
+end 
+// ctrl_shiftamt[ 1 ]
+initial
+begin
+	ctrl_shiftamt[1] = 1'b0;
+end 
+// ctrl_shiftamt[ 0 ]
+initial
+begin
+	ctrl_shiftamt[0] = 1'b0;
+end 
+// data_operandA[ 31 ]
+initial
+begin
+	data_operandA[31] = 1'b0;
+	data_operandA[31] = #20000 1'b1;
+	data_operandA[31] = #80000 1'b0;
+	data_operandA[31] = #60000 1'b1;
+	data_operandA[31] = #80000 1'b0;
+	data_operandA[31] = #40000 1'b1;
+	data_operandA[31] = #60000 1'b0;
+	data_operandA[31] = #20000 1'b1;
+	data_operandA[31] = #20000 1'b0;
+	data_operandA[31] = #80000 1'b1;
+	data_operandA[31] = #60000 1'b0;
+	data_operandA[31] = #100000 1'b1;
+	data_operandA[31] = #20000 1'b0;
+	data_operandA[31] = #60000 1'b1;
+	data_operandA[31] = #60000 1'b0;
+	data_operandA[31] = #20000 1'b1;
+	data_operandA[31] = #60000 1'b0;
+	data_operandA[31] = #20000 1'b1;
+	data_operandA[31] = #20000 1'b0;
+	data_operandA[31] = #20000 1'b1;
+	data_operandA[31] = #80000 1'b0;
+end 
+// data_operandA[ 30 ]
+initial
+begin
+	data_operandA[30] = 1'b1;
+	data_operandA[30] = #20000 1'b0;
+	data_operandA[30] = #20000 1'b1;
+	data_operandA[30] = #20000 1'b0;
+	data_operandA[30] = #20000 1'b1;
+	data_operandA[30] = #80000 1'b0;
+	data_operandA[30] = #60000 1'b1;
+	data_operandA[30] = #20000 1'b0;
+	data_operandA[30] = #20000 1'b1;
+	data_operandA[30] = #20000 1'b0;
+	data_operandA[30] = #20000 1'b1;
+	data_operandA[30] = #40000 1'b0;
+	data_operandA[30] = #60000 1'b1;
+	data_operandA[30] = #80000 1'b0;
+	data_operandA[30] = #60000 1'b1;
+	data_operandA[30] = #40000 1'b0;
+	data_operandA[30] = #60000 1'b1;
+	data_operandA[30] = #20000 1'b0;
+	data_operandA[30] = #40000 1'b1;
+	data_operandA[30] = #20000 1'b0;
+	data_operandA[30] = #60000 1'b1;
+	data_operandA[30] = #60000 1'b0;
+	data_operandA[30] = #20000 1'b1;
+	data_operandA[30] = #100000 1'b0;
+	data_operandA[30] = #20000 1'b1;
+end 
+// data_operandA[ 29 ]
+initial
+begin
+	data_operandA[29] = 1'b0;
+	data_operandA[29] = #40000 1'b1;
+	data_operandA[29] = #80000 1'b0;
+	data_operandA[29] = #40000 1'b1;
+	data_operandA[29] = #80000 1'b0;
+	data_operandA[29] = #20000 1'b1;
+	data_operandA[29] = #60000 1'b0;
+	data_operandA[29] = #40000 1'b1;
+	data_operandA[29] = #20000 1'b0;
+	data_operandA[29] = #60000 1'b1;
+	data_operandA[29] = #60000 1'b0;
+	data_operandA[29] = #80000 1'b1;
+	data_operandA[29] = #60000 1'b0;
+	data_operandA[29] = #60000 1'b1;
+	data_operandA[29] = #20000 1'b0;
+	data_operandA[29] = #40000 1'b1;
+	data_operandA[29] = #20000 1'b0;
+	data_operandA[29] = #60000 1'b1;
+	data_operandA[29] = #20000 1'b0;
+	data_operandA[29] = #20000 1'b1;
+	data_operandA[29] = #20000 1'b0;
+	data_operandA[29] = #20000 1'b1;
+end 
+// data_operandA[ 28 ]
+initial
+begin
+	data_operandA[28] = 1'b1;
+	data_operandA[28] = #40000 1'b0;
+	data_operandA[28] = #20000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+	data_operandA[28] = #20000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+	data_operandA[28] = #20000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+	data_operandA[28] = #40000 1'b1;
+	data_operandA[28] = #40000 1'b0;
+	data_operandA[28] = #60000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+	data_operandA[28] = #60000 1'b1;
+	data_operandA[28] = #40000 1'b0;
+	data_operandA[28] = #20000 1'b1;
+	data_operandA[28] = #40000 1'b0;
+	data_operandA[28] = #60000 1'b1;
+	data_operandA[28] = #40000 1'b0;
+	data_operandA[28] = #20000 1'b1;
+	data_operandA[28] = #60000 1'b0;
+	data_operandA[28] = #60000 1'b1;
+	data_operandA[28] = #60000 1'b0;
+	data_operandA[28] = #40000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+	data_operandA[28] = #40000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+	data_operandA[28] = #40000 1'b1;
+	data_operandA[28] = #20000 1'b0;
+end 
+// data_operandA[ 27 ]
+initial
+begin
+	data_operandA[27] = 1'b1;
+	data_operandA[27] = #80000 1'b0;
+	data_operandA[27] = #20000 1'b1;
+	data_operandA[27] = #40000 1'b0;
+	data_operandA[27] = #40000 1'b1;
+	data_operandA[27] = #40000 1'b0;
+	data_operandA[27] = #60000 1'b1;
+	data_operandA[27] = #40000 1'b0;
+	data_operandA[27] = #60000 1'b1;
+	data_operandA[27] = #20000 1'b0;
+	data_operandA[27] = #60000 1'b1;
+	data_operandA[27] = #60000 1'b0;
+	data_operandA[27] = #40000 1'b1;
+	data_operandA[27] = #80000 1'b0;
+	data_operandA[27] = #20000 1'b1;
+	data_operandA[27] = #100000 1'b0;
+	data_operandA[27] = #40000 1'b1;
+	data_operandA[27] = #20000 1'b0;
+	data_operandA[27] = #20000 1'b1;
+	data_operandA[27] = #40000 1'b0;
+	data_operandA[27] = #20000 1'b1;
+	data_operandA[27] = #20000 1'b0;
+	data_operandA[27] = #40000 1'b1;
+end 
+// data_operandA[ 26 ]
+initial
+begin
+	data_operandA[26] = 1'b1;
+	data_operandA[26] = #80000 1'b0;
+	data_operandA[26] = #60000 1'b1;
+	data_operandA[26] = #100000 1'b0;
+	data_operandA[26] = #20000 1'b1;
+	data_operandA[26] = #40000 1'b0;
+	data_operandA[26] = #40000 1'b1;
+	data_operandA[26] = #20000 1'b0;
+	data_operandA[26] = #80000 1'b1;
+	data_operandA[26] = #40000 1'b0;
+	data_operandA[26] = #40000 1'b1;
+	data_operandA[26] = #120000 1'b0;
+	data_operandA[26] = #20000 1'b1;
+	data_operandA[26] = #40000 1'b0;
+	data_operandA[26] = #20000 1'b1;
+	data_operandA[26] = #20000 1'b0;
+	data_operandA[26] = #20000 1'b1;
+	data_operandA[26] = #40000 1'b0;
+	data_operandA[26] = #20000 1'b1;
+	data_operandA[26] = #20000 1'b0;
+	data_operandA[26] = #40000 1'b1;
+	data_operandA[26] = #20000 1'b0;
+	data_operandA[26] = #40000 1'b1;
+end 
+// data_operandA[ 25 ]
+initial
+begin
+	data_operandA[25] = 1'b0;
+	data_operandA[25] = #120000 1'b1;
+	data_operandA[25] = #60000 1'b0;
+	data_operandA[25] = #60000 1'b1;
+	data_operandA[25] = #40000 1'b0;
+	data_operandA[25] = #20000 1'b1;
+	data_operandA[25] = #40000 1'b0;
+	data_operandA[25] = #40000 1'b1;
+	data_operandA[25] = #20000 1'b0;
+	data_operandA[25] = #20000 1'b1;
+	data_operandA[25] = #20000 1'b0;
+	data_operandA[25] = #20000 1'b1;
+	data_operandA[25] = #40000 1'b0;
+	data_operandA[25] = #220000 1'b1;
+	data_operandA[25] = #20000 1'b0;
+	data_operandA[25] = #20000 1'b1;
+	data_operandA[25] = #20000 1'b0;
+	data_operandA[25] = #40000 1'b1;
+	data_operandA[25] = #20000 1'b0;
+	data_operandA[25] = #40000 1'b1;
+	data_operandA[25] = #20000 1'b0;
+	data_operandA[25] = #20000 1'b1;
+	data_operandA[25] = #60000 1'b0;
+end 
+// data_operandA[ 24 ]
+initial
+begin
+	data_operandA[24] = 1'b0;
+	data_operandA[24] = #20000 1'b1;
+	data_operandA[24] = #40000 1'b0;
+	data_operandA[24] = #40000 1'b1;
+	data_operandA[24] = #40000 1'b0;
+	data_operandA[24] = #60000 1'b1;
+	data_operandA[24] = #20000 1'b0;
+	data_operandA[24] = #80000 1'b1;
+	data_operandA[24] = #80000 1'b0;
+	data_operandA[24] = #120000 1'b1;
+	data_operandA[24] = #40000 1'b0;
+	data_operandA[24] = #40000 1'b1;
+	data_operandA[24] = #80000 1'b0;
+	data_operandA[24] = #60000 1'b1;
+	data_operandA[24] = #40000 1'b0;
+	data_operandA[24] = #20000 1'b1;
+	data_operandA[24] = #20000 1'b0;
+	data_operandA[24] = #80000 1'b1;
+	data_operandA[24] = #20000 1'b0;
+	data_operandA[24] = #60000 1'b1;
+end 
+// data_operandA[ 23 ]
+initial
+begin
+	data_operandA[23] = 1'b0;
+	data_operandA[23] = #20000 1'b1;
+	data_operandA[23] = #40000 1'b0;
+	data_operandA[23] = #120000 1'b1;
+	data_operandA[23] = #20000 1'b0;
+	data_operandA[23] = #20000 1'b1;
+	data_operandA[23] = #60000 1'b0;
+	data_operandA[23] = #20000 1'b1;
+	data_operandA[23] = #40000 1'b0;
+	data_operandA[23] = #20000 1'b1;
+	data_operandA[23] = #40000 1'b0;
+	data_operandA[23] = #60000 1'b1;
+	data_operandA[23] = #60000 1'b0;
+	data_operandA[23] = #40000 1'b1;
+	data_operandA[23] = #20000 1'b0;
+	data_operandA[23] = #20000 1'b1;
+	data_operandA[23] = #20000 1'b0;
+	data_operandA[23] = #80000 1'b1;
+	data_operandA[23] = #60000 1'b0;
+	data_operandA[23] = #20000 1'b1;
+	data_operandA[23] = #20000 1'b0;
+	data_operandA[23] = #100000 1'b1;
+	data_operandA[23] = #20000 1'b0;
+end 
+// data_operandA[ 22 ]
+initial
+begin
+	data_operandA[22] = 1'b0;
+	data_operandA[22] = #20000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #40000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #80000 1'b1;
+	data_operandA[22] = #40000 1'b0;
+	data_operandA[22] = #40000 1'b1;
+	data_operandA[22] = #80000 1'b0;
+	data_operandA[22] = #60000 1'b1;
+	data_operandA[22] = #40000 1'b0;
+	data_operandA[22] = #20000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #60000 1'b1;
+	data_operandA[22] = #140000 1'b0;
+	data_operandA[22] = #20000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #20000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #40000 1'b1;
+	data_operandA[22] = #40000 1'b0;
+	data_operandA[22] = #20000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #60000 1'b1;
+	data_operandA[22] = #20000 1'b0;
+	data_operandA[22] = #20000 1'b1;
+end 
+// data_operandA[ 21 ]
+initial
+begin
+	data_operandA[21] = 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #80000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #20000 1'b1;
+	data_operandA[21] = #60000 1'b0;
+	data_operandA[21] = #40000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #20000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #60000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #20000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #60000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #40000 1'b1;
+	data_operandA[21] = #40000 1'b0;
+	data_operandA[21] = #160000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #20000 1'b1;
+	data_operandA[21] = #20000 1'b0;
+	data_operandA[21] = #40000 1'b1;
+	data_operandA[21] = #60000 1'b0;
+end 
+// data_operandA[ 20 ]
+initial
+begin
+	data_operandA[20] = 1'b1;
+	data_operandA[20] = #40000 1'b0;
+	data_operandA[20] = #120000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #40000 1'b1;
+	data_operandA[20] = #60000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #40000 1'b0;
+	data_operandA[20] = #80000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #40000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #80000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #40000 1'b0;
+	data_operandA[20] = #60000 1'b1;
+	data_operandA[20] = #40000 1'b0;
+	data_operandA[20] = #20000 1'b1;
+	data_operandA[20] = #20000 1'b0;
+end 
+// data_operandA[ 19 ]
+initial
+begin
+	data_operandA[19] = 1'b1;
+	data_operandA[19] = #40000 1'b0;
+	data_operandA[19] = #40000 1'b1;
+	data_operandA[19] = #20000 1'b0;
+	data_operandA[19] = #40000 1'b1;
+	data_operandA[19] = #40000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #60000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #20000 1'b0;
+	data_operandA[19] = #40000 1'b1;
+	data_operandA[19] = #20000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #40000 1'b0;
+	data_operandA[19] = #40000 1'b1;
+	data_operandA[19] = #40000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #20000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #40000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #20000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #20000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #100000 1'b0;
+	data_operandA[19] = #20000 1'b1;
+	data_operandA[19] = #60000 1'b0;
+end 
+// data_operandA[ 18 ]
+initial
+begin
+	data_operandA[18] = 1'b0;
+	data_operandA[18] = #40000 1'b1;
+	data_operandA[18] = #20000 1'b0;
+	data_operandA[18] = #40000 1'b1;
+	data_operandA[18] = #20000 1'b0;
+	data_operandA[18] = #80000 1'b1;
+	data_operandA[18] = #120000 1'b0;
+	data_operandA[18] = #40000 1'b1;
+	data_operandA[18] = #60000 1'b0;
+	data_operandA[18] = #40000 1'b1;
+	data_operandA[18] = #40000 1'b0;
+	data_operandA[18] = #20000 1'b1;
+	data_operandA[18] = #20000 1'b0;
+	data_operandA[18] = #20000 1'b1;
+	data_operandA[18] = #20000 1'b0;
+	data_operandA[18] = #20000 1'b1;
+	data_operandA[18] = #100000 1'b0;
+	data_operandA[18] = #40000 1'b1;
+	data_operandA[18] = #20000 1'b0;
+	data_operandA[18] = #60000 1'b1;
+	data_operandA[18] = #20000 1'b0;
+	data_operandA[18] = #60000 1'b1;
+	data_operandA[18] = #60000 1'b0;
+	data_operandA[18] = #20000 1'b1;
+end 
+// data_operandA[ 17 ]
+initial
+begin
+	data_operandA[17] = 1'b1;
+	data_operandA[17] = #40000 1'b0;
+	data_operandA[17] = #40000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #40000 1'b1;
+	data_operandA[17] = #60000 1'b0;
+	data_operandA[17] = #40000 1'b1;
+	data_operandA[17] = #40000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #60000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #40000 1'b1;
+	data_operandA[17] = #60000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #120000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #20000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #100000 1'b0;
+	data_operandA[17] = #20000 1'b1;
+	data_operandA[17] = #40000 1'b0;
+end 
+// data_operandA[ 16 ]
+initial
+begin
+	data_operandA[16] = 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #20000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #80000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #60000 1'b0;
+	data_operandA[16] = #60000 1'b1;
+	data_operandA[16] = #20000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #100000 1'b0;
+	data_operandA[16] = #40000 1'b1;
+	data_operandA[16] = #40000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #20000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #20000 1'b0;
+	data_operandA[16] = #60000 1'b1;
+	data_operandA[16] = #40000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #40000 1'b0;
+	data_operandA[16] = #20000 1'b1;
+	data_operandA[16] = #120000 1'b0;
+	data_operandA[16] = #60000 1'b1;
+	data_operandA[16] = #40000 1'b0;
+end 
+// data_operandA[ 15 ]
+initial
+begin
+	data_operandA[15] = 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #40000 1'b0;
+	data_operandA[15] = #40000 1'b1;
+	data_operandA[15] = #40000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #40000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #60000 1'b1;
+	data_operandA[15] = #200000 1'b0;
+	data_operandA[15] = #80000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #60000 1'b1;
+	data_operandA[15] = #40000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+	data_operandA[15] = #20000 1'b1;
+	data_operandA[15] = #20000 1'b0;
+end 
+// data_operandA[ 14 ]
+initial
+begin
+	data_operandA[14] = 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #40000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #40000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #40000 1'b1;
+	data_operandA[14] = #80000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #40000 1'b1;
+	data_operandA[14] = #40000 1'b0;
+	data_operandA[14] = #40000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #20000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #40000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #80000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+	data_operandA[14] = #100000 1'b0;
+	data_operandA[14] = #20000 1'b1;
+end 
+// data_operandA[ 13 ]
+initial
+begin
+	data_operandA[13] = 1'b1;
+	data_operandA[13] = #40000 1'b0;
+	data_operandA[13] = #20000 1'b1;
+	data_operandA[13] = #20000 1'b0;
+	data_operandA[13] = #20000 1'b1;
+	data_operandA[13] = #40000 1'b0;
+	data_operandA[13] = #40000 1'b1;
+	data_operandA[13] = #20000 1'b0;
+	data_operandA[13] = #60000 1'b1;
+	data_operandA[13] = #40000 1'b0;
+	data_operandA[13] = #120000 1'b1;
+	data_operandA[13] = #20000 1'b0;
+	data_operandA[13] = #60000 1'b1;
+	data_operandA[13] = #100000 1'b0;
+	data_operandA[13] = #40000 1'b1;
+	data_operandA[13] = #80000 1'b0;
+	data_operandA[13] = #80000 1'b1;
+	data_operandA[13] = #20000 1'b0;
+	data_operandA[13] = #60000 1'b1;
+	data_operandA[13] = #40000 1'b0;
+end 
+// data_operandA[ 12 ]
+initial
+begin
+	data_operandA[12] = 1'b0;
+	data_operandA[12] = #40000 1'b1;
+	data_operandA[12] = #40000 1'b0;
+	data_operandA[12] = #100000 1'b1;
+	data_operandA[12] = #60000 1'b0;
+	data_operandA[12] = #20000 1'b1;
+	data_operandA[12] = #20000 1'b0;
+	data_operandA[12] = #40000 1'b1;
+	data_operandA[12] = #40000 1'b0;
+	data_operandA[12] = #20000 1'b1;
+	data_operandA[12] = #80000 1'b0;
+	data_operandA[12] = #20000 1'b1;
+	data_operandA[12] = #40000 1'b0;
+	data_operandA[12] = #120000 1'b1;
+	data_operandA[12] = #80000 1'b0;
+	data_operandA[12] = #20000 1'b1;
+	data_operandA[12] = #40000 1'b0;
+	data_operandA[12] = #40000 1'b1;
+	data_operandA[12] = #60000 1'b0;
+	data_operandA[12] = #40000 1'b1;
+end 
+// data_operandA[ 11 ]
+initial
+begin
+	data_operandA[11] = 1'b1;
+	data_operandA[11] = #40000 1'b0;
+	data_operandA[11] = #60000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #100000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #40000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #40000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #40000 1'b0;
+	data_operandA[11] = #40000 1'b1;
+	data_operandA[11] = #80000 1'b0;
+	data_operandA[11] = #20000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #60000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #80000 1'b1;
+	data_operandA[11] = #20000 1'b0;
+	data_operandA[11] = #80000 1'b1;
+end 
+// data_operandA[ 10 ]
+initial
+begin
+	data_operandA[10] = 1'b1;
+	data_operandA[10] = #20000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #40000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #100000 1'b0;
+	data_operandA[10] = #160000 1'b1;
+	data_operandA[10] = #40000 1'b0;
+	data_operandA[10] = #100000 1'b1;
+	data_operandA[10] = #40000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #20000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #60000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #20000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #40000 1'b0;
+	data_operandA[10] = #40000 1'b1;
+	data_operandA[10] = #20000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+	data_operandA[10] = #100000 1'b0;
+	data_operandA[10] = #20000 1'b1;
+end 
+// data_operandA[ 9 ]
+initial
+begin
+	data_operandA[9] = 1'b1;
+	data_operandA[9] = #40000 1'b0;
+	data_operandA[9] = #20000 1'b1;
+	data_operandA[9] = #40000 1'b0;
+	data_operandA[9] = #120000 1'b1;
+	data_operandA[9] = #20000 1'b0;
+	data_operandA[9] = #20000 1'b1;
+	data_operandA[9] = #20000 1'b0;
+	data_operandA[9] = #20000 1'b1;
+	data_operandA[9] = #20000 1'b0;
+	data_operandA[9] = #60000 1'b1;
+	data_operandA[9] = #40000 1'b0;
+	data_operandA[9] = #60000 1'b1;
+	data_operandA[9] = #40000 1'b0;
+	data_operandA[9] = #40000 1'b1;
+	data_operandA[9] = #20000 1'b0;
+	data_operandA[9] = #40000 1'b1;
+	data_operandA[9] = #60000 1'b0;
+	data_operandA[9] = #40000 1'b1;
+	data_operandA[9] = #40000 1'b0;
+	data_operandA[9] = #80000 1'b1;
+	data_operandA[9] = #20000 1'b0;
+	data_operandA[9] = #20000 1'b1;
+	data_operandA[9] = #20000 1'b0;
+	data_operandA[9] = #40000 1'b1;
+	data_operandA[9] = #40000 1'b0;
+end 
+// data_operandA[ 8 ]
+initial
+begin
+	data_operandA[8] = 1'b1;
+	data_operandA[8] = #20000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+	data_operandA[8] = #20000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+	data_operandA[8] = #100000 1'b0;
+	data_operandA[8] = #40000 1'b1;
+	data_operandA[8] = #60000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+	data_operandA[8] = #80000 1'b0;
+	data_operandA[8] = #60000 1'b1;
+	data_operandA[8] = #80000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+	data_operandA[8] = #20000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+	data_operandA[8] = #80000 1'b0;
+	data_operandA[8] = #80000 1'b1;
+	data_operandA[8] = #40000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+	data_operandA[8] = #40000 1'b0;
+	data_operandA[8] = #40000 1'b1;
+	data_operandA[8] = #20000 1'b0;
+	data_operandA[8] = #20000 1'b1;
+end 
+// data_operandA[ 7 ]
+initial
+begin
+	data_operandA[7] = 1'b1;
+	data_operandA[7] = #20000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #140000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #40000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #20000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #20000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #40000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #20000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #60000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #20000 1'b0;
+	data_operandA[7] = #80000 1'b1;
+	data_operandA[7] = #40000 1'b0;
+	data_operandA[7] = #100000 1'b1;
+	data_operandA[7] = #60000 1'b0;
+	data_operandA[7] = #20000 1'b1;
+	data_operandA[7] = #20000 1'b0;
+	data_operandA[7] = #40000 1'b1;
+	data_operandA[7] = #80000 1'b0;
+end 
+// data_operandA[ 6 ]
+initial
+begin
+	data_operandA[6] = 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #100000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #60000 1'b1;
+	data_operandA[6] = #40000 1'b0;
+	data_operandA[6] = #20000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #100000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #20000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #80000 1'b1;
+	data_operandA[6] = #60000 1'b0;
+	data_operandA[6] = #60000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #60000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #20000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #60000 1'b1;
+	data_operandA[6] = #20000 1'b0;
+	data_operandA[6] = #20000 1'b1;
+	data_operandA[6] = #40000 1'b0;
+	data_operandA[6] = #20000 1'b1;
+end 
+// data_operandA[ 5 ]
+initial
+begin
+	data_operandA[5] = 1'b1;
+	data_operandA[5] = #80000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #40000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #40000 1'b0;
+	data_operandA[5] = #120000 1'b1;
+	data_operandA[5] = #40000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #20000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #40000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #80000 1'b0;
+	data_operandA[5] = #80000 1'b1;
+	data_operandA[5] = #20000 1'b0;
+	data_operandA[5] = #100000 1'b1;
+	data_operandA[5] = #40000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #100000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+	data_operandA[5] = #20000 1'b0;
+	data_operandA[5] = #20000 1'b1;
+end 
+// data_operandA[ 4 ]
+initial
+begin
+	data_operandA[4] = 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+	data_operandA[4] = #40000 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+	data_operandA[4] = #60000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+	data_operandA[4] = #60000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+	data_operandA[4] = #40000 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #40000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #20000 1'b1;
+	data_operandA[4] = #40000 1'b0;
+	data_operandA[4] = #100000 1'b1;
+	data_operandA[4] = #20000 1'b0;
+end 
+// data_operandA[ 3 ]
+initial
+begin
+	data_operandA[3] = 1'b0;
+	data_operandA[3] = #60000 1'b1;
+	data_operandA[3] = #20000 1'b0;
+	data_operandA[3] = #100000 1'b1;
+	data_operandA[3] = #20000 1'b0;
+	data_operandA[3] = #20000 1'b1;
+	data_operandA[3] = #40000 1'b0;
+	data_operandA[3] = #20000 1'b1;
+	data_operandA[3] = #20000 1'b0;
+	data_operandA[3] = #40000 1'b1;
+	data_operandA[3] = #20000 1'b0;
+	data_operandA[3] = #20000 1'b1;
+	data_operandA[3] = #80000 1'b0;
+	data_operandA[3] = #20000 1'b1;
+	data_operandA[3] = #80000 1'b0;
+	data_operandA[3] = #80000 1'b1;
+	data_operandA[3] = #40000 1'b0;
+	data_operandA[3] = #20000 1'b1;
+	data_operandA[3] = #60000 1'b0;
+	data_operandA[3] = #20000 1'b1;
+	data_operandA[3] = #140000 1'b0;
+	data_operandA[3] = #40000 1'b1;
+	data_operandA[3] = #20000 1'b0;
+end 
+// data_operandA[ 2 ]
+initial
+begin
+	data_operandA[2] = 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #60000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #40000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #100000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #100000 1'b0;
+	data_operandA[2] = #40000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #60000 1'b0;
+	data_operandA[2] = #60000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #60000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+	data_operandA[2] = #40000 1'b1;
+	data_operandA[2] = #40000 1'b0;
+	data_operandA[2] = #20000 1'b1;
+	data_operandA[2] = #20000 1'b0;
+end 
+// data_operandA[ 1 ]
+initial
+begin
+	data_operandA[1] = 1'b0;
+	data_operandA[1] = #40000 1'b1;
+	data_operandA[1] = #60000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #40000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #40000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #60000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #20000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #40000 1'b0;
+	data_operandA[1] = #40000 1'b1;
+	data_operandA[1] = #40000 1'b0;
+	data_operandA[1] = #40000 1'b1;
+	data_operandA[1] = #60000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #60000 1'b0;
+	data_operandA[1] = #20000 1'b1;
+	data_operandA[1] = #60000 1'b0;
+end 
+// data_operandA[ 0 ]
+initial
+begin
+	data_operandA[0] = 1'b0;
+	data_operandA[0] = #80000 1'b1;
+	data_operandA[0] = #40000 1'b0;
+	data_operandA[0] = #80000 1'b1;
+	data_operandA[0] = #80000 1'b0;
+	data_operandA[0] = #20000 1'b1;
+	data_operandA[0] = #100000 1'b0;
+	data_operandA[0] = #40000 1'b1;
+	data_operandA[0] = #20000 1'b0;
+	data_operandA[0] = #60000 1'b1;
+	data_operandA[0] = #100000 1'b0;
+	data_operandA[0] = #40000 1'b1;
+	data_operandA[0] = #60000 1'b0;
+	data_operandA[0] = #20000 1'b1;
+	data_operandA[0] = #20000 1'b0;
+	data_operandA[0] = #20000 1'b1;
+	data_operandA[0] = #20000 1'b0;
+	data_operandA[0] = #20000 1'b1;
+	data_operandA[0] = #20000 1'b0;
+	data_operandA[0] = #60000 1'b1;
+	data_operandA[0] = #80000 1'b0;
+end 
+// data_operandB[ 31 ]
+initial
+begin
+	data_operandB[31] = 1'b0;
+	data_operandB[31] = #40000 1'b1;
+	data_operandB[31] = #40000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+	data_operandB[31] = #100000 1'b0;
+	data_operandB[31] = #140000 1'b1;
+	data_operandB[31] = #40000 1'b0;
+	data_operandB[31] = #80000 1'b1;
+	data_operandB[31] = #80000 1'b0;
+	data_operandB[31] = #60000 1'b1;
+	data_operandB[31] = #20000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+	data_operandB[31] = #20000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+	data_operandB[31] = #40000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+	data_operandB[31] = #20000 1'b0;
+	data_operandB[31] = #60000 1'b1;
+	data_operandB[31] = #20000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+	data_operandB[31] = #60000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+	data_operandB[31] = #20000 1'b0;
+	data_operandB[31] = #20000 1'b1;
+end 
+// data_operandB[ 30 ]
+initial
+begin
+	data_operandB[30] = 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #40000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #40000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #60000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #80000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #40000 1'b0;
+	data_operandB[30] = #40000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #40000 1'b1;
+	data_operandB[30] = #40000 1'b0;
+	data_operandB[30] = #60000 1'b1;
+	data_operandB[30] = #40000 1'b0;
+	data_operandB[30] = #60000 1'b1;
+	data_operandB[30] = #60000 1'b0;
+	data_operandB[30] = #40000 1'b1;
+	data_operandB[30] = #20000 1'b0;
+	data_operandB[30] = #20000 1'b1;
+end 
+// data_operandB[ 29 ]
+initial
+begin
+	data_operandB[29] = 1'b0;
+	data_operandB[29] = #20000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #20000 1'b1;
+	data_operandB[29] = #40000 1'b0;
+	data_operandB[29] = #40000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #20000 1'b1;
+	data_operandB[29] = #40000 1'b0;
+	data_operandB[29] = #80000 1'b1;
+	data_operandB[29] = #80000 1'b0;
+	data_operandB[29] = #20000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #40000 1'b1;
+	data_operandB[29] = #40000 1'b0;
+	data_operandB[29] = #40000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #20000 1'b1;
+	data_operandB[29] = #100000 1'b0;
+	data_operandB[29] = #40000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #80000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #40000 1'b1;
+	data_operandB[29] = #20000 1'b0;
+	data_operandB[29] = #20000 1'b1;
+end 
+// data_operandB[ 28 ]
+initial
+begin
+	data_operandB[28] = 1'b0;
+	data_operandB[28] = #20000 1'b1;
+	data_operandB[28] = #40000 1'b0;
+	data_operandB[28] = #40000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #60000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #80000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #40000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #20000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #20000 1'b1;
+	data_operandB[28] = #40000 1'b0;
+	data_operandB[28] = #40000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #20000 1'b1;
+	data_operandB[28] = #40000 1'b0;
+	data_operandB[28] = #160000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #60000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #60000 1'b1;
+	data_operandB[28] = #20000 1'b0;
+	data_operandB[28] = #20000 1'b1;
+	data_operandB[28] = #40000 1'b0;
+end 
+// data_operandB[ 27 ]
+initial
+begin
+	data_operandB[27] = 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #40000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #40000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #40000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #20000 1'b0;
+	data_operandB[27] = #80000 1'b1;
+	data_operandB[27] = #20000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #60000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #20000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #60000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #20000 1'b0;
+	data_operandB[27] = #40000 1'b1;
+	data_operandB[27] = #20000 1'b0;
+	data_operandB[27] = #40000 1'b1;
+	data_operandB[27] = #20000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #80000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #60000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+	data_operandB[27] = #80000 1'b0;
+	data_operandB[27] = #20000 1'b1;
+end 
+// data_operandB[ 26 ]
+initial
+begin
+	data_operandB[26] = 1'b0;
+	data_operandB[26] = #40000 1'b1;
+	data_operandB[26] = #20000 1'b0;
+	data_operandB[26] = #100000 1'b1;
+	data_operandB[26] = #20000 1'b0;
+	data_operandB[26] = #20000 1'b1;
+	data_operandB[26] = #60000 1'b0;
+	data_operandB[26] = #40000 1'b1;
+	data_operandB[26] = #40000 1'b0;
+	data_operandB[26] = #20000 1'b1;
+	data_operandB[26] = #20000 1'b0;
+	data_operandB[26] = #20000 1'b1;
+	data_operandB[26] = #20000 1'b0;
+	data_operandB[26] = #80000 1'b1;
+	data_operandB[26] = #60000 1'b0;
+	data_operandB[26] = #100000 1'b1;
+	data_operandB[26] = #60000 1'b0;
+	data_operandB[26] = #20000 1'b1;
+	data_operandB[26] = #40000 1'b0;
+	data_operandB[26] = #20000 1'b1;
+	data_operandB[26] = #80000 1'b0;
+	data_operandB[26] = #60000 1'b1;
+	data_operandB[26] = #40000 1'b0;
+end 
+// data_operandB[ 25 ]
+initial
+begin
+	data_operandB[25] = 1'b0;
+	data_operandB[25] = #40000 1'b1;
+	data_operandB[25] = #20000 1'b0;
+	data_operandB[25] = #40000 1'b1;
+	data_operandB[25] = #100000 1'b0;
+	data_operandB[25] = #40000 1'b1;
+	data_operandB[25] = #40000 1'b0;
+	data_operandB[25] = #40000 1'b1;
+	data_operandB[25] = #40000 1'b0;
+	data_operandB[25] = #60000 1'b1;
+	data_operandB[25] = #20000 1'b0;
+	data_operandB[25] = #20000 1'b1;
+	data_operandB[25] = #20000 1'b0;
+	data_operandB[25] = #40000 1'b1;
+	data_operandB[25] = #40000 1'b0;
+	data_operandB[25] = #100000 1'b1;
+	data_operandB[25] = #20000 1'b0;
+	data_operandB[25] = #20000 1'b1;
+	data_operandB[25] = #40000 1'b0;
+	data_operandB[25] = #20000 1'b1;
+	data_operandB[25] = #40000 1'b0;
+	data_operandB[25] = #40000 1'b1;
+	data_operandB[25] = #60000 1'b0;
+	data_operandB[25] = #20000 1'b1;
+	data_operandB[25] = #20000 1'b0;
+	data_operandB[25] = #20000 1'b1;
+	data_operandB[25] = #20000 1'b0;
+end 
+// data_operandB[ 24 ]
+initial
+begin
+	data_operandB[24] = 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #20000 1'b1;
+	data_operandB[24] = #60000 1'b0;
+	data_operandB[24] = #20000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #20000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #80000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #20000 1'b1;
+	data_operandB[24] = #80000 1'b0;
+	data_operandB[24] = #20000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #40000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #60000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #40000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #120000 1'b1;
+	data_operandB[24] = #20000 1'b0;
+	data_operandB[24] = #40000 1'b1;
+	data_operandB[24] = #40000 1'b0;
+	data_operandB[24] = #60000 1'b1;
+	data_operandB[24] = #40000 1'b0;
+	data_operandB[24] = #20000 1'b1;
+end 
+// data_operandB[ 23 ]
+initial
+begin
+	data_operandB[23] = 1'b0;
+	data_operandB[23] = #40000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #80000 1'b1;
+	data_operandB[23] = #120000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #40000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #60000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #40000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #40000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+	data_operandB[23] = #20000 1'b0;
+	data_operandB[23] = #40000 1'b1;
+	data_operandB[23] = #40000 1'b0;
+	data_operandB[23] = #40000 1'b1;
+	data_operandB[23] = #40000 1'b0;
+	data_operandB[23] = #20000 1'b1;
+end 
+// data_operandB[ 22 ]
+initial
+begin
+	data_operandB[22] = 1'b0;
+	data_operandB[22] = #40000 1'b1;
+	data_operandB[22] = #20000 1'b0;
+	data_operandB[22] = #40000 1'b1;
+	data_operandB[22] = #40000 1'b0;
+	data_operandB[22] = #20000 1'b1;
+	data_operandB[22] = #60000 1'b0;
+	data_operandB[22] = #160000 1'b1;
+	data_operandB[22] = #60000 1'b0;
+	data_operandB[22] = #20000 1'b1;
+	data_operandB[22] = #40000 1'b0;
+	data_operandB[22] = #140000 1'b1;
+	data_operandB[22] = #20000 1'b0;
+	data_operandB[22] = #40000 1'b1;
+	data_operandB[22] = #20000 1'b0;
+	data_operandB[22] = #20000 1'b1;
+	data_operandB[22] = #60000 1'b0;
+	data_operandB[22] = #20000 1'b1;
+	data_operandB[22] = #80000 1'b0;
+	data_operandB[22] = #40000 1'b1;
+	data_operandB[22] = #20000 1'b0;
+end 
+// data_operandB[ 21 ]
+initial
+begin
+	data_operandB[21] = 1'b0;
+	data_operandB[21] = #140000 1'b1;
+	data_operandB[21] = #20000 1'b0;
+	data_operandB[21] = #60000 1'b1;
+	data_operandB[21] = #40000 1'b0;
+	data_operandB[21] = #60000 1'b1;
+	data_operandB[21] = #20000 1'b0;
+	data_operandB[21] = #80000 1'b1;
+	data_operandB[21] = #40000 1'b0;
+	data_operandB[21] = #40000 1'b1;
+	data_operandB[21] = #40000 1'b0;
+	data_operandB[21] = #20000 1'b1;
+	data_operandB[21] = #20000 1'b0;
+	data_operandB[21] = #160000 1'b1;
+	data_operandB[21] = #60000 1'b0;
+	data_operandB[21] = #20000 1'b1;
+	data_operandB[21] = #20000 1'b0;
+	data_operandB[21] = #40000 1'b1;
+end 
+// data_operandB[ 20 ]
+initial
+begin
+	data_operandB[20] = 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #60000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #60000 1'b0;
+	data_operandB[20] = #60000 1'b1;
+	data_operandB[20] = #80000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #60000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #60000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #40000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #40000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #40000 1'b0;
+	data_operandB[20] = #20000 1'b1;
+	data_operandB[20] = #20000 1'b0;
+	data_operandB[20] = #60000 1'b1;
+end 
+// data_operandB[ 19 ]
+initial
+begin
+	data_operandB[19] = 1'b0;
+	data_operandB[19] = #40000 1'b1;
+	data_operandB[19] = #100000 1'b0;
+	data_operandB[19] = #40000 1'b1;
+	data_operandB[19] = #20000 1'b0;
+	data_operandB[19] = #20000 1'b1;
+	data_operandB[19] = #60000 1'b0;
+	data_operandB[19] = #20000 1'b1;
+	data_operandB[19] = #60000 1'b0;
+	data_operandB[19] = #40000 1'b1;
+	data_operandB[19] = #20000 1'b0;
+	data_operandB[19] = #20000 1'b1;
+	data_operandB[19] = #40000 1'b0;
+	data_operandB[19] = #20000 1'b1;
+	data_operandB[19] = #20000 1'b0;
+	data_operandB[19] = #40000 1'b1;
+	data_operandB[19] = #60000 1'b0;
+	data_operandB[19] = #40000 1'b1;
+	data_operandB[19] = #60000 1'b0;
+	data_operandB[19] = #40000 1'b1;
+	data_operandB[19] = #60000 1'b0;
+	data_operandB[19] = #20000 1'b1;
+	data_operandB[19] = #20000 1'b0;
+	data_operandB[19] = #60000 1'b1;
+	data_operandB[19] = #40000 1'b0;
+end 
+// data_operandB[ 18 ]
+initial
+begin
+	data_operandB[18] = 1'b1;
+	data_operandB[18] = #120000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #80000 1'b0;
+	data_operandB[18] = #100000 1'b1;
+	data_operandB[18] = #60000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #40000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #60000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #60000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+	data_operandB[18] = #40000 1'b0;
+	data_operandB[18] = #80000 1'b1;
+	data_operandB[18] = #20000 1'b0;
+	data_operandB[18] = #20000 1'b1;
+end 
+// data_operandB[ 17 ]
+initial
+begin
+	data_operandB[17] = 1'b1;
+	data_operandB[17] = #80000 1'b0;
+	data_operandB[17] = #20000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #60000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #140000 1'b0;
+	data_operandB[17] = #80000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #40000 1'b1;
+	data_operandB[17] = #40000 1'b0;
+	data_operandB[17] = #20000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+	data_operandB[17] = #80000 1'b1;
+	data_operandB[17] = #20000 1'b0;
+end 
+// data_operandB[ 16 ]
+initial
+begin
+	data_operandB[16] = 1'b0;
+	data_operandB[16] = #20000 1'b1;
+	data_operandB[16] = #40000 1'b0;
+	data_operandB[16] = #20000 1'b1;
+	data_operandB[16] = #40000 1'b0;
+	data_operandB[16] = #40000 1'b1;
+	data_operandB[16] = #20000 1'b0;
+	data_operandB[16] = #20000 1'b1;
+	data_operandB[16] = #20000 1'b0;
+	data_operandB[16] = #60000 1'b1;
+	data_operandB[16] = #20000 1'b0;
+	data_operandB[16] = #200000 1'b1;
+	data_operandB[16] = #40000 1'b0;
+	data_operandB[16] = #40000 1'b1;
+	data_operandB[16] = #20000 1'b0;
+	data_operandB[16] = #80000 1'b1;
+	data_operandB[16] = #40000 1'b0;
+	data_operandB[16] = #20000 1'b1;
+	data_operandB[16] = #60000 1'b0;
+	data_operandB[16] = #20000 1'b1;
+	data_operandB[16] = #20000 1'b0;
+	data_operandB[16] = #120000 1'b1;
+	data_operandB[16] = #20000 1'b0;
+end 
+// data_operandB[ 15 ]
+initial
+begin
+	data_operandB[15] = 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #40000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #40000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #40000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #40000 1'b0;
+	data_operandB[15] = #40000 1'b1;
+	data_operandB[15] = #60000 1'b0;
+	data_operandB[15] = #40000 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+	data_operandB[15] = #60000 1'b0;
+	data_operandB[15] = #60000 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #40000 1'b1;
+	data_operandB[15] = #20000 1'b0;
+	data_operandB[15] = #40000 1'b1;
+	data_operandB[15] = #40000 1'b0;
+	data_operandB[15] = #60000 1'b1;
+	data_operandB[15] = #60000 1'b0;
+	data_operandB[15] = #20000 1'b1;
+end 
+// data_operandB[ 14 ]
+initial
+begin
+	data_operandB[14] = 1'b1;
+	data_operandB[14] = #40000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+	data_operandB[14] = #40000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #40000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #80000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #60000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+	data_operandB[14] = #100000 1'b1;
+	data_operandB[14] = #100000 1'b0;
+	data_operandB[14] = #40000 1'b1;
+	data_operandB[14] = #40000 1'b0;
+	data_operandB[14] = #40000 1'b1;
+	data_operandB[14] = #40000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+	data_operandB[14] = #20000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+	data_operandB[14] = #60000 1'b1;
+	data_operandB[14] = #20000 1'b0;
+end 
+// data_operandB[ 13 ]
+initial
+begin
+	data_operandB[13] = 1'b1;
+	data_operandB[13] = #40000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #20000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #20000 1'b0;
+	data_operandB[13] = #60000 1'b1;
+	data_operandB[13] = #40000 1'b0;
+	data_operandB[13] = #100000 1'b1;
+	data_operandB[13] = #40000 1'b0;
+	data_operandB[13] = #20000 1'b1;
+	data_operandB[13] = #40000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #20000 1'b0;
+	data_operandB[13] = #20000 1'b1;
+	data_operandB[13] = #40000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #40000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #20000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #20000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+	data_operandB[13] = #60000 1'b0;
+	data_operandB[13] = #20000 1'b1;
+	data_operandB[13] = #20000 1'b0;
+	data_operandB[13] = #40000 1'b1;
+end 
+// data_operandB[ 12 ]
+initial
+begin
+	data_operandB[12] = 1'b0;
+	data_operandB[12] = #60000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #40000 1'b0;
+	data_operandB[12] = #40000 1'b1;
+	data_operandB[12] = #40000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #100000 1'b0;
+	data_operandB[12] = #40000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #40000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #40000 1'b0;
+	data_operandB[12] = #60000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #60000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+	data_operandB[12] = #20000 1'b0;
+	data_operandB[12] = #80000 1'b1;
+	data_operandB[12] = #80000 1'b0;
+	data_operandB[12] = #20000 1'b1;
+end 
+// data_operandB[ 11 ]
+initial
+begin
+	data_operandB[11] = 1'b1;
+	data_operandB[11] = #40000 1'b0;
+	data_operandB[11] = #20000 1'b1;
+	data_operandB[11] = #20000 1'b0;
+	data_operandB[11] = #60000 1'b1;
+	data_operandB[11] = #20000 1'b0;
+	data_operandB[11] = #20000 1'b1;
+	data_operandB[11] = #80000 1'b0;
+	data_operandB[11] = #80000 1'b1;
+	data_operandB[11] = #300000 1'b0;
+	data_operandB[11] = #60000 1'b1;
+	data_operandB[11] = #80000 1'b0;
+	data_operandB[11] = #40000 1'b1;
+	data_operandB[11] = #40000 1'b0;
+	data_operandB[11] = #40000 1'b1;
+	data_operandB[11] = #40000 1'b0;
+	data_operandB[11] = #20000 1'b1;
+end 
+// data_operandB[ 10 ]
+initial
+begin
+	data_operandB[10] = 1'b0;
+	data_operandB[10] = #40000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+	data_operandB[10] = #40000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+	data_operandB[10] = #80000 1'b1;
+	data_operandB[10] = #40000 1'b0;
+	data_operandB[10] = #20000 1'b1;
+	data_operandB[10] = #40000 1'b0;
+	data_operandB[10] = #40000 1'b1;
+	data_operandB[10] = #60000 1'b0;
+	data_operandB[10] = #60000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+	data_operandB[10] = #40000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+	data_operandB[10] = #20000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+	data_operandB[10] = #200000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+	data_operandB[10] = #20000 1'b1;
+	data_operandB[10] = #60000 1'b0;
+	data_operandB[10] = #20000 1'b1;
+	data_operandB[10] = #40000 1'b0;
+	data_operandB[10] = #20000 1'b1;
+	data_operandB[10] = #20000 1'b0;
+end 
+// data_operandB[ 9 ]
+initial
+begin
+	data_operandB[9] = 1'b0;
+	data_operandB[9] = #20000 1'b1;
+	data_operandB[9] = #20000 1'b0;
+	data_operandB[9] = #80000 1'b1;
+	data_operandB[9] = #100000 1'b0;
+	data_operandB[9] = #20000 1'b1;
+	data_operandB[9] = #20000 1'b0;
+	data_operandB[9] = #20000 1'b1;
+	data_operandB[9] = #20000 1'b0;
+	data_operandB[9] = #60000 1'b1;
+	data_operandB[9] = #60000 1'b0;
+	data_operandB[9] = #80000 1'b1;
+	data_operandB[9] = #20000 1'b0;
+	data_operandB[9] = #20000 1'b1;
+	data_operandB[9] = #20000 1'b0;
+	data_operandB[9] = #100000 1'b1;
+	data_operandB[9] = #40000 1'b0;
+	data_operandB[9] = #40000 1'b1;
+	data_operandB[9] = #60000 1'b0;
+	data_operandB[9] = #60000 1'b1;
+	data_operandB[9] = #20000 1'b0;
+	data_operandB[9] = #40000 1'b1;
+	data_operandB[9] = #60000 1'b0;
+end 
+// data_operandB[ 8 ]
+initial
+begin
+	data_operandB[8] = 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #100000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #40000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #60000 1'b1;
+	data_operandB[8] = #100000 1'b0;
+	data_operandB[8] = #40000 1'b1;
+	data_operandB[8] = #40000 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #60000 1'b1;
+	data_operandB[8] = #60000 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #40000 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #60000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #20000 1'b0;
+	data_operandB[8] = #20000 1'b1;
+	data_operandB[8] = #60000 1'b0;
+end 
+// data_operandB[ 7 ]
+initial
+begin
+	data_operandB[7] = 1'b0;
+	data_operandB[7] = #20000 1'b1;
+	data_operandB[7] = #20000 1'b0;
+	data_operandB[7] = #40000 1'b1;
+	data_operandB[7] = #80000 1'b0;
+	data_operandB[7] = #40000 1'b1;
+	data_operandB[7] = #180000 1'b0;
+	data_operandB[7] = #20000 1'b1;
+	data_operandB[7] = #80000 1'b0;
+	data_operandB[7] = #40000 1'b1;
+	data_operandB[7] = #60000 1'b0;
+	data_operandB[7] = #20000 1'b1;
+	data_operandB[7] = #80000 1'b0;
+	data_operandB[7] = #60000 1'b1;
+	data_operandB[7] = #60000 1'b0;
+	data_operandB[7] = #20000 1'b1;
+	data_operandB[7] = #20000 1'b0;
+	data_operandB[7] = #100000 1'b1;
+	data_operandB[7] = #20000 1'b0;
+	data_operandB[7] = #20000 1'b1;
+end 
+// data_operandB[ 6 ]
+initial
+begin
+	data_operandB[6] = 1'b0;
+	data_operandB[6] = #40000 1'b1;
+	data_operandB[6] = #20000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #20000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #60000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #140000 1'b1;
+	data_operandB[6] = #60000 1'b0;
+	data_operandB[6] = #40000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #20000 1'b0;
+	data_operandB[6] = #20000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #60000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #40000 1'b1;
+	data_operandB[6] = #40000 1'b0;
+	data_operandB[6] = #40000 1'b1;
+end 
+// data_operandB[ 5 ]
+initial
+begin
+	data_operandB[5] = 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #60000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #60000 1'b1;
+	data_operandB[5] = #40000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #40000 1'b1;
+	data_operandB[5] = #40000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #40000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #40000 1'b1;
+	data_operandB[5] = #60000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #40000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #40000 1'b0;
+	data_operandB[5] = #40000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #40000 1'b1;
+	data_operandB[5] = #40000 1'b0;
+	data_operandB[5] = #20000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+	data_operandB[5] = #60000 1'b1;
+	data_operandB[5] = #20000 1'b0;
+end 
+// data_operandB[ 4 ]
+initial
+begin
+	data_operandB[4] = 1'b1;
+	data_operandB[4] = #40000 1'b0;
+	data_operandB[4] = #20000 1'b1;
+	data_operandB[4] = #60000 1'b0;
+	data_operandB[4] = #60000 1'b1;
+	data_operandB[4] = #40000 1'b0;
+	data_operandB[4] = #40000 1'b1;
+	data_operandB[4] = #60000 1'b0;
+	data_operandB[4] = #80000 1'b1;
+	data_operandB[4] = #40000 1'b0;
+	data_operandB[4] = #20000 1'b1;
+	data_operandB[4] = #20000 1'b0;
+	data_operandB[4] = #80000 1'b1;
+	data_operandB[4] = #40000 1'b0;
+	data_operandB[4] = #40000 1'b1;
+	data_operandB[4] = #20000 1'b0;
+	data_operandB[4] = #20000 1'b1;
+	data_operandB[4] = #40000 1'b0;
+	data_operandB[4] = #80000 1'b1;
+	data_operandB[4] = #20000 1'b0;
+	data_operandB[4] = #20000 1'b1;
+	data_operandB[4] = #20000 1'b0;
+	data_operandB[4] = #100000 1'b1;
+end 
+// data_operandB[ 3 ]
+initial
+begin
+	data_operandB[3] = 1'b1;
+	data_operandB[3] = #40000 1'b0;
+	data_operandB[3] = #120000 1'b1;
+	data_operandB[3] = #20000 1'b0;
+	data_operandB[3] = #60000 1'b1;
+	data_operandB[3] = #20000 1'b0;
+	data_operandB[3] = #20000 1'b1;
+	data_operandB[3] = #20000 1'b0;
+	data_operandB[3] = #40000 1'b1;
+	data_operandB[3] = #40000 1'b0;
+	data_operandB[3] = #60000 1'b1;
+	data_operandB[3] = #40000 1'b0;
+	data_operandB[3] = #20000 1'b1;
+	data_operandB[3] = #40000 1'b0;
+	data_operandB[3] = #40000 1'b1;
+	data_operandB[3] = #100000 1'b0;
+	data_operandB[3] = #20000 1'b1;
+	data_operandB[3] = #20000 1'b0;
+	data_operandB[3] = #140000 1'b1;
+	data_operandB[3] = #20000 1'b0;
+	data_operandB[3] = #60000 1'b1;
+	data_operandB[3] = #20000 1'b0;
+	data_operandB[3] = #20000 1'b1;
+end 
+// data_operandB[ 2 ]
+initial
+begin
+	data_operandB[2] = 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #40000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #40000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #80000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #40000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #40000 1'b1;
+	data_operandB[2] = #40000 1'b0;
+	data_operandB[2] = #40000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #40000 1'b0;
+	data_operandB[2] = #20000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #100000 1'b1;
+	data_operandB[2] = #20000 1'b0;
+	data_operandB[2] = #100000 1'b1;
+	data_operandB[2] = #40000 1'b0;
+end 
+// data_operandB[ 1 ]
+initial
+begin
+	data_operandB[1] = 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #40000 1'b1;
+	data_operandB[1] = #100000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #80000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #80000 1'b1;
+	data_operandB[1] = #40000 1'b0;
+	data_operandB[1] = #40000 1'b1;
+	data_operandB[1] = #60000 1'b0;
+	data_operandB[1] = #40000 1'b1;
+	data_operandB[1] = #80000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+	data_operandB[1] = #40000 1'b0;
+	data_operandB[1] = #60000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+	data_operandB[1] = #20000 1'b0;
+	data_operandB[1] = #20000 1'b1;
+end 
+// data_operandB[ 0 ]
+initial
+begin
+	data_operandB[0] = 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #40000 1'b0;
+	data_operandB[0] = #40000 1'b1;
+	data_operandB[0] = #100000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #60000 1'b0;
+	data_operandB[0] = #140000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #40000 1'b0;
+	data_operandB[0] = #80000 1'b1;
+	data_operandB[0] = #60000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #40000 1'b0;
+	data_operandB[0] = #40000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+	data_operandB[0] = #20000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+	data_operandB[0] = #40000 1'b1;
+	data_operandB[0] = #20000 1'b0;
+end 
+endmodule
+

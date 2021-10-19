@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/18/2021 00:25:34"
+// Generated on "10/18/2021 13:38:26"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          skeleton
 // 
@@ -33,50 +33,52 @@ module skeleton_vlg_vec_tst();
 reg clock;
 reg reset;
 // wires                                               
+wire [4:0] alucode_test;
+wire [31:0] aluresult_test;
+wire [4:0] ctrl_readRegA_test;
+wire [4:0] ctrl_readRegB_test;
 wire ctrl_writeEnable_test;
-wire [31:0] data_readRegA_test;
 wire [31:0] data_writeReg_test;
 wire dmem_clock;
 wire imem_clock;
+wire [31:0] operandA_test;
+wire [31:0] operandB_test;
 wire [11:0] pc_test;
 wire processor_clock;
 wire [31:0] q_imem_test;
 wire regfile_clock;
-wire [31:0] sign_extension_test;
 
 // assign statements (if any)                          
 skeleton i1 (
 // port map - connection between master ports and signals/registers   
+	.alucode_test(alucode_test),
+	.aluresult_test(aluresult_test),
 	.clock(clock),
+	.ctrl_readRegA_test(ctrl_readRegA_test),
+	.ctrl_readRegB_test(ctrl_readRegB_test),
 	.ctrl_writeEnable_test(ctrl_writeEnable_test),
-	.data_readRegA_test(data_readRegA_test),
 	.data_writeReg_test(data_writeReg_test),
 	.dmem_clock(dmem_clock),
 	.imem_clock(imem_clock),
+	.operandA_test(operandA_test),
+	.operandB_test(operandB_test),
 	.pc_test(pc_test),
 	.processor_clock(processor_clock),
 	.q_imem_test(q_imem_test),
 	.regfile_clock(regfile_clock),
-	.reset(reset),
-	.sign_extension_test(sign_extension_test)
+	.reset(reset)
 );
 initial 
 begin 
-#10000000 $stop;
+#1000000 $stop;
 end 
 
 // clock
-initial
+always
 begin
-	repeat(24)
-	begin
-		clock = 1'b0;
-		clock = #20000 1'b1;
-		# 20000;
-	end
 	clock = 1'b0;
-	clock = #20000 1'b1;
-	clock = #19000 1'b0;
+	clock = #10000 1'b1;
+	#10000;
 end 
 
 // reset

@@ -1,10 +1,10 @@
 |skeleton
-clock => imem_clock.IN2
+clock => clock.IN2
 reset => reset.IN4
 imem_clock << imem_clock.DB_MAX_OUTPUT_PORT_TYPE
 dmem_clock << dmem_clock.DB_MAX_OUTPUT_PORT_TYPE
 processor_clock << processor_clock.DB_MAX_OUTPUT_PORT_TYPE
-regfile_clock << regfile_clock.DB_MAX_OUTPUT_PORT_TYPE
+regfile_clock << clock.DB_MAX_OUTPUT_PORT_TYPE
 data_writeReg_test[0] << data_writeReg[0].DB_MAX_OUTPUT_PORT_TYPE
 data_writeReg_test[1] << data_writeReg[1].DB_MAX_OUTPUT_PORT_TYPE
 data_writeReg_test[2] << data_writeReg[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -181,6 +181,18 @@ ctrl_readRegB_test[1] << ctrl_readRegB[1].DB_MAX_OUTPUT_PORT_TYPE
 ctrl_readRegB_test[2] << ctrl_readRegB[2].DB_MAX_OUTPUT_PORT_TYPE
 ctrl_readRegB_test[3] << ctrl_readRegB[3].DB_MAX_OUTPUT_PORT_TYPE
 ctrl_readRegB_test[4] << ctrl_readRegB[4].DB_MAX_OUTPUT_PORT_TYPE
+pc_test[0] << processor:my_processor.port19
+pc_test[1] << processor:my_processor.port19
+pc_test[2] << processor:my_processor.port19
+pc_test[3] << processor:my_processor.port19
+pc_test[4] << processor:my_processor.port19
+pc_test[5] << processor:my_processor.port19
+pc_test[6] << processor:my_processor.port19
+pc_test[7] << processor:my_processor.port19
+pc_test[8] << processor:my_processor.port19
+pc_test[9] << processor:my_processor.port19
+pc_test[10] << processor:my_processor.port19
+pc_test[11] << processor:my_processor.port19
 
 
 |skeleton|frequency_divider_by2:frediv_1
@@ -5321,6 +5333,18 @@ aluresult_test[28] <= alu:Alu.data_result
 aluresult_test[29] <= alu:Alu.data_result
 aluresult_test[30] <= alu:Alu.data_result
 aluresult_test[31] <= alu:Alu.data_result
+pc_test[0] <= pc_counter:Pc_counter.pc
+pc_test[1] <= pc_counter:Pc_counter.pc
+pc_test[2] <= pc_counter:Pc_counter.pc
+pc_test[3] <= pc_counter:Pc_counter.pc
+pc_test[4] <= pc_counter:Pc_counter.pc
+pc_test[5] <= pc_counter:Pc_counter.pc
+pc_test[6] <= pc_counter:Pc_counter.pc
+pc_test[7] <= pc_counter:Pc_counter.pc
+pc_test[8] <= pc_counter:Pc_counter.pc
+pc_test[9] <= pc_counter:Pc_counter.pc
+pc_test[10] <= pc_counter:Pc_counter.pc
+pc_test[11] <= pc_counter:Pc_counter.pc
 
 
 |skeleton|processor:my_processor|pc_counter:Pc_counter
