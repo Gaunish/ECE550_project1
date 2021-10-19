@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/Softwares/Quartus/CPU/simulation/qsim
 vpc_counter
-Z1 !s110 1634483444
+Z1 !s110 1634507558
 !i10b 1
-!s100 WZf`@B3GR@goDS9nAFWe>3
-I`Z<1D6A38R`Em^]dnY@nb3
+!s100 1ig>HTlH]>Zk?U1G3YmPK3
+I7;WTZFI?3BamYn?:nUVY>2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1634483443
+Z3 dC:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim
+w1634507558
 Z4 8CPU.vo
 Z5 FCPU.vo
 Z6 L0 32
@@ -23,7 +23,7 @@ Z7 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z8 !s108 1634483444.000000
+Z8 !s108 1634507558.000000
 Z9 !s107 CPU.vo|
 Z10 !s90 -work|work|CPU.vo|
 !i113 1
@@ -31,11 +31,11 @@ Z11 o-work work
 vpc_counter_vlg_vec_tst
 R1
 !i10b 1
-!s100 5UKVFA437OzWSQTm:oid23
-IfM?2?iBgLLPEPl]3fokCz0
+!s100 5ICO=>4IEl<ELGmD[E=I51
+IHigOE0SBH;F;B=C_2:Ld53
 R2
-R0
 R3
+w1634507557
 8pc_counter.vwf.vt
 Fpc_counter.vwf.vt
 Z12 L0 30
@@ -48,14 +48,14 @@ R8
 !s90 -work|work|pc_counter.vwf.vt|
 !i113 1
 R11
-vtest
-Z13 !s110 1634445009
+vprocessor
+Z13 !s110 1634508030
 !i10b 1
-!s100 k`6`GG0A`C]Q?[zLYzn3S2
-I]4U4WoKIFzOE91=aKN<nI0
+!s100 ;aRNnH;c_=f@igE4fP3B[0
+II?F]0?m1:3E6m:I?UJGAm3
 R2
-R0
-Z14 w1634445002
+R3
+Z14 w1634508029
 R4
 R5
 R6
@@ -63,19 +63,99 @@ R7
 r1
 !s85 0
 31
-Z15 !s108 1634445009.000000
+Z15 !s108 1634508030.000000
+R9
+R10
+!i113 1
+R11
+vprocessor_vlg_vec_tst
+R13
+!i10b 1
+!s100 eM`CU;HjE?daN;7IliI>^1
+IZFnY[QU>TI_NOK?>S@4Wd2
+R2
+R3
+R14
+8processor.vwf.vt
+Fprocessor.vwf.vt
+R12
+R7
+r1
+!s85 0
+31
+R15
+!s107 processor.vwf.vt|
+!s90 -work|work|processor.vwf.vt|
+!i113 1
+R11
+vskeleton
+Z16 !s110 1634534699
+!i10b 1
+!s100 3O<@Jf7FNm=<PV=<6?iT:0
+IWO1@dnfH<6ClW`aeHXzZQ3
+R2
+R3
+w1634534698
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z17 !s108 1634534699.000000
+R9
+R10
+!i113 1
+R11
+vskeleton_vlg_vec_tst
+R16
+!i10b 1
+!s100 oBbS8?Mz;AzLl2o6T`h]k2
+IF;4W^N3n[FUY<KZ<:=c@n2
+R2
+R3
+w1634534697
+8skeleton.vwf.vt
+Fskeleton.vwf.vt
+R12
+R7
+r1
+!s85 0
+31
+R17
+!s107 skeleton.vwf.vt|
+!s90 -work|work|skeleton.vwf.vt|
+!i113 1
+R11
+vtest
+Z18 !s110 1634445009
+!i10b 1
+!s100 k`6`GG0A`C]Q?[zLYzn3S2
+I]4U4WoKIFzOE91=aKN<nI0
+R2
+R0
+Z19 w1634445002
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z20 !s108 1634445009.000000
 R9
 R10
 !i113 1
 R11
 vtest_vlg_vec_tst
-R13
+R18
 !i10b 1
 !s100 gc<InjbI[Y37m`k3W]M_z3
 IDCm<cbnYIM16;0CVZd1o`0
 R2
 R0
-R14
+R19
 8test.vwf.vt
 Ftest.vwf.vt
 R12
@@ -83,7 +163,7 @@ R7
 r1
 !s85 0
 31
-R15
+R20
 !s107 test.vwf.vt|
 !s90 -work|work|test.vwf.vt|
 !i113 1

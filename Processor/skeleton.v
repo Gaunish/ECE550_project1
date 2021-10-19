@@ -9,7 +9,19 @@
  * inspect which signals the processor tries to assert when.
  */
 
-module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock);
+module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_clock,
+ //Test ports
+ data_writeReg_test,
+ q_imem_test,
+ ctrl_writeEnable_test,
+ operandA_test,
+ operandB_test,
+ alucode_test,
+ aluresult_test,
+ ctrl_readRegA_test,
+ ctrl_readRegB_test
+	
+);
     input clock, reset;
     /* 
         Create four clocks for each module from the original input "clock".
@@ -19,6 +31,7 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         based on proper functioning with this clock.
     */
 	 
+	 //Clock dividingd
 	 wire clk_div2, clk_div4;
 	 frequency_divider_by2 frediv_1(clock,reset,clk_div2);
 	 frequency_divider_by2 frediv_2(clk_div2,reset,clk_div4);
@@ -27,11 +40,28 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 assign processor_clock = ~clk_div4; 
 	 assign dmem_clock = ~clk_div2;
 	 
+	 //Test ports
+	 //-----------------------------------------------------------------------------
+	 output [31:0]data_writeReg_test;
+	 assign data_writeReg_test = data_writeReg;
+	 output [4:0]ctrl_readRegA_test,ctrl_readRegB_test;
+	 assign ctrl_readRegA_test = ctrl_readRegA;
+	 assign ctrl_readRegB_test = ctrl_readRegB;
 	 
 	 
-	 
+	 output [31:0]q_imem_test;
+	 assign q_imem_test = q_imem;
+	 output ctrl_writeEnable_test;
+	 assign ctrl_writeEnable_test = ctrl_writeEnable;
     output imem_clock, dmem_clock, processor_clock, regfile_clock;
-
+	 
+	 //alu testing
+	 output [31:0] operandA_test,operandB_test,aluresult_test;
+	 output [4:0] alucode_test;
+	 //-----------------------------------------------------------------------------
+	
+	 
+	 
     /** IMEM **/
     // Figure out how to generate a Quartus syncram component and commit the generated verilog file.
     // Make sure you configure it correctly!
@@ -99,7 +129,14 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
         ctrl_readRegB,                  // O: Register to read from port B of regfile
         data_writeReg,                  // O: Data to write to for regfile
         data_readRegA,                  // I: Data from port A of regfile
-        data_readRegB                   // I: Data from port B of regfile
+        data_readRegB,                   // I: Data from port B of regfile
+		  
+		 //test
+		 operandA_test,
+		operandB_test,
+		alucode_test,
+		aluresult_test
+		 
     );
 
 endmodule

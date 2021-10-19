@@ -69,7 +69,13 @@ module processor(
     ctrl_readRegB,                  // O: Register to read from port B of regfile
     data_writeReg,                  // O: Data to write to for regfile
     data_readRegA,                  // I: Data from port A of regfile
-    data_readRegB                   // I: Data from port B of regfile
+    data_readRegB,                   // I: Data from port B of regfile
+	 
+	//Test ports
+	operandA_test,
+	operandB_test,
+	alucode_test,
+	aluresult_test
 );
     // Control signals
     input clock, reset;
@@ -91,40 +97,76 @@ module processor(
     input [31:0] data_readRegA, data_readRegB;
 
     /* YOUR CODE STARTS HERE */
+	 // Test ports
+	 // When adding ports to waveform file you can edit this part.
+	 // The naming convention is XXXX_test
+	 //---------------------------------------------
+	 output [31:0] operandA_test,operandB_test,aluresult_test;
+	 output [4:0] alucode_test;
+	 assign operandA_test = data_readRegA;
+	 assign operandB_test = sign_extension;
+	 assign aluresult_test = data_writeReg;
+	 assign alucode_test = q_imem[6:2];
+	 //---------------------------------------------
+
+
+	 //output[11:0] pc_out;
+	 wire [11:0] pc;
+	 //assign pc_out = pc;
 	 
-	 wiren [11:0] pc;
-	 wire [11:0] pc_wire;
-	 assign pc_wire = pc;
 	 pc_counter Pc_counter(
 		.clk(clock),
 		.rst(reset),
-		.pc(pc_wire),
-		.new_pc(pc)
+		.pc(pc)		
 	 );
 	 
-	 assign address_imem[11:0] = pc_wire[11:0];
+	 assign address_imem[11:0] = pc[11:0];
+	
+	//Control port initiation.
+	//Please check that when new control bits are added
+	wire opcode,BR,JP,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB;
+	assign ctrl_writeEnable = Rwe;
+	control Control(q_imem[31:27],BR,JP,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB);
+	
+
+	//Different from lecture note.
+	//Because Rd is in the higher bits[26:22], while in lecture note Rd is in lower bits.
+	//There's no conflicts with instant number so the mux is neglected.
+	 assign ctrl_writeReg[4:0] = q_imem[26:22];//Rd
+	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
+	 assign ctrl_readRegB[4:0] = q_imem[16:12];//Rt
 	 
-	 
-	 assign ctrl_writeReg[4:0] = q_imem[15:11];
-	 assign ctrl_readRegA[4:0] = q_imem[25:21];//Rs
-	 assign ctrl_readRegB[4:0] = q_imem[20:16];//Rt
+	 //The oval sign extension part
+	 wire [31:0]sign_extension;
+	 sign_extension Sign_extension(
+		.in (q_imem[16:0]),
+		.out (sign_extension[31:0])
+	 );
+	 //The mux after sign_extension
+	 wire [31:0]sign_mux_output;
+	 mux_32 Sign_extention_mux_32(
+		.in0(data_readRegB[31:0]),
+		.in1(sign_extension[31:0]),
+		.out(sign_mux_output[31:0]),
+		.sel(ALUinB)
+	 );
 	 
 	 wire alu_isNotEqual,alu_isLessThan,alu_overflow;
-	 
-	 
-	 
 	 wire[31:0] alu_result;
+	 
+	 //Alu part
 	 alu Alu(
-		.data_operandA(data_readRegA),
-		.data_operandB(data_readRegB),
-		.ctrl_ALUopcode(q_imem[5:0]),
-		.ctrl_shiftamt(q_imem[10:6]),
-		.data_result(data_writeReg),
+		.data_operandA(data_readRegA[31:0]),
+		.data_operandB(sign_mux_output[31:0]),
+		.ctrl_ALUopcode(5'b00000),//Assign to 0 right now because only add operation is performed
+		.ctrl_shiftamt(q_imem[11:7]),
+		.data_result(data_writeReg[31:0]),
 		.isNotEqual(alu_isNotEqual),
 		.isLessThan(alu_isLessThan),
 		.overflow(alu_overflow)
 	 );
 	
+
 	 
 	 
 	// pc_counter pc_counter()
