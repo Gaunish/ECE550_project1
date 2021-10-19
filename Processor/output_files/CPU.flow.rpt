@@ -1,5 +1,5 @@
 Flow report for CPU
-Mon Oct 18 13:38:35 2021
+Tue Oct 19 12:23:08 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 18 13:38:35 2021       ;
+; Flow Status                        ; Successful - Tue Oct 19 12:23:08 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; skeleton                                    ;
@@ -110,7 +110,11 @@ agreement for further details.
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4852 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4852 MB             ; 00:00:00                           ;
 ; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4885 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:58     ; --                      ; --                  ; 00:01:18                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4852 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4861 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4852 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4888 MB             ; 00:00:02                           ;
+; Total                     ; 00:01:00     ; --                      ; --                  ; 00:01:21                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,6 +127,10 @@ agreement for further details.
 ; Fitter                    ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; Assembler                 ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
@@ -143,6 +151,10 @@ quartus_eda --read_settings_files=off --write_settings_files=off CPU -c CPU
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
 quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/modelsim/skeleton.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
+quartus_eda --write_settings_files=off --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
 quartus_eda --write_settings_files=off --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
 
