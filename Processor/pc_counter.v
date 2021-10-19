@@ -10,7 +10,7 @@ module pc_counter(clk,rst,pc,new_pc);
 		if(rst)
 			new_pc = 12'h000;
 		else
-			new_pc = pc + 4;
+			adder_4 A1(pc, new_pc);
 			
 	end
 
