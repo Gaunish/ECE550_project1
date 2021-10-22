@@ -134,7 +134,7 @@ module processor(
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire DMwe, Rwe, Rwd, ALUinB, shift, type;
+	wire DMwe, Rwe, Rwd, ALUinB, type;
 	wire [4:0] ALUop;
 	
 	
@@ -142,7 +142,7 @@ module processor(
 	control Control(q_imem[31:27],
 						 q_imem[6:2], 					
 						 DMwe,Rwe,Rwd,
-						 ALUop[4:0],ALUinB, shift);
+						 ALUop[4:0],ALUinB);
 	
 	assign ctrl_writeEnable = Rwe;
 
@@ -151,9 +151,7 @@ module processor(
 	//There's no conflicts with instant number so the mux is neglected.
 	 assign ctrl_writeReg[4:0] = q_imem[26:22];//Rd
 	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
-	 
-	 //change later
-	 assign ctrl_readRegB[4:0] = q_imem[16:12];//Rt
+	 assign ctrl_readRegB[4:0] = (q_imem[31:27] == 5'b00000) ? q_imem[16:12] : 5'bZZZZZ;//Rt
 	 
 	 
 	 //The oval sign extension part
