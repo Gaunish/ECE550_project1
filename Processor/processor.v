@@ -76,7 +76,6 @@ module processor(
 	operandB_test,
 	alucode_test,
 	aluresult_test,
-	
 	pc_test
 );
     // Control signals
@@ -134,17 +133,17 @@ module processor(
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire DMwe, Rwe, Rwd, ALUinB, shift;
+	wire DMwe, Rwe, Rwd, ALUinB, shift, type;
 	wire [4:0] ALUop;
 	
-	assign ctrl_writeEnable = Rwe;
 	
 	//generate the control signals
 	control Control(q_imem[31:27],
 						 q_imem[6:2], 					
 						 DMwe,Rwe,Rwd,
-						 Rdst,ALUop,ALUinB);
+						 ALUop,ALUinB, shift);
 	
+	assign ctrl_writeEnable = Rwe;
 
 	//Different from lecture note.
 	//Because Rd is in the higher bits[26:22], while in lecture note Rd is in lower bits.
@@ -159,6 +158,8 @@ module processor(
 		.in (q_imem[16:0]),
 		.out (sign_extension[31:0])
 	 );
+	 
+
 	 //The mux after sign_extension
 	 wire [31:0]sign_mux_output;
 	 mux_32 Sign_extention_mux_32(
