@@ -12,7 +12,7 @@ input [4:0] alu_in;
 output reg DMwe;
 output reg Rwe;
 output reg Rwd;
-output [4:0] reg ALUop;
+output reg [4:0] ALUop;
 output reg ALUinB;
 
 
@@ -25,9 +25,8 @@ always@(opcode) begin
 		begin
 		 
 		 // decide flags on basis of alu_in (func)
-		 case(alu_in):
-		 begin
-			
+		 case(alu_in)
+	
 			//add insn
 			5'b00000:
 			begin
@@ -88,7 +87,7 @@ always@(opcode) begin
 				ALUinB = 1'bZ;
 			end
 		
-		 end
+		 endcase
 		
 		end
 		
