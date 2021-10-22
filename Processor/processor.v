@@ -118,17 +118,23 @@ module processor(
 	 wire [11:0] pc;
 	 //assign pc_out = pc;
 	 
+	 //Get the address of imem where instruction is stored
 	 pc_counter Pc_counter(
 		.clk(clock),
 		.rst(reset),
 		.pc(pc)		
 	 );
 	 
+	 
+	 //fan-out wire to the output address_imem
 	 assign address_imem[11:0] = pc[11:0];
+	
+	//--------------------------------------------------------------------------------------------
+	
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire opcode,BR,JP,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB;
+	wire DMwe, Rwe, Rwd, ALU;
 	assign ctrl_writeEnable = Rwe;
 	control Control(q_imem[31:27],BR,JP,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB);
 	

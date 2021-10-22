@@ -1,38 +1,140 @@
 module control(opcode,BR,JP,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB);
+
 input [4:0] opcode;
-output reg BR;
-output reg JP;
+input [4:0] alu_in;
+
+// DMwe : data memory write enable
+// Rwe : reg file write enable
+// Rwd : reg file writeback mux
+// ALUop : ALU opcode
+// ALUinB : ALU B mux
+// flags if shift = 1
 output reg DMwe;
 output reg Rwe;
 output reg Rwd;
-output reg Rdst;
-output reg ALUop;
+output [4:0] reg ALUop;
 output reg ALUinB;
+output reg shift;
 
 //assign Rdst = 1'b1;
 always@(opcode) begin
 	case(opcode)
+		
+		//opcode = 00000, R type insn
 		5'b00000:
 		begin
-		 BR = 1'b0;
-       JP = 1'b0;
-       DMwe = 1'b0;
-       Rwd = 1'b0;
-       ALUop = 1'b0;
-       ALUinB = 1'b0;
-		 Rdst = 1'b1;
-		 Rwe = 1'b1;
+		 
+		 // decide flags on basis of alu_in (func)
+		 case(alu_in):
+		 begin
+			
+			//add insn
+			5'b00000:
+			begin
+				DMwe = 1'b0;
+				Rwe = 1'b1;
+				Rwd = 1'b0;
+				ALUop = 5'b00000;
+				ALUinB = 1'b0;
+				shift = 1'b0;
+			end
+			
+			//sub insn
+	    	5'b00001:
+			begin
+				DMwe = 1'b0;
+				Rwe = 1'b1;
+				Rwd = 1'b0;
+				ALUop = 5'b00001;
+				ALUinB = 1'b0;
+				shift = 1'b0;
+			end
+		
+			//and insn
+	    	5'b00010:
+			begin
+				DMwe = 1'b0;
+				Rwe = 1'b1;
+				Rwd = 1'b0;
+				ALUop = 5'b00010;
+				ALUinB = 1'b0;
+				shift = 1'b0;
+			end	
+			
+			//or insn
+	    	5'b00011:
+			begin
+				DMwe = 1'b0;
+				Rwe = 1'b1;
+				Rwd = 1'b0;
+				ALUop = 5'b00011;
+				ALUinB = 1'b0;
+				shift = 1'b0;
+			end	
+			
+			//sll insn
+	    	5'b00100:
+			begin
+				DMwe = 1'b0;
+				Rwe = 1'b1;
+				Rwd = 1'b0;
+				ALUop = 5'b00100;
+				ALUinB = 1'b0;
+				shift = 1'b1;
+			end
+			
+			//sra insn
+	    	5'b00101:
+			begin
+				DMwe = 1'b0;
+				Rwe = 1'b1;
+				Rwd = 1'b0;
+				ALUop = 5'b00101;
+				ALUinB = 1'b0;
+				shift = 1'b1;
+			end
+		
+		 end
+		
 		end
+		
+		//opcode = 00101
+		//I type instruction
+		//addi instruction
 		5'b00101:
 		begin
-		 BR = 1'b0;
-       JP = 1'b0;
-       DMwe = 1'b0;
-  		 Rwd = 1'b0;
- 		 Rdst = 1'b0;
- 		 ALUop = 1'b0;
-		 Rwe = 1'b1;
-		 ALUinB = 1'b1;
+			DMwe = 1'b0;
+			Rwe = 1'b1;
+			Rwd = 1'b0;
+			ALUop = 5'b00000;
+			ALUinB = 1'b1;
+			shift = 1'b0;
+		end
+		
+		//opcode = 00111
+		//I type instruction
+		//sw instruction
+		5'b00111:
+		begin
+			DMwe = 1'b1;
+			Rwe = 1'b0;
+			Rwd = 1'b0;
+			ALUop = 5'b00000;
+			ALUinB = 1'b1;
+			shift = 1'b0;
+		end
+		
+		//opcode = 01000
+		//I type instruction
+		//lw instruction
+		5'b01000:
+		begin
+			DMwe = 1'b0;
+			Rwe = 1'b1;
+			Rwd = 1'b1;
+			ALUop = 5'b00000;
+			ALUinB = 1'b1;
+			shift = 1'b0;
 		end
 endcase
 end
