@@ -134,9 +134,16 @@ module processor(
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire DMwe, Rwe, Rwd, ALU;
+	wire DMwe, Rwe, Rwd, ALUinB, shift;
+	wire [4:0] ALUop;
+	
 	assign ctrl_writeEnable = Rwe;
-	control Control(q_imem[31:27],BR,JP,DMwe,Rwe,Rwd,Rdst,ALUop,ALUinB);
+	
+	//generate the control signals
+	control Control(q_imem[31:27],
+						 q_imem[6:2], 					
+						 DMwe,Rwe,Rwd,
+						 Rdst,ALUop,ALUinB);
 	
 
 	//Different from lecture note.
