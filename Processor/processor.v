@@ -110,8 +110,9 @@ module processor(
 	 assign alucode_test = q_imem[6:2];
 	 output [11:0]pc_test;
 	 assign pc_test = pc;
-	 //---------------------------------------------
-
+	
+	//---------------------------------------------
+		//Stage 1
 
 	 //output[11:0] pc_out;
 	 wire [11:0] pc;
@@ -129,7 +130,7 @@ module processor(
 	 assign address_imem[11:0] = pc[11:0];
 	
 	//--------------------------------------------------------------------------------------------
-	
+		//Stage 2
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
@@ -141,7 +142,7 @@ module processor(
 	control Control(q_imem[31:27],
 						 q_imem[6:2], 					
 						 DMwe,Rwe,Rwd,
-						 ALUop,ALUinB, shift);
+						 ALUop[4:0],ALUinB, shift);
 	
 	assign ctrl_writeEnable = Rwe;
 
@@ -150,7 +151,10 @@ module processor(
 	//There's no conflicts with instant number so the mux is neglected.
 	 assign ctrl_writeReg[4:0] = q_imem[26:22];//Rd
 	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
+	 
+	 //change later
 	 assign ctrl_readRegB[4:0] = q_imem[16:12];//Rt
+	 
 	 
 	 //The oval sign extension part
 	 wire [31:0]sign_extension;
@@ -169,14 +173,20 @@ module processor(
 		.sel(ALUinB)
 	 );
 	 
+	 //--------------------------------------------------------------------------------------------
+		//Stage 3
+	 
+	 //wires keep track of addnl ALU ops (!=, <, overflow)
 	 wire alu_isNotEqual,alu_isLessThan,alu_overflow;
+	 
+	//store the result of ALU
 	 wire[31:0] alu_result;
 	 
 	 //Alu part
 	 alu Alu(
 		.data_operandA(data_readRegA[31:0]),
 		.data_operandB(sign_mux_output[31:0]),
-		.ctrl_ALUopcode(5'b00000),//Assign to 0 right now because only add operation is performed
+		.ctrl_ALUopcode(ALUop),
 		.ctrl_shiftamt(q_imem[11:7]),
 		.data_result(data_writeReg[31:0]),
 		.isNotEqual(alu_isNotEqual),
@@ -184,9 +194,29 @@ module processor(
 		.overflow(alu_overflow)
 	 );
 	
-
+	 //--------------------------------------------------------------------------------------------
+		//Stage 4, 5
 	 
+	 //initiate data memory
+	 assign wren = DMwe;
+	 assign address_dmem[11:0] = data_writeReg[11:0];
+    data[31:0] = data_readRegB[31:0];
 	 
-	// pc_counter pc_counter()
-
+		
+	 //The mux after data memory
+	 wire [31:0]dmem_mux_output;
+	 
+	 mux_32 Sign_extention_mux_32(
+		.in0(data_writeReg[31:0]),
+		.in1(q_dmem[31:0]),
+		.out(dmem_mux_output[31:0]),
+		.sel(Rwd)
+	 );
+	 
+	 //------------------------------------------------------------------------------------------------
+		//Stage 5
+		
+		//write back to reg file
+		assign data_writeReg[31:0] = dmem_mux_output[31:0];
+		
 endmodule
