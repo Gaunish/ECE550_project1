@@ -134,7 +134,7 @@ module processor(
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire DMwe, Rwe, Rwd, ALUinB, type;
+	wire DMwe, Rwe, Rwd, ALUinB;
 	wire [4:0] ALUop;
 	
 	
@@ -186,26 +186,27 @@ module processor(
 		.data_operandB(sign_mux_output[31:0]),
 		.ctrl_ALUopcode(ALUop),
 		.ctrl_shiftamt(q_imem[11:7]),
-		.data_result(data_writeReg[31:0]),
+		.data_result(alu_result[31:0]),
 		.isNotEqual(alu_isNotEqual),
 		.isLessThan(alu_isLessThan),
 		.overflow(alu_overflow)
 	 );
-	
+		
+
 	 //--------------------------------------------------------------------------------------------
 		//Stage 4, 5
 	 
 	 //initiate data memory
 	 assign wren = DMwe;
-	 assign address_dmem[11:0] = data_writeReg[11:0];
-    data[31:0] = data_readRegB[31:0];
+	 assign address_dmem[11:0] = alu_result[11:0];
+    assign data[31:0] = data_readRegB[31:0];
 	 
 		
 	 //The mux after data memory
 	 wire [31:0]dmem_mux_output;
 	 
-	 mux_32 Sign_extention_mux_32(
-		.in0(data_writeReg[31:0]),
+	 mux_32 dmem_mux_32(
+		.in0(alu_result[31:0]),
 		.in1(q_dmem[31:0]),
 		.out(dmem_mux_output[31:0]),
 		.sel(Rwd)
