@@ -77,6 +77,7 @@ module processor(
 	alucode_test,
 	aluresult_test,
 	pc_test
+	
 );
     // Control signals
     input clock, reset;
@@ -105,7 +106,7 @@ module processor(
 	 output [31:0] operandA_test,operandB_test,aluresult_test;
 	 output [4:0] alucode_test;
 	 assign operandA_test = data_readRegA;
-	 assign operandB_test = sign_extension;
+	 assign operandB_test = sign_mux_output;
 	 assign aluresult_test = data_writeReg;
 	 assign alucode_test = q_imem[6:2];
 	 output [11:0]pc_test;
@@ -151,7 +152,7 @@ module processor(
 	//There's no conflicts with instant number so the mux is neglected.
 	 assign ctrl_writeReg[4:0] = q_imem[26:22];//Rd
 	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
-	 assign ctrl_readRegB[4:0] = (q_imem[31:27] == 5'b00000) ? q_imem[16:12] : 5'bZZZZZ;//Rt
+	 assign ctrl_readRegB[4:0] = (q_imem[31:27] == 5'b00000) ? q_imem[16:12] : q_imem[26:22];//Rt
 	 
 	 
 	 //The oval sign extension part

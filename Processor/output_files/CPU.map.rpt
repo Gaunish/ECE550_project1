@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Mon Oct 18 13:37:24 2021
+Sat Oct 23 12:29:44 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -19,19 +19,17 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  11. Registers Removed During Synthesis
  12. General Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated
+ 14. Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated
  15. Source assignments for dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_1eh1:auto_generated
  16. Parameter Settings for User Entity Instance: imem:my_imem|altsyncram:altsyncram_component
  17. Parameter Settings for User Entity Instance: dmem:my_dmem|altsyncram:altsyncram_component
  18. altsyncram Parameter Settings by Entity Instance
  19. Port Connectivity Checks: "processor:my_processor|alu:Alu"
- 20. Port Connectivity Checks: "processor:my_processor|control:Control"
- 21. Port Connectivity Checks: "processor:my_processor"
- 22. Port Connectivity Checks: "dmem:my_dmem"
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
- 26. Analysis & Synthesis Suppressed Messages
+ 20. Port Connectivity Checks: "dmem:my_dmem"
+ 21. Post-Synthesis Netlist Statistics for Top Partition
+ 22. Elapsed Time Per Partition
+ 23. Analysis & Synthesis Messages
+ 24. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -58,16 +56,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 18 13:37:24 2021       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 23 12:29:44 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 2,452                                       ;
-;     Total combinational functions  ; 1,492                                       ;
+; Total logic elements               ; 2,998                                       ;
+;     Total combinational functions  ; 2,038                                       ;
 ;     Dedicated logic registers      ; 1,006                                       ;
 ; Total registers                    ; 1006                                        ;
-; Total pins                         ; 194                                         ;
+; Total pins                         ; 271                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 131,072                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -170,14 +168,14 @@ agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
-;     Processor 4            ;   0.1%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -186,7 +184,7 @@ agreement for further details.
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                      ; Library ;
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
-; add_test.mif                     ; yes             ; User Memory Initialization File  ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/add_test.mif            ;         ;
+; basic_test.mif                   ; yes             ; User Memory Initialization File  ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/basic_test.mif          ;         ;
 ; mux_32.v                         ; yes             ; User Verilog HDL File            ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/mux_32.v                ;         ;
 ; alu.v                            ; yes             ; User Verilog HDL File            ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v                   ;         ;
 ; regfile.v                        ; yes             ; User Verilog HDL File            ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v               ;         ;
@@ -208,42 +206,42 @@ agreement for further details.
 ; altrom.inc                       ; yes             ; Megafunction                     ; d:/softwares/quartus/quartus/libraries/megafunctions/altrom.inc                   ;         ;
 ; altram.inc                       ; yes             ; Megafunction                     ; d:/softwares/quartus/quartus/libraries/megafunctions/altram.inc                   ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                     ; d:/softwares/quartus/quartus/libraries/megafunctions/altdpram.inc                 ;         ;
-; db/altsyncram_mi91.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_mi91.tdf  ;         ;
+; db/altsyncram_fp91.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf  ;         ;
 ; db/altsyncram_1eh1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_1eh1.tdf  ;         ;
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 2,452       ;
-;                                             ;             ;
-; Total combinational functions               ; 1492        ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 1363        ;
-;     -- 3 input functions                    ; 83          ;
-;     -- <=2 input functions                  ; 46          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1450        ;
-;     -- arithmetic mode                      ; 42          ;
-;                                             ;             ;
-; Total registers                             ; 1006        ;
-;     -- Dedicated logic registers            ; 1006        ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 194         ;
-; Total memory bits                           ; 131072      ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 1027        ;
-; Total fan-out                               ; 10618       ;
-; Average fan-out                             ; 3.64        ;
-+---------------------------------------------+-------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                          ;
++---------------------------------------------+----------------------------------------+
+; Resource                                    ; Usage                                  ;
++---------------------------------------------+----------------------------------------+
+; Estimated Total logic elements              ; 2,998                                  ;
+;                                             ;                                        ;
+; Total combinational functions               ; 2038                                   ;
+; Logic element usage by number of LUT inputs ;                                        ;
+;     -- 4 input functions                    ; 1750                                   ;
+;     -- 3 input functions                    ; 237                                    ;
+;     -- <=2 input functions                  ; 51                                     ;
+;                                             ;                                        ;
+; Logic elements by mode                      ;                                        ;
+;     -- normal mode                          ; 1995                                   ;
+;     -- arithmetic mode                      ; 43                                     ;
+;                                             ;                                        ;
+; Total registers                             ; 1006                                   ;
+;     -- Dedicated logic registers            ; 1006                                   ;
+;     -- I/O registers                        ; 0                                      ;
+;                                             ;                                        ;
+; I/O pins                                    ; 271                                    ;
+; Total memory bits                           ; 131072                                 ;
+;                                             ;                                        ;
+; Embedded Multiplier 9-bit elements          ; 0                                      ;
+;                                             ;                                        ;
+; Maximum fan-out node                        ; frequency_divider_by2:frediv_2|out_clk ;
+; Maximum fan-out                             ; 1007                                   ;
+; Total fan-out                               ; 12808                                  ;
+; Average fan-out                             ; 3.54                                   ;
++---------------------------------------------+----------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -251,29 +249,30 @@ agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Entity Name           ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
-; |skeleton                                 ; 1492 (0)          ; 1006 (0)     ; 131072      ; 0            ; 0       ; 0         ; 194  ; 0            ; |skeleton                                                                             ; skeleton              ; work         ;
+; |skeleton                                 ; 2038 (0)          ; 1006 (0)     ; 131072      ; 0            ; 0       ; 0         ; 271  ; 0            ; |skeleton                                                                             ; skeleton              ; work         ;
 ;    |frequency_divider_by2:frediv_1|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider_by2:frediv_1                                              ; frequency_divider_by2 ; work         ;
 ;    |frequency_divider_by2:frediv_2|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider_by2:frediv_2                                              ; frequency_divider_by2 ; work         ;
 ;    |imem:my_imem|                         ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem                                                                ; imem                  ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component                                ; altsyncram            ; work         ;
-;          |altsyncram_mi91:auto_generated| ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated ; altsyncram_mi91       ; work         ;
-;    |processor:my_processor|               ; 736 (0)           ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor                                                      ; processor             ; work         ;
-;       |alu:Alu|                           ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|alu:Alu                                              ; alu                   ; work         ;
-;       |control:Control|                   ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|control:Control                                      ; control               ; work         ;
-;       |mux_32:Sign_extention_mux_32|      ; 688 (688)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|mux_32:Sign_extention_mux_32                         ; mux_32                ; work         ;
+;          |altsyncram_fp91:auto_generated| ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated ; altsyncram_fp91       ; work         ;
+;    |processor:my_processor|               ; 616 (7)           ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor                                                      ; processor             ; work         ;
+;       |alu:Alu|                           ; 425 (425)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|alu:Alu                                              ; alu                   ; work         ;
+;       |control:Control|                   ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|control:Control                                      ; control               ; work         ;
+;       |mux_32:Sign_extention_mux_32|      ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|mux_32:Sign_extention_mux_32                         ; mux_32                ; work         ;
+;       |mux_32:dmem_mux_32|                ; 119 (119)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|mux_32:dmem_mux_32                                   ; mux_32                ; work         ;
 ;       |pc_counter:Pc_counter|             ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc_counter:Pc_counter                                ; pc_counter            ; work         ;
-;    |regfile:my_regfile|                   ; 754 (754)         ; 992 (992)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|regfile:my_regfile                                                          ; regfile               ; work         ;
+;    |regfile:my_regfile|                   ; 1420 (1420)       ; 992 (992)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|regfile:my_regfile                                                          ; regfile               ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                         ;
-+----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+--------------+
-; Name                                                                                   ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF          ;
-+----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+--------------+
-; imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 4096         ; 32           ; --           ; --           ; 131072 ; add_test.mif ;
-+----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+----------------+
+; Name                                                                                   ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF            ;
++----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+----------------+
+; imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 4096         ; 32           ; --           ; --           ; 131072 ; basic_test.mif ;
++----------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------+----------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -286,14 +285,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------+-----------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                           ;
-+----------------------------------------------------+-------------------------------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal                             ; Free of Timing Hazards ;
-+----------------------------------------------------+-------------------------------------------------+------------------------+
-; processor:my_processor|control:Control|ALUinB      ; processor:my_processor|control:Control|WideNor0 ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                                                 ;                        ;
-+----------------------------------------------------+-------------------------------------------------+------------------------+
++---------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                             ;
++-----------------------------------------------------+--------------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                              ; Free of Timing Hazards ;
++-----------------------------------------------------+--------------------------------------------------+------------------------+
+; processor:my_processor|control:Control|Rwd$latch    ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; processor:my_processor|control:Control|ALUop[0]     ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; processor:my_processor|control:Control|ALUop[2]     ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; processor:my_processor|control:Control|ALUop[1]     ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; processor:my_processor|control:Control|ALUinB$latch ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; processor:my_processor|control:Control|Rwe          ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; processor:my_processor|control:Control|DMwe         ; processor:my_processor|control:Control|Selector7 ; yes                    ;
+; Number of user-specified and inferred latches = 7   ;                                                  ;                        ;
++-----------------------------------------------------+--------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -302,14 +307,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------+---------------------------------------------+
 ; Register name                          ; Reason for Removal                          ;
 +----------------------------------------+---------------------------------------------+
-; regfile:my_regfile|registers[0][0]     ; Stuck at GND due to stuck port clock_enable ;
-; regfile:my_regfile|registers[0][1]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][2]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][3]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][4]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][5]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][6]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][7]     ; Stuck at GND due to stuck port clock_enable ;
+; regfile:my_regfile|registers[0][0]     ; Stuck at GND due to stuck port clock_enable ;
+; regfile:my_regfile|registers[0][1]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][8]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][9]     ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][10]    ; Stuck at GND due to stuck port clock_enable ;
@@ -353,19 +358,28 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |skeleton|regfile:my_regfile|Mux19                                    ;
-; 33:1               ; 15 bits   ; 330 LEs       ; 330 LEs              ; 0 LEs                  ; No         ; |skeleton|processor:my_processor|mux_32:Sign_extention_mux_32|out[18] ;
-; 33:1               ; 17 bits   ; 374 LEs       ; 374 LEs              ; 0 LEs                  ; No         ; |skeleton|processor:my_processor|mux_32:Sign_extention_mux_32|out[1]  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |skeleton|processor:my_processor|alu:Alu|Add0               ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 64 LEs               ; 96 LEs                 ; No         ; |skeleton|processor:my_processor|alu:Alu|Add0               ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |skeleton|regfile:my_regfile|Mux22                          ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |skeleton|regfile:my_regfile|Mux32                          ;
+; 11:1               ; 4 bits    ; 28 LEs        ; 16 LEs               ; 12 LEs                 ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector20         ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |skeleton|processor:my_processor|mux_32:dmem_mux_32|out[20] ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector24         ;
+; 12:1               ; 4 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; No         ; |skeleton|processor:my_processor|mux_32:dmem_mux_32|out[14] ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:my_processor|mux_32:dmem_mux_32|out[24] ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector28         ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:my_processor|mux_32:dmem_mux_32|out[28] ;
+; 14:1               ; 2 bits    ; 18 LEs        ; 12 LEs               ; 6 LEs                  ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector31         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated ;
+; Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -425,7 +439,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; INIT_FILE                          ; add_test.mif         ; Untyped                       ;
+; INIT_FILE                          ; basic_test.mif       ; Untyped                       ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                       ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Untyped                       ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                       ;
@@ -438,7 +452,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_mi91      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_fp91      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -535,41 +549,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|alu:Alu"                                                               ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port           ; Type   ; Severity ; Details                                                                             ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-; ctrl_ALUopcode ; Input  ; Info     ; Stuck at GND                                                                        ;
-; isNotEqual     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; isLessThan     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; overflow       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor|control:Control"                                              ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; BR    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; JP    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; DMwe  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Rwd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; Rdst  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; ALUop ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:my_processor"                                                                     ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; address_dmem ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; data         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; wren         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:my_processor|alu:Alu"                                                           ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; isNotEqual ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; isLessThan ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; overflow   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -589,26 +577,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 194                         ;
+; boundary_port         ; 271                         ;
 ; cycloneiii_ff         ; 1006                        ;
 ;     ENA CLR           ; 992                         ;
 ;     SCLR              ; 12                          ;
 ;     plain             ; 2                           ;
-; cycloneiii_io_obuf    ; 32                          ;
-; cycloneiii_lcell_comb ; 1496                        ;
-;     arith             ; 42                          ;
-;         2 data inputs ; 11                          ;
+; cycloneiii_io_obuf    ; 64                          ;
+; cycloneiii_lcell_comb ; 2039                        ;
+;     arith             ; 43                          ;
+;         2 data inputs ; 12                          ;
 ;         3 data inputs ; 31                          ;
-;     normal            ; 1454                        ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 34                          ;
-;         3 data inputs ; 52                          ;
-;         4 data inputs ; 1363                        ;
+;     normal            ; 1996                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 38                          ;
+;         3 data inputs ; 206                         ;
+;         4 data inputs ; 1750                        ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 10.10                       ;
-; Average LUT depth     ; 7.04                        ;
+; Max LUT depth         ; 14.90                       ;
+; Average LUT depth     ; 12.07                       ;
 +-----------------------+-----------------------------+
 
 
@@ -617,7 +605,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -627,7 +615,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Oct 18 13:37:14 2021
+    Info: Processing started: Sat Oct 23 12:29:30 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (125092): Tcl Script File test.qip not found
     Info (125063): set_global_assignment -name QIP_FILE test.qip
@@ -660,15 +648,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extension.v
     Info (12023): Found entity 1: sign_extension File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/sign_extension.v Line: 1
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Info (12128): Elaborating entity "frequency_divider_by2" for hierarchy "frequency_divider_by2:frediv_1" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 37
-Info (12128): Elaborating entity "imem" for hierarchy "imem:my_imem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 77
+Info (12128): Elaborating entity "frequency_divider_by2" for hierarchy "frequency_divider_by2:frediv_1" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 42
+Info (12128): Elaborating entity "imem" for hierarchy "imem:my_imem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 96
 Info (12128): Elaborating entity "altsyncram" for hierarchy "imem:my_imem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 82
 Info (12130): Elaborated megafunction instantiation "imem:my_imem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 82
 Info (12133): Instantiated megafunction "imem:my_imem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/imem.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "add_test.mif"
+    Info (12134): Parameter "init_file" = "basic_test.mif"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -679,10 +667,10 @@ Info (12133): Instantiated megafunction "imem:my_imem|altsyncram:altsyncram_comp
     Info (12134): Parameter "widthad_a" = "12"
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mi91.tdf
-    Info (12023): Found entity 1: altsyncram_mi91 File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_mi91.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_mi91" for hierarchy "imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated" File: d:/softwares/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 92
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fp91.tdf
+    Info (12023): Found entity 1: altsyncram_fp91 File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_fp91" for hierarchy "imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated" File: d:/softwares/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 111
 Info (12128): Elaborating entity "altsyncram" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 86
 Info (12130): Elaborated megafunction instantiation "dmem:my_dmem|altsyncram:altsyncram_component" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 86
 Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/dmem.v Line: 86
@@ -704,34 +692,31 @@ Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_comp
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_1eh1.tdf
     Info (12023): Found entity 1: altsyncram_1eh1 File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_1eh1.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_1eh1" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_1eh1:auto_generated" File: d:/softwares/quartus/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 110
-Info (12128): Elaborating entity "processor" for hierarchy "processor:my_processor" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 144
-Warning (10034): Output port "address_dmem" at processor.v(90) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 90
-Warning (10034): Output port "data" at processor.v(91) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 91
-Warning (10034): Output port "wren" at processor.v(92) has no driver File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 92
-Info (12128): Elaborating entity "pc_counter" for hierarchy "processor:my_processor|pc_counter:Pc_counter" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 125
+Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 129
+Info (12128): Elaborating entity "processor" for hierarchy "processor:my_processor" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 163
+Info (12128): Elaborating entity "pc_counter" for hierarchy "processor:my_processor|pc_counter:Pc_counter" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 127
 Warning (10230): Verilog HDL assignment warning at pc_counter.v(13): truncated value with size 32 to match size of target (12) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/pc_counter.v Line: 13
-Info (12128): Elaborating entity "control" for hierarchy "processor:my_processor|control:Control" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 133
-Warning (10270): Verilog HDL Case Statement warning at control.v(14): incomplete case statement has no default case item File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 14
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "BR", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "JP", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "DMwe", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "Rwd", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "ALUop", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "ALUinB", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "Rdst", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Warning (10240): Verilog HDL Always Construct warning at control.v(13): inferring latch(es) for variable "Rwe", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "Rwe" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "Rdst" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "ALUinB" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "ALUop" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "Rwd" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "DMwe" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "JP" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (10041): Inferred latch for "BR" at control.v(13) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
-Info (12128): Elaborating entity "sign_extension" for hierarchy "processor:my_processor|sign_extension:Sign_extension" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 148
-Info (12128): Elaborating entity "mux_32" for hierarchy "processor:my_processor|mux_32:Sign_extention_mux_32" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 156
-Info (12128): Elaborating entity "alu" for hierarchy "processor:my_processor|alu:Alu" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 171
+Info (12128): Elaborating entity "control" for hierarchy "processor:my_processor|control:Control" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 146
+Warning (10235): Verilog HDL Always Construct warning at control.v(28): variable "alu_in" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 28
+Warning (10270): Verilog HDL Case Statement warning at control.v(28): incomplete case statement has no default case item File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 28
+Warning (10270): Verilog HDL Case Statement warning at control.v(21): incomplete case statement has no default case item File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 21
+Warning (10240): Verilog HDL Always Construct warning at control.v(20): inferring latch(es) for variable "DMwe", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at control.v(20): inferring latch(es) for variable "Rwe", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at control.v(20): inferring latch(es) for variable "Rwd", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at control.v(20): inferring latch(es) for variable "ALUop", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Warning (10240): Verilog HDL Always Construct warning at control.v(20): inferring latch(es) for variable "ALUinB", which holds its previous value in one or more paths through the always construct File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "ALUinB" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "ALUop[0]" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "ALUop[1]" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "ALUop[2]" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "ALUop[3]" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "ALUop[4]" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "Rwd" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "Rwe" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (10041): Inferred latch for "DMwe" at control.v(20) File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+Info (12128): Elaborating entity "sign_extension" for hierarchy "processor:my_processor|sign_extension:Sign_extension" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 163
+Info (12128): Elaborating entity "mux_32" for hierarchy "processor:my_processor|mux_32:Sign_extention_mux_32" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 173
+Info (12128): Elaborating entity "alu" for hierarchy "processor:my_processor|alu:Alu" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/processor.v Line: 194
 Warning (10270): Verilog HDL Case Statement warning at alu.v(25): incomplete case statement has no default case item File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v Line: 25
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
@@ -768,104 +753,134 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_1eh1:auto_generated|q_a[30]" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_1eh1.tdf Line: 787
         Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_1eh1:auto_generated|q_a[31]" File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_1eh1.tdf Line: 812
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[31]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[30]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[29]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[28]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[27]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[26]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[25]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[24]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[23]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[22]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[21]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[20]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[19]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[18]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[17]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[16]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[15]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[14]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[13]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[12]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[11]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[10]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[9]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[8]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[7]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[6]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[5]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[4]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[3]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[2]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[1]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegB[0]" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13049): Converted tri-state buffer "processor:my_processor|control:Control|ALUinB" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 16
+    Warning (13049): Converted tri-state buffer "processor:my_processor|control:Control|Rwd" feeding internal logic into a wire File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 14
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[0]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[1]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[2]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[3]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[4]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[5]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[6]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[7]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[8]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[9]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[10]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[11]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[12]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[13]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[14]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[15]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[16]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[17]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[18]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[19]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[20]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[21]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[22]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[23]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[24]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[25]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[26]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[27]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[28]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[29]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[30]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[31]" to the node "processor:my_processor|alu:Alu|Add0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
-Warning (13012): Latch processor:my_processor|control:Control|ALUinB has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 10
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_mi91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_mi91.tdf Line: 32
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[1]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[2]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[3]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[0]" to the node "processor:my_processor|alu:Alu|ShiftLeft0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[4]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[5]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[6]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[7]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[8]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[9]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[10]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[11]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[12]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[13]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[14]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[15]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[16]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[17]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[18]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[19]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[20]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[21]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[22]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[23]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[24]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[25]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[26]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[27]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[28]" to the node "processor:my_processor|alu:Alu|ShiftRight0" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[29]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[30]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegA[31]" to the node "processor:my_processor|alu:Alu|inner_result" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[0]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[0]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[1]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[1]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[2]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[2]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[3]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[3]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[4]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[4]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[5]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[5]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[6]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[6]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[7]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[7]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[8]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[8]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[9]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[9]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[10]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[10]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[11]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[11]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[12]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[12]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[13]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[13]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[14]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[14]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[15]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[15]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[16]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[16]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[17]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[17]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[18]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[18]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[19]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[19]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[20]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[20]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[21]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[21]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[22]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[22]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[23]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[23]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[24]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[24]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[25]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[25]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[26]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[26]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[27]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[27]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[28]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[28]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[29]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[29]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[30]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[30]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+    Warning (13047): Converted the fan-out from the tri-state buffer "regfile:my_regfile|data_readRegB[31]" to the node "processor:my_processor|mux_32:Sign_extention_mux_32|out[31]" into an OR gate File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/regfile.v Line: 9
+Warning (13012): Latch processor:my_processor|control:Control|Rwd$latch has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
+Warning (13012): Latch processor:my_processor|control:Control|ALUop[0] has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
+Warning (13012): Latch processor:my_processor|control:Control|ALUop[2] has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
+Warning (13012): Latch processor:my_processor|control:Control|ALUop[1] has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[3] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
+Warning (13012): Latch processor:my_processor|control:Control|ALUinB$latch has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 20
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
+Warning (13012): Latch processor:my_processor|control:Control|Rwe has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 13
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
+Warning (13012): Latch processor:my_processor|control:Control|DMwe has unsafe behavior File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/control.v Line: 12
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal imem:my_imem|altsyncram:altsyncram_component|altsyncram_fp91:auto_generated|q_a[27] File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/db/altsyncram_fp91.tdf Line: 32
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ctrl_writeEnable_test" is stuck at VCC File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 55
-    Warning (13410): Pin "operandB_test[16]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[17]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[18]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[19]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[20]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[21]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[22]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[23]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[24]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[25]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[26]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[27]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[28]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[29]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
-    Warning (13410): Pin "operandB_test[30]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 60
+    Warning (13410): Pin "q_dmem_test[0]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[1]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[2]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[3]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[4]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[5]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[6]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[7]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[8]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[9]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[10]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[11]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[12]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[13]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[14]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[15]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[16]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[17]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[18]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[19]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[20]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[21]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[22]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[23]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[24]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[25]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[26]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[27]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[28]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[29]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[30]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
+    Warning (13410): Pin "q_dmem_test[31]" is stuck at GND File: C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.v Line: 79
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2710 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3333 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 192 output pins
-    Info (21061): Implemented 2484 logic cells
+    Info (21059): Implemented 269 output pins
+    Info (21061): Implemented 3030 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 135 warnings
-    Info: Peak virtual memory: 5003 megabytes
-    Info: Processing ended: Mon Oct 18 13:37:24 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 161 warnings
+    Info: Peak virtual memory: 5025 megabytes
+    Info: Processing ended: Sat Oct 23 12:29:44 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+
