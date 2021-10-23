@@ -276,6 +276,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "ctrl_writeEnable_test",
+					"strict" : false
+				},
+				{
 					"name" : "operandA_test[0]",
 					"strict" : false
 				},
@@ -465,6 +469,66 @@
 				},
 				{
 					"name" : "operandB_test[15]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[16]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[17]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[18]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[19]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[20]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[21]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[22]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[23]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[24]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[25]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[26]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[27]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[28]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[29]",
+					"strict" : false
+				},
+				{
+					"name" : "operandB_test[30]",
 					"strict" : false
 				},
 				{
@@ -705,6 +769,186 @@
 				},
 				{
 					"name" : "pc_test[11]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[0]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[1]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[2]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[3]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[4]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[5]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[6]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[7]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[8]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[9]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[10]",
+					"strict" : false
+				},
+				{
+					"name" : "address_dmem_test[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[16]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[17]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[18]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[19]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[20]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[21]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[22]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[23]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[24]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[25]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[26]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[27]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[28]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[29]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[30]",
+					"strict" : false
+				},
+				{
+					"name" : "dmem_data_test[31]",
+					"strict" : false
+				},
+				{
+					"name" : "wren_test",
 					"strict" : false
 				},
 				{

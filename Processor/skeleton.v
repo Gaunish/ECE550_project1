@@ -20,7 +20,12 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
  aluresult_test,
  ctrl_readRegA_test,
  ctrl_readRegB_test,
- pc_test
+ pc_test,
+ q_dmem_test,
+ address_dmem_test,
+ dmem_data_test,
+ wren_test
+ 
 	
 );
     input clock, reset;
@@ -36,10 +41,15 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 wire clk_div2, clk_div4;
 	 frequency_divider_by2 frediv_1(clock,reset,clk_div2);
 	 frequency_divider_by2 frediv_2(clk_div2,reset,clk_div4);
-	 assign imem_clock = ~clock;
-	 assign regfile_clock = clock;
+//	 assign imem_clock = ~clock;
+//	 assign regfile_clock = clock;
+//	 assign processor_clock = clk_div4; 
+//	 assign dmem_clock = ~clk_div2;
+//	 
+	 assign imem_clock = clock;
+	 assign regfile_clock = processor_clock;
 	 assign processor_clock = clk_div4; 
-	 assign dmem_clock = ~clk_div2;
+	 assign dmem_clock = clk_div2;
 	 
 	 //Test ports
 	 //-----------------------------------------------------------------------------
@@ -61,6 +71,15 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 output [4:0] alucode_test;
 	 
 	 output [11:0]pc_test;
+	 
+	 output [11:0] address_dmem_test;
+	 assign address_dmem_test = address_dmem;
+    output [31:0] dmem_data_test;
+    assign dmem_data_test = data;
+    output [31:0] q_dmem_test;
+	 assign q_dmem_test = q_dmem;
+	 output wren_test;
+	 assign wren_test = wren;
 	 //-----------------------------------------------------------------------------
 	
 	 
