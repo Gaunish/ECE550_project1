@@ -41,16 +41,16 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 	 wire clk_div2, clk_div4, clk_div8;
 	 frequency_divider_by2 frediv_1(clock,reset,clk_div2);
 	 frequency_divider_by2 frediv_2(clk_div2,reset,clk_div4);
-	 assign imem_clock = ~clock;
-	 assign regfile_clock = clock;
-	 assign processor_clock = clk_div8; 
-	 assign dmem_clock = ~clk_div2;
-	 
-	 frequency_divider_by2 frediv_3(clk_div4,reset,clk_div8);
-//	 assign imem_clock = clock;
-//	 assign regfile_clock = processor_clock;
+//	 assign imem_clock = ~clock;
+//	 assign regfile_clock = clock;
 //	 assign processor_clock = clk_div4; 
-//	 assign dmem_clock = clk_div2;
+//	 assign dmem_clock = ~clk_div2;
+//	 
+//	 frequency_divider_by2 frediv_3(clk_div4,reset,clk_div8);
+	 assign imem_clock = clock;
+	 assign regfile_clock = processor_clock;
+	 assign processor_clock = clk_div4; 
+	 assign dmem_clock = clk_div2;
 	 
 	 //Test ports
 	 //-----------------------------------------------------------------------------
@@ -104,11 +104,11 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
     wire wren;
     wire [31:0] q_dmem;
     dmem my_dmem(
-        .address    (/* 12-bit wire */),       // address of data
+        .address    (address_dmem),       // address of data
         .clock      (dmem_clock),                  // may need to invert the clock
-        .data	    (/* 32-bit data in */),    // data you want to write
-        .wren	    (/* 1-bit signal */),      // write enable
-        .q          (/* 32-bit data out */)    // data from dmem
+        .data	    (data),    // data you want to write
+        .wren	    (wren),      // write enable
+        .q          (q_dmem)    // data from dmem
     );
 
     /** REGFILE **/
