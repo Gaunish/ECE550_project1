@@ -23,5 +23,8 @@ sw $20, 2($0)			# store 2 into address 2
 addi $27, $0, 456		# r27 = 456 
 sw $1, 0($27)			# store 65535 into address 456
 lw $28, 1($0)			# load 1 from address 1 into r28
+addi $28,$0,5			# r28 = 5
 lw $29, 2($0)			# load 2 from address 2 into r29
+add $29,$0,$28			# r29 = r28 = 5
 lw $19, 0($27)			# load 65535 from address 456 into r19
+add $1, $19, $28		# r1 = 65535 + 5 

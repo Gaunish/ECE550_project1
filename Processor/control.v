@@ -17,7 +17,7 @@ output reg ALUinB;
 
 
 //assign Rdst = 1'b1;
-always@(opcode) begin
+always@(opcode,alu_in) begin
 	case(opcode)
 		
 		//opcode = 00000, R type insn
