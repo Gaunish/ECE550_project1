@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/modelsim
+valu
+Z1 !s110 1635043325
+!i10b 1
+!s100 CM2POFHhm`MRQRPIcjMQG0
+IdoHJV`LE<GJzhd?H2IWo:2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1634666092
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v
+L0 1
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z5 !s108 1635043325.000000
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Processor|C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/alu.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Processor
+vmux_32
+R1
+!i10b 1
+!s100 GU7A6ElkHGnJBEC3>F9BB3
+IPgO5>mAjiE1R__2:1Z5@n3
+R2
+R0
+R3
+8C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/mux_32.v
+FC:/Users/86156/Documents/GitHub/ECE550_project1/Processor/mux_32.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/mux_32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86156/Documents/GitHub/ECE550_project1/Processor|C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/mux_32.v|
+!i113 1
+R6
+R7
