@@ -1,5 +1,5 @@
 Flow report for CPU
-Sat Oct 23 23:50:31 2021
+Sun Oct 24 12:03:32 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Oct 23 23:50:31 2021       ;
+; Flow Status                        ; Successful - Sun Oct 24 12:03:32 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2,343 / 114,480 ( 2 % )                     ;
-;     Total combinational functions  ; 2,120 / 114,480 ( 2 % )                     ;
+; Total logic elements               ; 2,313 / 114,480 ( 2 % )                     ;
+;     Total combinational functions  ; 2,097 / 114,480 ( 2 % )                     ;
 ;     Dedicated logic registers      ; 1,006 / 114,480 ( < 1 % )                   ;
 ; Total registers                    ; 1006                                        ;
 ; Total pins                         ; 271 / 529 ( 51 % )                          ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/23/2021 23:45:37 ;
+; Start date & time ; 10/24/2021 12:00:13 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CPU                 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110427378324588.163504713745000       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110427378324588.163509121316116       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                  ; --            ; --          ; eda_simulation ;
@@ -100,14 +100,16 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 5014 MB             ; 00:00:20                           ;
-; Fitter                    ; 00:02:39     ; 1.0                     ; 5993 MB             ; 00:02:55                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4898 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.1                     ; 5107 MB             ; 00:00:09                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4897 MB             ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 5029 MB             ; 00:00:19                           ;
+; Fitter                    ; 00:02:16     ; 1.0                     ; 6000 MB             ; 00:02:32                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4901 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.2                     ; 5115 MB             ; 00:00:06                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4898 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4855 MB             ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4867 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4854 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4895 MB             ; 00:00:02                           ;
-; Total                     ; 00:03:06     ; --                      ; --                  ; 00:03:32                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4897 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:40     ; --                      ; --                  ; 00:03:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,6 +125,8 @@ agreement for further details.
 ; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-OHF94TJ4  ; Windows 8 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -134,6 +138,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off CPU -c CPU
 quartus_asm --read_settings_files=off --write_settings_files=off CPU -c CPU
 quartus_sta CPU -c CPU
 quartus_eda --read_settings_files=off --write_settings_files=off CPU -c CPU
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/skeleton.vwf --testbench_file=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/skeleton.vwf.vt
 quartus_eda --write_settings_files=off --functional=off --flatten_buses=off --timescale=1ps --simulation=on --tool=modelsim_oem --format=verilog --output_directory=C:/Users/86156/Documents/GitHub/ECE550_project1/Processor/simulation/qsim/ CPU -c CPU
 
