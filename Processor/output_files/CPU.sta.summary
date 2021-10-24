@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'frequency_divider_by2:frediv_2|out_clk'
+Slack : -14.035
+TNS   : -12939.336
+
+Type  : Slow 1200mV 85C Model Setup 'frequency_divider_by2:frediv_1|out_clk'
+Slack : -11.593
+TNS   : -451.108
+
+Type  : Slow 1200mV 85C Model Setup 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : -6.220
+TNS   : -36.047
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -2.204
+TNS   : -83.050
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.456
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'frequency_divider_by2:frediv_2|out_clk'
+Slack : 0.463
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'frequency_divider_by2:frediv_1|out_clk'
+Slack : 0.823
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -133.549
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_divider_by2:frediv_1|out_clk'
+Slack : -2.693
+TNS   : -216.725
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'frequency_divider_by2:frediv_2|out_clk'
+Slack : -1.285
+TNS   : -1290.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'frequency_divider_by2:frediv_2|out_clk'
+Slack : -12.920
+TNS   : -11879.826
+
+Type  : Slow 1200mV 0C Model Setup 'frequency_divider_by2:frediv_1|out_clk'
+Slack : -10.587
+TNS   : -409.292
+
+Type  : Slow 1200mV 0C Model Setup 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : -5.908
+TNS   : -34.055
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -1.907
+TNS   : -71.048
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'frequency_divider_by2:frediv_2|out_clk'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'frequency_divider_by2:frediv_1|out_clk'
+Slack : 0.768
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : 0.834
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -131.437
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_divider_by2:frediv_1|out_clk'
+Slack : -2.649
+TNS   : -213.205
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'frequency_divider_by2:frediv_2|out_clk'
+Slack : -1.285
+TNS   : -1290.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'frequency_divider_by2:frediv_2|out_clk'
+Slack : -6.850
+TNS   : -6312.912
+
+Type  : Fast 1200mV 0C Model Setup 'frequency_divider_by2:frediv_1|out_clk'
+Slack : -5.733
+TNS   : -196.414
+
+Type  : Fast 1200mV 0C Model Setup 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : -3.156
+TNS   : -17.599
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -0.324
+TNS   : -10.631
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.068
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'frequency_divider_by2:frediv_2|out_clk'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : 0.287
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'frequency_divider_by2:frediv_1|out_clk'
+Slack : 0.449
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -56.546
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_divider_by2:frediv_2|out_clk'
+Slack : -1.000
+TNS   : -1004.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'frequency_divider_by2:frediv_1|out_clk'
+Slack : -1.000
+TNS   : -81.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'imem:my_imem|altsyncram:altsyncram_component|altsyncram_pq91:auto_generated|q_a[27]'
+Slack : 0.183
+TNS   : 0.000
+
+------------------------------------------------------------
