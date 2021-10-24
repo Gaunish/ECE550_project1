@@ -216,7 +216,9 @@ module processor(
 	 //------------------------------------------------------------------------------------------------
 		//Stage 5
 		
+		
 		//write back to reg file
 		assign data_writeReg[31:0] = dmem_mux_output[31:0];
+		
 		
 endmodule

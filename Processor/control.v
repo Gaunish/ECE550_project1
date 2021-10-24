@@ -110,7 +110,7 @@ always@(opcode) begin
 		begin
 			DMwe = 1'b1;
 			Rwe = 1'b0;
-			Rwd = 1'bZ;
+			Rwd = 1'b0;
 			ALUop = 5'b00000;
 			ALUinB = 1'b1;
 		end
