@@ -2,25 +2,25 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 12:03:32 on Oct 24,2021
+# Start time: 23:44:44 on Oct 26,2021
 # vlog -work work CPU.vo 
 # -- Compiling module skeleton
 # 
 # Top level modules:
 # 	skeleton
-# End time: 12:03:33 on Oct 24,2021, Elapsed time: 0:00:01
+# End time: 23:44:44 on Oct 26,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 12:03:33 on Oct 24,2021
+# Start time: 23:44:44 on Oct 26,2021
 # vlog -work work skeleton.vwf.vt 
 # -- Compiling module skeleton_vlg_vec_tst
 # 
 # Top level modules:
 # 	skeleton_vlg_vec_tst
-# End time: 12:03:33 on Oct 24,2021, Elapsed time: 0:00:00
+# End time: 23:44:45 on Oct 26,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.skeleton_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 12:03:33 on Oct 24,2021
+# Start time: 23:44:45 on Oct 26,2021
 # Loading work.skeleton_vlg_vec_tst
 # Loading work.skeleton
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -37,26 +37,12 @@
 # 
 # Loading instances from CPU_v.sdo
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 10135 statements exceeds ModelSim Altera Starter recommended capacity.
-# Expect performance to be adversely affected.
 # Loading timing data from CPU_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 ps  Iteration: 0  Instance: /skeleton_vlg_vec_tst File: skeleton.vwf.vt
-# ** Error: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_primitives.v(294): $hold( posedge clk &&& sloaddata:217235 ps, asdata:217256 ps, 186 ps );
-#    Time: 217256 ps  Iteration: 1  Instance: /skeleton_vlg_vec_tst/i1/\my_regfile|registers[3][19] 
-# ** Error: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_primitives.v(294): $hold( posedge clk &&& sloaddata:217256 ps, asdata:217358 ps, 186 ps );
-#    Time: 217358 ps  Iteration: 0  Instance: /skeleton_vlg_vec_tst/i1/\my_regfile|registers[3][3] 
-# ** Error: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_primitives.v(294): $hold( posedge clk &&& sloaddata:217256 ps, asdata:217432 ps, 186 ps );
-#    Time: 217432 ps  Iteration: 0  Instance: /skeleton_vlg_vec_tst/i1/\my_regfile|registers[3][16] 
-# ** Error: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_primitives.v(294): $hold( posedge clk &&& sloaddata:377242 ps, asdata:377278 ps, 186 ps );
-#    Time: 377278 ps  Iteration: 0  Instance: /skeleton_vlg_vec_tst/i1/\my_regfile|registers[6][12] 
-# ** Error: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_primitives.v(294): $hold( posedge clk &&& sloaddata:377227 ps, asdata:377322 ps, 186 ps );
-#    Time: 377322 ps  Iteration: 0  Instance: /skeleton_vlg_vec_tst/i1/\my_regfile|registers[6][11] 
-# ** Error: /build/swbuild/SJ/nightly/16.0/211/l64/work/modelsim/eda/sim_lib/altera_primitives.v(294): $hold( posedge clk &&& sloaddata:377242 ps, asdata:377404 ps, 186 ps );
-#    Time: 377404 ps  Iteration: 0  Instance: /skeleton_vlg_vec_tst/i1/\my_regfile|registers[6][10] 
 # ** Note: $stop    : skeleton.vwf.vt(81)
 #    Time: 5 us  Iteration: 0  Instance: /skeleton_vlg_vec_tst
 # Break in Module skeleton_vlg_vec_tst at skeleton.vwf.vt line 81
 # Stopped at skeleton.vwf.vt line 81
-# End time: 12:03:38 on Oct 24,2021, Elapsed time: 0:00:05
-# Errors: 6, Warnings: 1
+# End time: 23:44:46 on Oct 26,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -218,7 +218,7 @@ module processor(
 		
 		
 		//write back to reg file
-	assign data_writeReg[31:0] = dmem_mux_output[31:0];
+	assign data_writeReg[31:0] = (ctrl_writeReg[4:0] == 5'b00000) ? 5'b00000 : dmem_mux_output[31:0];
 		
 		
 endmodule
