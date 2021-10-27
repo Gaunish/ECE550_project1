@@ -49,7 +49,7 @@ module skeleton(clock, reset, imem_clock, dmem_clock, processor_clock, regfile_c
 //	 frequency_divider_by2 frediv_3(clk_div4,reset,clk_div8);
 	 assign imem_clock = clock;
 	 assign regfile_clock = clock;
-	 assign processor_clock = clk_div2; 
+	 assign processor_clock = clk_div4; 
 	 assign dmem_clock = clock;
 	 
 	 //Test ports

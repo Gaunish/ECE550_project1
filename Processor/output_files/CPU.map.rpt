@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU
-Tue Oct 26 23:40:42 2021
+Tue Oct 26 23:48:03 2021
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -25,11 +25,10 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
  17. Parameter Settings for User Entity Instance: dmem:my_dmem|altsyncram:altsyncram_component
  18. altsyncram Parameter Settings by Entity Instance
  19. Port Connectivity Checks: "processor:my_processor|alu:Alu"
- 20. Port Connectivity Checks: "frequency_divider_by2:frediv_2"
- 21. Post-Synthesis Netlist Statistics for Top Partition
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
- 24. Analysis & Synthesis Suppressed Messages
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+ 23. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -56,15 +55,15 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Oct 26 23:40:42 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 26 23:48:03 2021       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 3,037                                       ;
-;     Total combinational functions  ; 2,077                                       ;
-;     Dedicated logic registers      ; 1,005                                       ;
-; Total registers                    ; 1005                                        ;
+; Total logic elements               ; 3,030                                       ;
+;     Total combinational functions  ; 2,070                                       ;
+;     Dedicated logic registers      ; 1,006                                       ;
+; Total registers                    ; 1006                                        ;
 ; Total pins                         ; 271                                         ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 262,144                                     ;
@@ -207,20 +206,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 3,037       ;
+; Estimated Total logic elements              ; 3,030       ;
 ;                                             ;             ;
-; Total combinational functions               ; 2077        ;
+; Total combinational functions               ; 2070        ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 1663        ;
+;     -- 4 input functions                    ; 1655        ;
 ;     -- 3 input functions                    ; 368         ;
-;     -- <=2 input functions                  ; 46          ;
+;     -- <=2 input functions                  ; 47          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 2004        ;
+;     -- normal mode                          ; 1997        ;
 ;     -- arithmetic mode                      ; 73          ;
 ;                                             ;             ;
-; Total registers                             ; 1005        ;
-;     -- Dedicated logic registers            ; 1005        ;
+; Total registers                             ; 1006        ;
+;     -- Dedicated logic registers            ; 1006        ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
 ; I/O pins                                    ; 271         ;
@@ -229,8 +228,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 1040        ;
-; Total fan-out                               ; 13353       ;
+; Maximum fan-out                             ; 1060        ;
+; Total fan-out                               ; 13325       ;
 ; Average fan-out                             ; 3.62        ;
 +---------------------------------------------+-------------+
 
@@ -240,16 +239,17 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Entity Name           ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+-----------------------+--------------+
-; |skeleton                                 ; 2077 (0)          ; 1005 (0)     ; 262144      ; 0            ; 0       ; 0         ; 271  ; 0            ; |skeleton                                                                             ; skeleton              ; work         ;
+; |skeleton                                 ; 2070 (0)          ; 1006 (0)     ; 262144      ; 0            ; 0       ; 0         ; 271  ; 0            ; |skeleton                                                                             ; skeleton              ; work         ;
 ;    |dmem:my_dmem|                         ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem                                                                ; dmem                  ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem|altsyncram:altsyncram_component                                ; altsyncram            ; work         ;
 ;          |altsyncram_l9g1:auto_generated| ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_l9g1:auto_generated ; altsyncram_l9g1       ; work         ;
 ;    |frequency_divider_by2:frediv_1|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider_by2:frediv_1                                              ; frequency_divider_by2 ; work         ;
+;    |frequency_divider_by2:frediv_2|       ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|frequency_divider_by2:frediv_2                                              ; frequency_divider_by2 ; work         ;
 ;    |imem:my_imem|                         ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem                                                                ; imem                  ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component                                ; altsyncram            ; work         ;
 ;          |altsyncram_o3a1:auto_generated| ; 0 (0)             ; 0 (0)        ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|imem:my_imem|altsyncram:altsyncram_component|altsyncram_o3a1:auto_generated ; altsyncram_o3a1       ; work         ;
-;    |processor:my_processor|               ; 616 (181)         ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor                                                      ; processor             ; work         ;
-;       |alu:Alu|                           ; 370 (370)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|alu:Alu                                              ; alu                   ; work         ;
+;    |processor:my_processor|               ; 608 (185)         ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor                                                      ; processor             ; work         ;
+;       |alu:Alu|                           ; 358 (358)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|alu:Alu                                              ; alu                   ; work         ;
 ;       |control:Control|                   ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|control:Control                                      ; control               ; work         ;
 ;       |mux_32:Sign_extention_mux_32|      ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|mux_32:Sign_extention_mux_32                         ; mux_32                ; work         ;
 ;       |pc_counter:Pc_counter|             ; 12 (12)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|processor:my_processor|pc_counter:Pc_counter                                ; pc_counter            ; work         ;
@@ -341,7 +341,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1005  ;
+; Total registers                              ; 1006  ;
 ; Number of registers using Synchronous Clear  ; 12    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 992   ;
@@ -363,7 +363,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 12:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector24 ;
 ; 13:1               ; 8 bits    ; 64 LEs        ; 56 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:my_processor|data_writeReg[23]  ;
 ; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector29 ;
-; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:my_processor|data_writeReg[14]  ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |skeleton|processor:my_processor|data_writeReg[13]  ;
 ; 14:1               ; 4 bits    ; 36 LEs        ; 32 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:my_processor|data_writeReg[24]  ;
 ; 14:1               ; 2 bits    ; 18 LEs        ; 14 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:my_processor|alu:Alu|Selector31 ;
 ; 15:1               ; 2 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; No         ; |skeleton|processor:my_processor|data_writeReg[28]  ;
@@ -552,39 +552,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "frequency_divider_by2:frediv_2"                                                        ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; out_clk ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 271                         ;
-; cycloneiii_ff         ; 1005                        ;
+; cycloneiii_ff         ; 1006                        ;
 ;     ENA CLR           ; 992                         ;
 ;     SCLR              ; 12                          ;
-;     plain             ; 1                           ;
+;     plain             ; 2                           ;
 ; cycloneiii_io_obuf    ; 64                          ;
-; cycloneiii_lcell_comb ; 2077                        ;
+; cycloneiii_lcell_comb ; 2070                        ;
 ;     arith             ; 73                          ;
 ;         2 data inputs ; 11                          ;
 ;         3 data inputs ; 62                          ;
-;     normal            ; 2004                        ;
+;     normal            ; 1997                        ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 34                          ;
+;         2 data inputs ; 35                          ;
 ;         3 data inputs ; 306                         ;
-;         4 data inputs ; 1663                        ;
+;         4 data inputs ; 1655                        ;
 ; cycloneiii_ram_block  ; 64                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 16.20                       ;
-; Average LUT depth     ; 13.12                       ;
+; Average LUT depth     ; 13.10                       ;
 +-----------------------+-----------------------------+
 
 
@@ -603,7 +594,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Tue Oct 26 23:40:25 2021
+    Info: Processing started: Tue Oct 26 23:47:47 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (125092): Tcl Script File test.qip not found
     Info (125063): set_global_assignment -name QIP_FILE test.qip
@@ -788,16 +779,16 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file E:/ECE550_Project1/Processor/output_files/CPU.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3404 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3397 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 269 output pins
-    Info (21061): Implemented 3069 logic cells
+    Info (21061): Implemented 3062 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 92 warnings
-    Info: Peak virtual memory: 4976 megabytes
-    Info: Processing ended: Tue Oct 26 23:40:42 2021
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 4977 megabytes
+    Info: Processing ended: Tue Oct 26 23:48:03 2021
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:30
 
 
 +------------------------------------------+

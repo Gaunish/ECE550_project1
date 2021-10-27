@@ -2,8 +2,8 @@
 clock => clock.IN4
 reset => reset.IN4
 imem_clock <= clock.DB_MAX_OUTPUT_PORT_TYPE
-dmem_clock <= clk_div2.DB_MAX_OUTPUT_PORT_TYPE
-processor_clock <= clock.DB_MAX_OUTPUT_PORT_TYPE
+dmem_clock <= clock.DB_MAX_OUTPUT_PORT_TYPE
+processor_clock <= processor_clock.DB_MAX_OUTPUT_PORT_TYPE
 regfile_clock <= clock.DB_MAX_OUTPUT_PORT_TYPE
 data_writeReg_test[0] <= data_writeReg[0].DB_MAX_OUTPUT_PORT_TYPE
 data_writeReg_test[1] <= data_writeReg[1].DB_MAX_OUTPUT_PORT_TYPE
