@@ -136,6 +136,7 @@ module processor(
 	//Control port initiation.
 	//Please check that when new control bits are added
 	wire DMwe, Rwe, Rwd, ALUinB;
+	wire [31:0] rstatus;
 	wire [4:0] ALUop;
 	
 	
@@ -143,14 +144,14 @@ module processor(
 	control Control(q_imem[31:27],
 						 q_imem[6:2], 					
 						 DMwe,Rwe,Rwd,
-						 ALUop[4:0],ALUinB);
+						 ALUop[4:0],ALUinB,
+						 rstatus);
 	
 	assign ctrl_writeEnable = Rwe;
 
 	//Different from lecture note.
 	//Because Rd is in the higher bits[26:22], while in lecture note Rd is in lower bits.
 	//There's no conflicts with instant number so the mux is neglected.
-	 assign ctrl_writeReg[4:0] = q_imem[26:22];//Rd
 	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
 	 assign ctrl_readRegB[4:0] = (q_imem[31:27] == 5'b00000) ? q_imem[16:12] : q_imem[26:22];//Rt
 	 
@@ -192,8 +193,8 @@ module processor(
 		.isLessThan(alu_isLessThan),
 		.overflow(alu_overflow)
 	 );
-		
-
+	
+	
 	 //--------------------------------------------------------------------------------------------
 		//Stage 4, 5
 	 
@@ -217,8 +218,17 @@ module processor(
 		//Stage 5
 		
 		
-		//write back to reg file
-	assign data_writeReg[31:0] = (ctrl_writeReg[4:0] == 5'b00000) ? 5'b00000 : dmem_mux_output[31:0];
+   //write back to reg file
+	
+	//special case : overflow, change Rd
+	assign ctrl_writeReg[4:0] = (alu_overflow == 1'b1) ? 5'b11110 : q_imem[26:22];//Rd
+	
+	//special case : overflow, change data to be written by rstatus
+	wire [31:0] final_out;
+	assign final_out[31:0] = (alu_overflow == 1'b1) ? rstatus[31:0] : dmem_mux_output[31:0];
+	
+	//special case : register 0 : always 0
+	assign data_writeReg[31:0] = (ctrl_writeReg[4:0] == 5'b00000) ? 5'b00000 : final_out[31:0];
 		
 		
 endmodule

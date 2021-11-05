@@ -1,4 +1,4 @@
-module control(opcode,alu_in,DMwe,Rwe,Rwd,ALUop,ALUinB);
+module control(opcode,alu_in,DMwe,Rwe,Rwd,ALUop,ALUinB, rstatus);
 
 input [4:0] opcode;
 input [4:0] alu_in;
@@ -14,6 +14,7 @@ output reg Rwe;
 output reg Rwd;
 output reg [4:0] ALUop;
 output reg ALUinB;
+output reg [31:0] rstatus;
 
 
 //assign Rdst = 1'b1;
@@ -35,6 +36,7 @@ always@(opcode,alu_in) begin
 				Rwd = 1'b0;
 				ALUop = 5'b00000;
 				ALUinB = 1'b0;
+				rstatus = 32'd1;
 			end
 			
 			//sub insn
@@ -45,6 +47,7 @@ always@(opcode,alu_in) begin
 				Rwd = 1'b0;
 				ALUop = 5'b00001;
 				ALUinB = 1'b0;
+				rstatus = 32'd3;
 			end
 		
 			//and insn
@@ -55,6 +58,7 @@ always@(opcode,alu_in) begin
 				Rwd = 1'b0;
 				ALUop = 5'b00010;
 				ALUinB = 1'b0;
+				rstatus = 32'd0;
 			end	
 			
 			//or insn
@@ -65,6 +69,7 @@ always@(opcode,alu_in) begin
 				Rwd = 1'b0;
 				ALUop = 5'b00011;
 				ALUinB = 1'b0;
+				rstatus = 32'd0;
 			end	
 			
 			//sll insn
@@ -75,6 +80,7 @@ always@(opcode,alu_in) begin
 				Rwd = 1'b0;
 				ALUop = 5'b00100;
 				ALUinB = 1'bZ;
+				rstatus = 32'd0;
 			end
 			
 			//sra insn
@@ -85,6 +91,7 @@ always@(opcode,alu_in) begin
 				Rwd = 1'b0;
 				ALUop = 5'b00101;
 				ALUinB = 1'bZ;
+				rstatus = 32'd0;
 			end
 		
 		 endcase
@@ -101,6 +108,7 @@ always@(opcode,alu_in) begin
 			Rwd = 1'b0;
 			ALUop = 5'b00000;
 			ALUinB = 1'b1;
+			rstatus = 32'd2;
 		end
 		
 		//opcode = 00111
@@ -113,6 +121,7 @@ always@(opcode,alu_in) begin
 			Rwd = 1'b0;
 			ALUop = 5'b00000;
 			ALUinB = 1'b1;
+			rstatus = 32'd0;
 		end
 		
 		//opcode = 01000
@@ -125,6 +134,7 @@ always@(opcode,alu_in) begin
 			Rwd = 1'b1;
 			ALUop = 5'b00000;
 			ALUinB = 1'b1;
+			rstatus = 32'd0;
 		end
 endcase
 end
