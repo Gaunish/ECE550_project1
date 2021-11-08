@@ -19,7 +19,7 @@ output reg Branch;
 output reg Jump;
 output reg jal;
 output reg jr;
-output reg Rt;
+output reg [1:0] Rt;
 output reg [4:0] ALUop;
 output reg ALUinB;
 output reg [31:0] rstatus;
@@ -39,7 +39,7 @@ always@(opcode,alu_in) begin
 			//add insn
 			5'b00000:
 			begin
-				Rt = 1'b0;
+				Rt = 2'b00;
 				DMwe = 1'b0;
 				Rwe = 1'b1;
 				Rwd = 1'b0;
@@ -55,7 +55,7 @@ always@(opcode,alu_in) begin
 			//sub insn
 	    	5'b00001:
 			begin
-				Rt = 1'b0;
+				Rt = 2'b00;
 				DMwe = 1'b0;
 				Rwe = 1'b1;
 				Rwd = 1'b0;
@@ -71,7 +71,7 @@ always@(opcode,alu_in) begin
 			//and insn
 	    	5'b00010:
 			begin
-				Rt = 1'b0;
+				Rt = 2'b00;
 				DMwe = 1'b0;
 				Rwe = 1'b1;
 				Rwd = 1'b0;
@@ -87,7 +87,7 @@ always@(opcode,alu_in) begin
 			//or insn
 	    	5'b00011:
 			begin
-				Rt = 1'b0;
+				Rt = 2'b00;
 				DMwe = 1'b0;
 				Rwe = 1'b1;
 				Rwd = 1'b0;
@@ -103,7 +103,7 @@ always@(opcode,alu_in) begin
 			//sll insn
 	    	5'b00100:
 			begin
-				Rt = 1'b0;
+				Rt = 2'b00;
 				DMwe = 1'b0;
 				Rwe = 1'b1;
 				Rwd = 1'b0;
@@ -119,7 +119,7 @@ always@(opcode,alu_in) begin
 			//sra insn
 	    	5'b00101:
 			begin
-				Rt = 1'b0;
+				Rt = 2'b00;
 				DMwe = 1'b0;
 				Rwe = 1'b1;
 				Rwd = 1'b0;
@@ -141,7 +141,7 @@ always@(opcode,alu_in) begin
 		//addi instruction
 		5'b00101:
 		begin
-			Rt = 1'b1;
+			Rt = 2'b01;
 			DMwe = 1'b0;
 			Rwe = 1'b1;
 			Rwd = 1'b0;
@@ -159,7 +159,7 @@ always@(opcode,alu_in) begin
 		//sw instruction
 		5'b00111:
 		begin
-			Rt = 1'b1;
+			Rt = 2'b01;
 			DMwe = 1'b1;
 			Rwe = 1'b0;
 			Rwd = 1'b0;
@@ -177,7 +177,7 @@ always@(opcode,alu_in) begin
 		//lw instruction
 		5'b01000:
 		begin
-			Rt = 1'b1;
+			Rt = 2'b01;
 			DMwe = 1'b0;
 			Rwe = 1'b1;
 			Rwd = 1'b1;
@@ -195,7 +195,7 @@ always@(opcode,alu_in) begin
 		//j instruction
 		5'b00001:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b10;
 			DMwe = 1'b0;
 			Rwe = 1'b0;
 			Rwd = 1'bZ;
@@ -213,7 +213,7 @@ always@(opcode,alu_in) begin
 		//bne instruction
 		5'b00010:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b01;
 			DMwe = 1'b0;
 			Rwe = 1'b0;
 			Rwd = 1'bZ;
@@ -231,7 +231,7 @@ always@(opcode,alu_in) begin
 		//jal instruction
 		5'b00011:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b10;
 			DMwe = 1'b0;
 			Rwe = 1'b1;
 			Rwd = 1'bZ;
@@ -249,7 +249,7 @@ always@(opcode,alu_in) begin
 		//jr instruction
 		5'b00100:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b11;
 			DMwe = 1'b0;
 			Rwe = 1'b0;
 			Rwd = 1'bZ;
@@ -267,7 +267,7 @@ always@(opcode,alu_in) begin
 		//blt instruction
 		5'b00110:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b01;
 			DMwe = 1'b0;
 			Rwe = 1'b0;
 			Rwd = 1'bZ;
@@ -285,7 +285,7 @@ always@(opcode,alu_in) begin
 		//bex instruction
 		5'b10110:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b10;
 			DMwe = 1'b0;
 			Rwe = 1'b0;
 			Rwd = 1'bZ;
@@ -303,7 +303,7 @@ always@(opcode,alu_in) begin
 		//setx instruction
 		5'b10101:
 		begin 
-			Rt = 1'b1;
+			Rt = 2'b10;
 			DMwe = 1'b0;
 			Rwe = 1'b1;
 			Rwd = 1'b0;

@@ -117,15 +117,19 @@ module processor(
 
 	 //output[11:0] pc_out;
 	 wire [11:0] pc;
+	 wire [11:0] ref_loc;
 	 //assign pc_out = pc;
 	 
 	 //Get the address of imem where instruction is stored
 	 pc_counter Pc_counter(
 		.clk(clock),
 		.rst(reset),
-		.pc(pc)		
+		.pc(pc),
+		.loc(ref_loc)
 	 );
 	 
+	 wire[11:0] ref_loc_buf;
+	 assign ref_loc_buf = ref_loc + 12'd1;
 	 
 	 //fan-out wire to the output address_imem
 	 assign address_imem[11:0] = pc[11:0];
@@ -135,7 +139,8 @@ module processor(
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire DMwe, Rwe, Rwd, ALUinB, Branch, Jump, jal, jr, Rt;
+	wire DMwe, Rwe, Rwd, ALUinB, Branch, Jump, jal, jr;
+	wire [1:0] insn_t;
 	wire [31:0] rstatus;
 	wire [4:0] ALUop;
 	
@@ -143,7 +148,7 @@ module processor(
 	//generate the control signals
 	control Control(q_imem[31:27],
 						 q_imem[6:2], 					
-						 DMwe,Rwe,Rwd,Branch,Jump,jal,jr, Rt
+						 DMwe,Rwe,Rwd,Branch,Jump,jal,jr, insn_t,
 						 ALUop[4:0],ALUinB,
 						 rstatus);
 	
@@ -151,8 +156,15 @@ module processor(
 	//Different from lecture note.
 	//Because Rd is in the higher bits[26:22], while in lecture note Rd is in lower bits.
 	//There's no conflicts with instant number so the mux is neglected.
-	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
-	 assign ctrl_readRegB[4:0] = (Rt == 1'b0) ? q_imem[16:12] : q_imem[26:22];//Rt
+	
+	 //Ra selection for bex
+	 assign ctrl_readRegA[4:0] = (ALUop == 5'b10110) ? 5'b11110 : q_imem[21:17];//Rs
+	
+	 //Rb selection
+	 wire[4:0] buffer_b;
+  	 assign buffer_b[4:0] = (insn_t == 2'b00) ? q_imem[16:12] : q_imem[26:22];//Rt 	 
+	 assign ctrl_readRegB[4:0] = (insn_t[0] == 1'b0) ? buffer_b[4:0] : 5'b00000;//Rt
+	 
 	 
 	 
 	 //The oval sign extension part
@@ -163,6 +175,9 @@ module processor(
 	 );
 	 
 	 //The mux for branch instruction  
+	 //NOTE : Assumed lower 12 bits of SX output
+	 wire[11:0] br_op;
+	 assign br_op = sign_extension[11:0] + ref_loc_buf[11:0];
 
 	 //The mux after sign_extension
 	 wire [31:0]sign_mux_output;
@@ -194,6 +209,37 @@ module processor(
 		.overflow(alu_overflow)
 	 );
 	
+	 //Mux for branching 
+	 wire br_ctrl, br_buf; 
+	 wire [11:0] br_mux_op;//output of branching mux
+	 
+	 //buffer to switch between bne and blt
+	 assign br_buf = (ALUop[4:0] == 5'b00010) ? alu_isNotEqual : alu_isLessThan;
+	 assign br_ctrl = Branch & br_buf;
+	 
+	 //output of branching selected
+	 mux_12 branch(ref_loc_buf[11:0], br_op[11:0], br_mux_op[11:0], br_ctrl);
+	
+	
+    //Mux for jumping 
+	 wire [11:0] jp_mux_op; // output of jumping mux
+	 mux_12 jp(br_mux_op[11:0], q_imem[11:0], jp_mux_op[11:0], Jump);
+	 
+	 //Mux for jr
+	 wire [11:0] jr_mux_op;
+	 mux_12 jr_mux(jp_mux_op[11:0], data_readRegB[11:0], jr_mux_op[11:0], jr);
+	
+	 //Mux for bex
+	 wire bex_buf;
+	 wire [11:0] bex_mux_op;
+	 assign bex_buf = (ALUop[4:0] == 5'b10110) ? 1'b1 : 1'b0;
+	 assign bex_ctrl = bex_buf & alu_isNotEqual;
+	 mux_12 bex_mux(jr_mux_op, q_imem[11:0], bex_mux_op, bex_ctrl);
+	 
+	 //Mux for jal
+	 wire [11:0] pc_op;
+	 mux_12 jal_mux(bex_mux_op, q_imem[11:0], pc_op, jal);
+	 
 	
 	 //--------------------------------------------------------------------------------------------
 		//Stage 4, 5
@@ -221,15 +267,41 @@ module processor(
    //write back to reg file
 	assign ctrl_writeEnable = Rwe;
 	
+	//control logic for writing to registers
+	wire setx_en;
+	assign setx_en = (ALUop[4:0] == 5'b10101) ? 1'b1 : 1'b0;
+	
 	//special case : overflow, change Rd
-	assign ctrl_writeReg[4:0] = (alu_overflow == 1'b1) ? 5'b11110 : q_imem[26:22];//Rd
+	wire [4:0] of_reg_buf;
+	assign of_reg_buf[4:0] = (alu_overflow == 1'b1) ? 5'b11110 : q_imem[26:22];//Rd
+	
+	//special case : setx
+	wire[4:0] setx_reg_buf;
+	assign setx_reg_buf[4:0] = (setx_en == 1'b1) ? 5'b11110 : of_reg_buf[4:0];//Rd
+	
+	//final reg
+	assign ctrl_writeReg[4:0] = (jal == 1'b1) ? 5'b11111 : setx_reg_buf[4:0];//Rd
+	
 	
 	//special case : overflow, change data to be written by rstatus
-	wire [31:0] final_out;
-	assign final_out[31:0] = (alu_overflow == 1'b1) ? rstatus[31:0] : dmem_mux_output[31:0];
+	wire [31:0] final_out1;
+	assign final_out1[31:0] = (alu_overflow == 1'b1) ? rstatus[31:0] : dmem_mux_output[31:0];
+	
+	//special case
+	//prepare jal, setx output
+	wire[31:0] jal_op, setx_op, final_out, final_out2;
+	sx_12(ref_loc_buf, jal_op);
+	sx_27(q_imem[26:0], setx_op);
+	
+	//special case : setx
+	assign final_out2[31:0] = (setx_en == 1'b1) ? setx_op[31:0] : final_out1[31:0];
+	
+	//special case : jal
+	assign final_out[31:0] = (jal == 1'b1) ? jal_op[31:0] : final_out2[31:0];
 	
 	//special case : register 0 : always 0
-	assign data_writeReg[31:0] = (ctrl_writeReg[4:0] == 5'b00000) ? 5'b00000 : final_out[31:0];
-		
-		
+	assign data_writeReg[31:0] = (ctrl_writeReg[4:0] == 5'b00000) ? 32'd0 : final_out[31:0];
+	
+	//changed the pc finally
+	assign ref_loc[11:0] = pc_op[11:0]; 
 endmodule
