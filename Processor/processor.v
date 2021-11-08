@@ -135,7 +135,7 @@ module processor(
 	
 	//Control port initiation.
 	//Please check that when new control bits are added
-	wire DMwe, Rwe, Rwd, ALUinB;
+	wire DMwe, Rwe, Rwd, ALUinB, Branch, Jump, jal, jr, Rt;
 	wire [31:0] rstatus;
 	wire [4:0] ALUop;
 	
@@ -143,17 +143,16 @@ module processor(
 	//generate the control signals
 	control Control(q_imem[31:27],
 						 q_imem[6:2], 					
-						 DMwe,Rwe,Rwd,
+						 DMwe,Rwe,Rwd,Branch,Jump,jal,jr, Rt
 						 ALUop[4:0],ALUinB,
 						 rstatus);
 	
-	assign ctrl_writeEnable = Rwe;
 
 	//Different from lecture note.
 	//Because Rd is in the higher bits[26:22], while in lecture note Rd is in lower bits.
 	//There's no conflicts with instant number so the mux is neglected.
 	 assign ctrl_readRegA[4:0] = q_imem[21:17];//Rs
-	 assign ctrl_readRegB[4:0] = (q_imem[31:27] == 5'b00000) ? q_imem[16:12] : q_imem[26:22];//Rt
+	 assign ctrl_readRegB[4:0] = (Rt == 1'b0) ? q_imem[16:12] : q_imem[26:22];//Rt
 	 
 	 
 	 //The oval sign extension part
@@ -163,6 +162,7 @@ module processor(
 		.out (sign_extension[31:0])
 	 );
 	 
+	 //The mux for branch instruction  
 
 	 //The mux after sign_extension
 	 wire [31:0]sign_mux_output;
@@ -219,6 +219,7 @@ module processor(
 		
 		
    //write back to reg file
+	assign ctrl_writeEnable = Rwe;
 	
 	//special case : overflow, change Rd
 	assign ctrl_writeReg[4:0] = (alu_overflow == 1'b1) ? 5'b11110 : q_imem[26:22];//Rd
